@@ -82,4 +82,7 @@ fig.update_layout(
     margin=dict(l=0, r=0, b=0, t=40)
 )
 
-fig.show()
+# fig.show()
+
+# Create an html file to save for interactive plot
+fig.write_html("Carte_Cygnus_3D_cones.html")
