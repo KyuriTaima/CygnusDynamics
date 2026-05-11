@@ -5,12 +5,12 @@ import pandas as pd
 
 # Initialisation des paramètres
 
-r0 = 8.30        # kpc Distance du soleil au centre galactique
-theta0 = 239.0  # km/s Vitesse de rotation fixe des objets autour du centre galactique
+r0 = 8.15        # kpc Distance du soleil au centre galactique
+theta0 = 236.0  # km/s Vitesse de rotation fixe des objets autour du centre galactique
 # Schönrich et al. (2010) : Vitesse du Soleil par rapport au LSR
-U_sun = 11.10 # km/s
-V_sun = 12.24 # km/s
-W_sun = 7.25 # km/s
+U_sun = 11.1 # km/s
+V_sun = 15.0 # km/s
+W_sun = 7.2 # km/s
 
 # Ancienne norme de vitesse du soleil utilisée pour les données radio v_lsr
 U_old = 10.3 # km/s
@@ -119,6 +119,10 @@ v_lsr_list = [] # Vitesses lsr comparables avec les données radio v_lsr de Rygl
 v_l_pec_kms_list = [] # Vitesse longitudinale
 v_b_pec_kms_list = [] # Vitesse latitudinale
 v_lb_kms_list = [] #norme de la vitesse dans le plan galactique
+# Initialisation des coordonnées spatiales héliocentriques
+X_helio_list = []
+Y_helio_list = []
+Z_helio_list = []
 
 # Boucle sur les groupes pour calculer les composantes de vitesses dans le référentiel LSR et Galactocentrique
 for i in range(len(names)):
@@ -139,6 +143,14 @@ for i in range(len(names)):
     U_obs_list.append(U_obs)
     V_obs_list.append(V_obs)
     W_obs_list.append(W_obs)
+
+    X_helio = coord.cartesian.x.value
+    Y_helio = coord.cartesian.y.value
+    Z_helio = coord.cartesian.z.value
+    
+    X_helio_list.append(X_helio)
+    Y_helio_list.append(Y_helio)
+    Z_helio_list.append(Z_helio)
 
     # Correction de la vitesse du soleil pour obtenir les composantes dans le référentiel LSR
     U_lsr = U_obs + U_sun
@@ -206,6 +218,9 @@ data = {
     "Dec_deg": declination,
     "l_deg": galactic_longitude,
     "b_deg": galactic_latitude,
+    "X_helio_pc": X_helio_list,
+    "Y_helio_pc": Y_helio_list,
+    "Z_helio_pc": Z_helio_list,
     "Distance_pc": distance,
     "mu_l_mas_yr": mu_l,
     "mu_l_err": mu_l_err,
