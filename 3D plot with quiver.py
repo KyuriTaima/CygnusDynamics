@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 # Data import
-objects_data = pd.read_csv('Cygnus_Objects_Datas_Schönrich_239_8.3.csv')
+objects_data = pd.read_csv('Cygnus_Objects_Datas_Uncertainties_v3.csv')
 objects_data = objects_data.dropna(subset=['Distance_pc', 'U_pec_kms', 'V_pec_kms', 'W_pec_kms'])
 object_names = objects_data['Object_Name'].values
 distances_pc = objects_data['Distance_pc'].values
@@ -15,7 +15,7 @@ v_pec = objects_data['V_pec_kms'].values
 w_pec = objects_data['W_pec_kms'].values
 
 # Paramètres Galactiques
-R0 = 8300 
+R0 = 8277 
 l_rad, b_rad = np.radians(l_deg), np.radians(b_deg)
 
 # CALCUL DES COORDONNÉES 3D (Centrées sur OB2)

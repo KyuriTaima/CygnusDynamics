@@ -7,16 +7,16 @@ import pandas as pd
 
 # Initialisation des paramètres
 
-r0 = 8.15        # kpc Distance du soleil au centre galactique
-theta0 = 236.0  # km/s Vitesse de rotation fixe des objets autour du centre galactique
-theta0_err = 7.0 # km/s Incertitude sur la vitesse de rotation homogène de la galaxie au LSR
+r0 = 8.277        # kpc Distance du soleil au centre galactique
+theta0 = 234.8  # km/s Vitesse de rotation fixe des objets autour du centre galactique
+theta0_err = 3.0 # km/s Incertitude sur la vitesse de rotation homogène de la galaxie au LSR
 # Schönrich et al. (2010) : Vitesse du Soleil par rapport au LSR
-U_sun = 11.1 # km/s
-V_sun = 15.0 # km/s
-W_sun = 7.2 # km/s
-U_sun_err = 1.2 # km/s
-V_sun_err = 10.0 # km/s
-W_sun_err = 1.1 # km/s
+U_sun = 9.1 # km/s
+V_sun = 8.66 # km/s
+W_sun = 7.90 # km/s
+U_sun_err = 0.18 # km/s
+V_sun_err = 0.26 # km/s
+W_sun_err = 0.13 # km/s
 
 # Ancienne norme de vitesse du soleil utilisée pour les données radio v_lsr
 U_old = 10.3 # km/s
@@ -31,7 +31,7 @@ declination = [35.68, 41.43, 37.87, 37.64, 41.30, 36.58, 42.626, 42.416, 41.582,
 galactic_longitude = [72.61, 78.58, 76.11, 75.44, 80.19, 74.04, 81.87, 81.75, 80.86, 79.74] # degrés
 galactic_latitude = [2.06, 3.31, 0.54, 1.19, 0.85, 1.44, 0.78, 0.59, 0.38, 0.99] # degrés
 distance = [1894.5, 1726.3, 1713.1, 2000.1, 1674.0, 1985.2, 1300, 1500, 1460, 1360] # pc
-distance_err = [4, 7, 10, 10, 10, 10 , 0.07, 0.08, 0.09, 0.12] # pc
+distance_err = [4, 7, 10, 10, 10, 10 , 70, 80, 90, 120] # pc
 
 # --- Mouvements propres ---
 mu_l = [-6.90, -5.47, -6.57, -5.55, -4.72, -6.11, -4.50, -4.74, -5.84, -5.02] # mas/yr
@@ -151,6 +151,8 @@ V_gal_abs_err_list = [] # Liste pour stocker les incertitudes sur les vitesses a
 v_l_pec_err_list = [] # Liste pour stocker les incertitudes sur les vitesses longitudinales
 v_b_pec_err_list = [] # Liste pour stocker les incertitudes sur les vitesses latitudinales
 v_lb_err_list = [] # Liste pour stocker les incertitudes sur les normes de vitesses dans le plan galactique
+l_err_deg_list = [0.00001] * len(names)
+b_err_deg_list = [0.00001] * len(names)
 
 # Boucle sur les groupes pour calculer les composantes de vitesses dans le référentiel LSR et Galactocentrique
 for i in range(len(names)):
@@ -245,8 +247,8 @@ n_samples = 10000
 for i in range(len(names)):
     print(f"\n--- {names[i]} ---")
     distances = np.random.normal(distance[i], distance_err[i], n_samples) * u.pc
-    longitudes = np.random.normal(galactic_longitude[i], 0.01, n_samples) * u.deg
-    latitudes = np.random.normal(galactic_latitude[i], 0.01, n_samples) * u.deg
+    longitudes = np.random.normal(galactic_longitude[i], l_err_deg_list[i], n_samples) * u.deg
+    latitudes = np.random.normal(galactic_latitude[i], b_err_deg_list[i], n_samples) * u.deg
 
     # Feed the arrays to SkyCoord
     c = SkyCoord(frame=Galactic, l=longitudes, b=latitudes, distance=distances)
@@ -295,10 +297,23 @@ for i in range(len(names)):
     V_lsr_abs_err_list.append(V_lsr_abs_err)
     W_lsr_abs_err_list.append(W_lsr_abs_err)
 
-    # Taylor expansion for peculiar velocity components uncertainties
+ # Taylor expansion for peculiar velocity components uncertainties
     beta = beta_list[i]
-    U_pec_err = np.sqrt((U_lsr_abs_err * np.cos(beta))**2 + (V_lsr_abs_err * np.sin(beta))**2)
-    V_pec_err = np.sqrt((U_lsr_abs_err * np.sin(beta))**2 + (V_lsr_abs_err * np.cos(beta))**2 + theta0_err**2)
+    
+    # U_pec = U_lsr * cos(beta) - (V_lsr + theta0) * sin(beta)
+    U_pec_err = np.sqrt(
+        (U_lsr_err * np.cos(beta))**2 + 
+        (V_lsr_err * np.sin(beta))**2 + 
+        (theta0_err * np.sin(beta))**2
+    )
+    
+    # V_pec = U_lsr * sin(beta) + (V_lsr + theta0) * cos(beta) - theta0
+    V_pec_err = np.sqrt(
+        (U_lsr_err * np.sin(beta))**2 + 
+        (V_lsr_err * np.cos(beta))**2 + 
+        (theta0_err * (np.cos(beta) - 1))**2
+    )
+    
     W_pec_err = W_lsr_abs_err
     U_pec_err_list.append(U_pec_err)
     V_pec_err_list.append(V_pec_err)
@@ -422,4 +437,3 @@ csv_filename = "Cygnus_Objects_Datas_Uncertainties.csv"
 df.to_csv(csv_filename, index=False, float_format='%.2f')
 
 print(f"\nDataFrame créé et exporté en CSV : {csv_filename}")
-

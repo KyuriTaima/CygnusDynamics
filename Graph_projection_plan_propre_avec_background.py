@@ -7,7 +7,7 @@ from astropy.io import fits
 from astropy.visualization import simple_norm
 
 # Import csv data
-objects_data = pd.read_csv('Cygnus_Objects_Datas_Schönrich_239_8.3.csv')
+objects_data = pd.read_csv('Cygnus_Objects_Datas_Uncertainties_v3.csv')
 
 names = objects_data['Object_Name']
 U_pec_kms = objects_data['U_pec_kms']
@@ -89,7 +89,7 @@ plt.title('Velocity Vectors (v_l, v_b) overlaid on WISE 12 Image of Cygnus X')
 plt.grid(True, linestyle='--', alpha=0.3)
 
 # On fixe les limites d'observation
-plt.xlim(83, 70)
+plt.xlim(83, 71)
 plt.ylim(-1, 5)
 
 plt.show()

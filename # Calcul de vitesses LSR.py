@@ -3,13 +3,13 @@ import astropy.units as u
 from astropy.coordinates import SkyCoord, Galactic
 
 # Initialisation des paramètres
-R0 = 8.3        # kpc Distance du soleil au centre galactique
-Theta0 = 239.0  # km/s Vitesse de rotation fixe des objets autour du centre galactique
+R0 = 8.277        # kpc Distance du soleil au centre galactique
+Theta0 = 234.8  # km/s Vitesse de rotation fixe des objets autour du centre galactique
 
 # Schönrich et al. (2010) : Vitesse du Soleil par rapport au LSR
-U_sun = 11.10 * u.km / u.s
-V_sun = 12.24 * u.km / u.s
-W_sun = 7.25 * u.km / u.s
+U_sun = 9.1 * u.km / u.s
+V_sun = 8.66 * u.km / u.s
+W_sun = 7.90 * u.km / u.s
 
 # tableau de valeurs pour les différentes sources dans Cygnus X: W75N, DR21, DR20, IRAS 20290+4052
 

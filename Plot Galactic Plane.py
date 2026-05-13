@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Import csv data
-objects_data = pd.read_csv('Cygnus_Objects_Datas_Reid2019_236_8.15.csv')
+objects_data = pd.read_csv('Cygnus_Objects_Datas_Uncertainties_v3.csv')
 
 # Extract relevant columns
 names = objects_data['Object_Name'].values
@@ -13,7 +13,7 @@ distances = objects_data['Distance_pc'].values
 l_deg = objects_data['l_deg'].values
 b_deg = objects_data['b_deg'].values
 
-R0 = 8150 # pc
+R0 = 8277 # pc
 
 # Galactic cartesian coordinates
 l_rad = np.radians(l_deg)

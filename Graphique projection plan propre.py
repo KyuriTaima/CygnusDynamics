@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Import csv data for molecular clouds and OB star clusters from a csv file
-objects_data = pd.read_csv('Cygnus_Objects_Datas_Reid2019_236_8.15.csv')
+objects_data = pd.read_csv('Cygnus_Objects_Datas_Uncertainties_v3.csv')
 # Extract relevant columns for clouds and clusters
 names = objects_data['Object_Name']
 U_pec_kms = objects_data['U_pec_kms']

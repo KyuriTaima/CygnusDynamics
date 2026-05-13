@@ -9,7 +9,7 @@ from astropy.io import fits
 from astropy.visualization import simple_norm
 
 # Import csv data
-objects_data = pd.read_csv('Cygnus_Objects_Datas_Schönrich_239_8.3.csv')
+objects_data = pd.read_csv('Cygnus_Objects_Datas_Uncertainties_v3.csv')
 
 names = objects_data['Object_Name']
 distances = objects_data['Distance_pc']
