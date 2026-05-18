@@ -4,6 +4,8 @@ import numpy as np
 import astropy.units as u
 from astropy.coordinates import SkyCoord, Galactic
 import pandas as pd
+from astropy.coordinates import Galactocentric, CartesianDifferential
+import astropy.coordinates as coord_module
 
 # Initialisation des paramètres
 
@@ -132,6 +134,16 @@ v_lb_kms_list = [] #norme de la vitesse dans le plan galactique
 X_helio_list = []
 Y_helio_list = []
 Z_helio_list = []
+# Cartesian coordinates in the galactocentric frame
+X_gc_list = []
+Y_gc_list = []
+Z_gc_list = []
+# Velocities in the galactocentric frame
+vx_gc_list = []
+vy_gc_list = []
+vz_gc_list = []
+
+# Uncertainties lists
 X_helio_err_list = []
 Y_helio_err_list = []
 Z_helio_err_list = []
@@ -153,6 +165,13 @@ v_b_pec_err_list = [] # Liste pour stocker les incertitudes sur les vitesses lat
 v_lb_err_list = [] # Liste pour stocker les incertitudes sur les normes de vitesses dans le plan galactique
 l_err_deg_list = [0.00001] * len(names)
 b_err_deg_list = [0.00001] * len(names)
+# Galactocentric coordinates and velocities uncertainties
+X_gc_err_list = []
+Y_gc_err_list = []
+Z_gc_err_list = []
+vx_gc_err_list = []
+vy_gc_err_list = []
+vz_gc_err_list = []
 
 # Boucle sur les groupes pour calculer les composantes de vitesses dans le référentiel LSR et Galactocentrique
 for i in range(len(names)):
@@ -240,6 +259,30 @@ for i in range(len(names)):
     v_lb_kms = np.sqrt(v_l_pec**2 + v_b_pec**2)
     v_lb_kms_list.append(v_lb_kms)
 
+    # Claculate cartesian coordinates and velocities in the galactocentric frame using Astropy's built-in transformations
+    v_sun_vector = coord_module.CartesianDifferential([U_sun, V_sun + theta0, W_sun] * u.km / u.s)
+    galactocentric_frame = Galactocentric(
+        galcen_distance=r0 * u.kpc,
+        galcen_v_sun=v_sun_vector,
+        z_sun=0 * u.pc # We suppose that the sun is in the galactic plane for simplicity, so z_sun = 0
+    )
+    # Transform the coordinates and velocities to the galactocentric frame
+    gc_coord = coord.transform_to(galactocentric_frame)
+    # Extract positions
+    X_gc = gc_coord.x.to_value(u.kpc)
+    Y_gc = gc_coord.y.to_value(u.kpc)
+    Z_gc = gc_coord.z.to_value(u.kpc)
+    X_gc_list.append(X_gc)
+    Y_gc_list.append(Y_gc)
+    Z_gc_list.append(Z_gc)
+    # Extract velocities
+    vx_gc = gc_coord.v_x.value
+    vy_gc = gc_coord.v_y.value
+    vz_gc = gc_coord.v_z.value
+    vx_gc_list.append(vx_gc)
+    vy_gc_list.append(vy_gc)
+    vz_gc_list.append(vz_gc)
+
 # Calcul des incertitudes
 # Object definition
 n_samples = 10000
@@ -257,9 +300,9 @@ for i in range(len(names)):
     cart = c.cartesian
 
     # Result
-    X_helio_err = cart.x.std()
-    Y_helio_err = cart.y.std()
-    Z_helio_err = cart.z.std()
+    X_helio_err = cart.x.std().value
+    Y_helio_err = cart.y.std().value
+    Z_helio_err = cart.z.std().value
 
     X_helio_err_list.append(X_helio_err)
     Y_helio_err_list.append(Y_helio_err)
@@ -297,7 +340,7 @@ for i in range(len(names)):
     V_lsr_abs_err_list.append(V_lsr_abs_err)
     W_lsr_abs_err_list.append(W_lsr_abs_err)
 
- # Taylor expansion for peculiar velocity components uncertainties
+    # Taylor expansion for peculiar velocity components uncertainties
     beta = beta_list[i]
     
     # U_pec = U_lsr * cos(beta) - (V_lsr + theta0) * sin(beta)
@@ -330,6 +373,21 @@ for i in range(len(names)):
     v_b_pec_err_list.append(v_b_pec_err)
     v_lb_err = np.sqrt(v_l_pec_kms_list[i]**2 * v_l_pec_err**2 + v_b_pec_kms_list[i]**2 * v_b_pec_err**2) / v_lb_kms_list[i]
     v_lb_err_list.append(v_lb_err)
+
+    v_sun_vector = CartesianDifferential([U_sun, V_sun + theta0, W_sun] * u.km / u.s)
+    gc_frame = Galactocentric(galcen_distance=r0 * u.kpc, galcen_v_sun=v_sun_vector, z_sun=0 * u.pc)
+
+    # Transform the samples to the galactocentric frame
+    gc_samples = c_samples.transform_to(gc_frame)
+
+    # Uncertainties on galactocentric coordinates and velocities from the Monte-Carlo simulation
+    X_gc_err_list.append(gc_samples.x.std().to_value(u.kpc))
+    Y_gc_err_list.append(gc_samples.y.std().to_value(u.kpc))
+    Z_gc_err_list.append(gc_samples.z.std().to_value(u.kpc))
+
+    vx_gc_err_list.append(gc_samples.v_x.std().value)
+    vy_gc_err_list.append(gc_samples.v_y.std().value)
+    vz_gc_err_list.append(gc_samples.v_z.std().value)
     
 
 # --- CRÉATION DU DATAFRAME PANDAS ---
@@ -396,6 +454,12 @@ data = {
     "v_l_kms": v_l_pec_kms_list,
     "v_b_kms": v_b_pec_kms_list,
     "v_lb_kms": v_lb_kms_list,
+    "X_gc_kpc": X_gc_list,
+    "Y_gc_kpc": Y_gc_list,
+    "Z_gc_kpc": Z_gc_list,
+    "vx_gc_kms": vx_gc_list,
+    "vy_gc_kms": vy_gc_list,
+    "vz_gc_kms": vz_gc_list,
     "Distance_err_pc": distance_err,
     "RA_err_deg": [0.00001] * len(names),
     "Dec_err_deg": [0.00001] * len(names),
@@ -423,7 +487,13 @@ data = {
     "V_gal_abs_err_kms": V_gal_abs_err_list,
     "v_l_pec_err_kms": v_l_pec_err_list,
     "v_b_pec_err_kms": v_b_pec_err_list,
-    "v_lb_err_kms": v_lb_err_list
+    "v_lb_err_kms": v_lb_err_list,
+    "X_gc_err_kpc": X_gc_err_list,
+    "Y_gc_err_kpc": Y_gc_err_list,
+    "Z_gc_err_kpc": Z_gc_err_list,
+    "vx_gc_err_kms": vx_gc_err_list,
+    "vy_gc_err_kms": vy_gc_err_list,
+    "vz_gc_err_kms": vz_gc_err_list
 }
 
 # Display the length of each list to ensure they match
