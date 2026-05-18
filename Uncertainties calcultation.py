@@ -2,14 +2,14 @@
 
 import numpy as np
 import astropy.units as u
-from astropy.coordinates import SkyCoord, Galactic
+from astropy.coordinates import SkyCoord, Galactic, Galactocentric, CartesianDifferential, CartesianRepresentation
 import pandas as pd
-from astropy.coordinates import Galactocentric, CartesianDifferential
 import astropy.coordinates as coord_module
 
 # Initialisation des paramètres
 
 r0 = 8.277        # kpc Distance du soleil au centre galactique
+z_sun = 5.5      # pc Hauteur du soleil au-dessus du plan galactique (Bennett & Bovy 2019)
 theta0 = 234.8  # km/s Vitesse de rotation fixe des objets autour du centre galactique
 theta0_err = 3.0 # km/s Incertitude sur la vitesse de rotation homogène de la galaxie au LSR
 # Schönrich et al. (2010) : Vitesse du Soleil par rapport au LSR
@@ -172,6 +172,33 @@ Z_gc_err_list = []
 vx_gc_err_list = []
 vy_gc_err_list = []
 vz_gc_err_list = []
+
+# Add referential data for the sun and LSR 
+v_sun_vector_ref = coord_module.CartesianDifferential([U_sun, V_sun + theta0, W_sun] * u.km / u.s)
+gc_frame_ref = Galactocentric(galcen_distance=r0 * u.kpc, galcen_v_sun=v_sun_vector_ref, z_sun=z_sun * u.pc)
+
+print("--- RÉFÉRENCES GALACTOCENTRIQUES (Non-tournantes) ---")
+
+sun_pos = CartesianRepresentation(0.00000001*u.pc, 0.0000000001*u.pc, 0.00000001*u.pc)
+sun_vel = CartesianDifferential(0.0000001*u.km/u.s, 0.000000001*u.km/u.s, 0.000000001*u.km/u.s)
+sun_helio = SkyCoord(sun_pos.with_differentials(sun_vel), frame=Galactic)
+
+sun_gc = sun_helio.transform_to(gc_frame_ref)
+
+print("SOLEIL :")
+print(f"  Position : X = {sun_gc.x.to_value(u.kpc):.3f} kpc, Y = {sun_gc.y.to_value(u.kpc):.3f} kpc, Z = {sun_gc.z.to_value(u.kpc):.3f} kpc")
+print(f"  Vitesse  : vx = {sun_gc.v_x.value:.2f} km/s, vy = {sun_gc.v_y.value:.2f} km/s, vz = {sun_gc.v_z.value:.2f} km/s")
+
+lsr_pos = CartesianRepresentation(0.00000001*u.pc, 0.0000000001*u.pc, 0.00000001*u.pc)
+lsr_vel = CartesianDifferential(-U_sun * u.km/u.s, -V_sun * u.km/u.s, -W_sun * u.km/u.s)
+lsr_helio = SkyCoord(lsr_pos.with_differentials(lsr_vel), frame=Galactic)
+
+lsr_gc = lsr_helio.transform_to(gc_frame_ref)
+
+print("\nLSR (Local Standard of Rest) :")
+print(f"  Position : X = {lsr_gc.x.to_value(u.kpc):.3f} kpc, Y = {lsr_gc.y.to_value(u.kpc):.3f} kpc, Z = {lsr_gc.z.to_value(u.kpc):.3f} kpc")
+print(f"  Vitesse  : vx = {lsr_gc.v_x.value:.2f} km/s, vy = {lsr_gc.v_y.value:.2f} km/s, vz = {lsr_gc.v_z.value:.2f} km/s")
+print("----------------------------------------------------\n")
 
 # Boucle sur les groupes pour calculer les composantes de vitesses dans le référentiel LSR et Galactocentrique
 for i in range(len(names)):
@@ -381,9 +408,9 @@ for i in range(len(names)):
     gc_samples = c_samples.transform_to(gc_frame)
 
     # Uncertainties on galactocentric coordinates and velocities from the Monte-Carlo simulation
-    X_gc_err_list.append(gc_samples.x.std().to_value(u.kpc))
-    Y_gc_err_list.append(gc_samples.y.std().to_value(u.kpc))
-    Z_gc_err_list.append(gc_samples.z.std().to_value(u.kpc))
+    X_gc_err_list.append(gc_samples.x.std().to_value(u.pc))
+    Y_gc_err_list.append(gc_samples.y.std().to_value(u.pc))
+    Z_gc_err_list.append(gc_samples.z.std().to_value(u.pc))
 
     vx_gc_err_list.append(gc_samples.v_x.std().value)
     vy_gc_err_list.append(gc_samples.v_y.std().value)
@@ -454,9 +481,9 @@ data = {
     "v_l_kms": v_l_pec_kms_list,
     "v_b_kms": v_b_pec_kms_list,
     "v_lb_kms": v_lb_kms_list,
-    "X_gc_kpc": X_gc_list,
-    "Y_gc_kpc": Y_gc_list,
-    "Z_gc_kpc": Z_gc_list,
+    "X_gc_pc": X_gc_list,
+    "Y_gc_pc": Y_gc_list,
+    "Z_gc_pc": Z_gc_list,
     "vx_gc_kms": vx_gc_list,
     "vy_gc_kms": vy_gc_list,
     "vz_gc_kms": vz_gc_list,
