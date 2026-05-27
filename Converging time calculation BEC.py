@@ -66,3 +66,4 @@ print("-" * 50)
 # --- Visualization ---
 plt.figure(figsize=(9, 6))
 plt.plot(time_array_myr, mean_distances_array, lw=2.5, color='royalblue', label='Mean Relative Distance')
+plt.show()
