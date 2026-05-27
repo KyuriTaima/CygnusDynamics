@@ -5,11 +5,11 @@ import pandas as pd
 # Import csv data
 objects_data = pd.read_csv('Cygnus_Objects_Datas_Uncertainties.csv')
 
-# 1. On filtre le DataFrame pour ne garder que les Groupes B, E et C
+# On filtre le DataFrame pour ne garder que les Groupes B, E et C
 target_names = ["Group B", "Group E", "Group C"]
 supergroupBEC = objects_data[objects_data['Object_Name'].isin(target_names)].reset_index(drop=True)
 
-# 2. On extrait les noms et on convertit les colonnes en tableaux NumPy d'un coup (.values)
+# On extrait les noms et on convertit les colonnes en tableaux NumPy
 names_BEC = supergroupBEC['Object_Name'].values
 X_gc_kpc = supergroupBEC['X_gc_pc'].values
 Y_gc_kpc = supergroupBEC['Y_gc_pc'].values

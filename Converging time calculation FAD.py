@@ -52,7 +52,7 @@ for t in time_array_myr:
 
 mean_distances_array = np.array(mean_distances_array)
 
-# --- Kinematic Age Determination (Time of Closest Approach) ---
+#Kinematic Age Determination (Time of Closest Approach), we take the minimum value of the mean distance
 min_distance_index = np.argmin(mean_distances_array)
 kinematic_age = time_array_myr[min_distance_index]
 minimum_mean_distance = mean_distances_array[min_distance_index]
