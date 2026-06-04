@@ -1,0 +1,280 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[french]{babel}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm,headheight=15pt]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx} % INDISPENSABLE pour les logos
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{setspace}
+\usepackage{float} % Permet d'utiliser le [H] majuscule pour figer les images
+\onehalfspacing
+\fancyhf{}
+
+% Ajoute le titre raccourci en haut au centre (C). 
+% Utilisez [L] pour l'aligner à gauche ou [R] pour la droite.
+\fancyhead[C]{Cinématique des étoiles jeunes et du gaz moléculaire dans le complexe Cygnus-X} 
+
+% Ajoute le numéro de page en bas au centre
+\fancyfoot[C]{\thepage} 
+
+% L'épaisseur de la ligne de séparation en haut (0.4pt par défaut)
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+	
+	% ==================== DÉBUT DE LA PAGE DE GARDE ====================
+	\begin{titlepage}
+		% 1. SECTION LOGOS (Haut de page)
+		\begin{minipage}{0.48\textwidth}
+			\begin{flushleft}
+				\includegraphics[height=2cm]{Logo_UF_Physique_cmjn.eps} 
+			\end{flushleft}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.48\textwidth}
+			\begin{flushright}
+				\includegraphics[height=2cm]{logo.png}
+			\end{flushright}
+		\end{minipage}
+		
+		\vspace{1.5cm} 
+		\centering 
+		
+		{\large \MakeUppercase{Laboratoire d'Astrophysique de Bordeaux}} \\
+		\vspace{0.2cm}
+		\hrule
+		
+		\vfill
+		
+		{\huge \bfseries Lien entre la cinématique des étoiles jeunes et la cinématique du gaz moléculaire dans le complexe moléculaire géant Cygnus-X} \\[0.6cm]
+		
+		{\Large \textit{Rapport de stage de Master 1 Physique fondamentale et applications Parcours Noyaux, Particules et Univers}} \\
+		
+		\vfill
+		
+		{\large Présenté par :} \\
+		{\Large \textbf{Sulwen de la Croix}} \\
+		
+		\vfill \vfill 
+		
+		
+		\begin{minipage}{0.48\textwidth}
+			\begin{flushleft} \large
+				\textbf{Tuteur de stage :} \\
+				M. Sylvain Bontemps\\
+				\small Laboratoire d'Astrophysique de Bordeaux - Groupe FEMIS \\
+				\small Directeur de recherche au CNRS
+			\end{flushleft}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.48\textwidth}
+			\begin{flushright} \large
+				\textbf{Professeur référent :} \\
+				Mme Marie-Hélène Grondin \\
+				\small Laboratoire de Physique des 2 infinis (LP2i) Bordeaux
+			\end{flushright}
+		\end{minipage}
+		
+		\vfill
+		
+		
+		\hrule
+		\vspace{0.3cm}
+		{\large Mai-Juin 2026} 
+		
+	\end{titlepage}
+	
+	\setcounter{page}{1}
+	\section*{Remerciements}
+	%\addcontentsline{toc}{section}{Remerciements}
+	Je tiens à adresser mes remerciements .... 
+	
+	\tableofcontents
+	\newpage
+	\section{Introduction}
+	
+	La région du Cygne est un complexe moléculaire géant très actif, et donc très particulier au sein de notre galaxie. Étudié depuis les années 50, on sait désormais qu'il est composé de nuages moléculaires formant actuellement des étoiles massives. Une des théories principales expliquant la formation de groupes d'étoiles massives, est la collision de deux nuages moléculaires. En effet, \textit{N. Schneider et al. 2023} a déjà montré que des nuages proches avec des vitesses différentielles interagissent ensemble, ce qui mène à la formation d'étoiles massives. Il est donc primordial de bien connaître les paramètres cinématiques des nuages existants afin d'alimenter ces hypothèse. Les distances et les mouvements propres de ces nuages ont été caractérisés par \textit{Rygl et al. 2018} par l'utilisation de masers. De plus, la région du Cygne est aussi composée de groupes d'étoiles OB, identifiés et caractérisés par \textit{Quintana et al. 2021}. Si l'hypothèse de la collision est véridique, ces groupes d'étoiles devraient en être les restes.  Si les positions et les vitesses de ces objets sont connues, elles n'ont jamais été comparées. Les référentiels et les hypothèses utilisés sont différents dans les deux publications, il est donc nécessaire de reprendre la démarche en utilisant les mêmes hypothèses et de les présenter dans un même référentiel afin de pouvoir comparer les paramètres cinématiques et interpréter les résultats.
+	Les positions et les vitesses de ces objets sont représentées selon leur projection sur la voute céleste, ainsi il est difficile d'apprécier la profondeur, et donc leur distance relative. La première étape sera donc d'exprimer les positions et les vitesses des nuages et des groupes d'étoiles OB dans un référentiel galactocentrique. Cela permettra de modéliser les objets en trois dimensions afin d'établir de premières interprétations et de s'affranchir des biais de projection 2D. Enfin, à partir de ces paramètres cinématiques, nous pourrons extrapoler les trajectoires vers le passé. L'objectif est d'identifier les époques correspondant aux événements de formation des étoiles massives et de reconstituer la configuration spatiale de la région du Cygne à ces instants précis.
+	Ces éléments nous permettrons d'établir un scénario cinématique et dynamique de formation de groupes d'étoiles massives au sein de la région du Cygne. En théorisant que la compression de la matière donnant lieu à des collisions de nuages moléculaires est due au passage du bras spiral, on pourra extrapoler la trajectoire de propagation du bras spiral local et sa vitesse.
+	
+	\newpage
+	
+	\section{Cinématique des nuages moléculaires et des groupes d'étoiles massives}
+	\subsection{Notions utilisées}
+	Afin de caractériser la cinématique des nuages et des groupes d'étoiles OB au sein du Cygne, nous utiliserons plusieurs concepts importants. 
+	Les composantes de vitesse galactique U, V et W représentent:
+	\begin{itemize}
+		\item U: la vitesse radiale galactique, elle représente la vitesse radiale d’un objet en mouvement circulaire autour du centre galactique. Une vitesse U positive indique que l’objet va vers le centre galactique
+		\item V: la vitesse tangentielle galactique, elle représente la vitesse de l’objet, tangente à sa trajectoire circulaire, si elle est positive, cela signifie que l’objet va plus vite que le repère
+		\item W: la vitesse orthogonale au plan galactique, une vitesse positive indique que l’objet monte vers le pôle nord galactique
+	\end{itemize}
+	le Local Standard of Rest (LSR) est un point de référence imaginaire situé à la distance $R_0$ du centre galactique, qui possède des composantes de vitesses nulles dans le référentiel LSR. Dans le référentiel galactocentrique, le point LSR a des vitesses radiales (U) et orthogonales (W) nulles, et a une vitesse tangentielle $\Theta_0$ qui est la moyenne de la vitesse tangentielle dans la galaxie à $R_0$.
+	\linebreak
+	Les mouvements propres des objets sont les dérives des objets observés sur la voûte céleste par rapport à leur point initial, exprimés en arc-secondes/an.
+	
+	\subsection{Paramètres déterminants}
+	Toutes les observations astronomiques que nous possédons sont influencées par des paramètres invisibles: la position et la vitesse du Soleil. En effet, le Soleil est situé à une distance $R_0$ du centre galactique et à une hauteur $Z_0$ par rapport au plan galactique. De plus, il possède trois composantes de vitesses $U_{sun}$, $V_{sun}$, $W_{sun}$, qui n'ont pas toujours les mêmes valeurs selon les publications. Les déplacements propres des nuages moléculaires ont été publiés dans \textit{Rygl et al. 2018}, ils ont aussi publié les vitesses particulières U,V et W des nuages, en utilisant les paramètres de \textit{Schönrich et al. 2010}:
+	\begin{itemize}
+		\item $R_0 = 8.3 \ kpc$;
+		\item $\Theta_0 = 236 \ km/s$
+		\item $U_{sun} = 11.10 \pm 0.71 \ km/s$
+		\item $V_{sun} = 12.24 \pm 0.47 \ km/s$
+		\item $W_{sun} = 7.25 \pm 0.35 \ km/s$
+	\end{itemize}
+	Cependant ces valeurs sont débattues depuis 2010, et de nouvelles observations permettent de les affiner et de prendre des valeurs avec de plus faibles incertitudes. Dans la suite du rapport, j'utiliserais les valeurs de \textit{Gravity Collaboration 2022} et \textit{V. Bobylev et al 2026} obtenues grâces aux données Gaia DR3:
+	\begin{itemize}
+		\item $R_0 = 8.277 \pm 0.041 \ kpc$;
+		\item $\Theta_0 = 234.8 \pm 3.0 \ km/s$
+		\item $U_{sun} = 9.83 \pm 0.42 \ km/s$
+		\item $V_{sun} = 13.33 \pm 0.50 \ km/s$
+		\item $W_{sun} = 7.89 \pm 0.41 \ km/s$
+	\end{itemize}
+	
+	\subsection{Détermination des vitesses particulières et des positions dans le référentiel galactocentrique}
+	L'article de \textit{Quintana et al. 2021} nous donne les déplacements propres des groupes d'étoiles OB au sein de la région du Cygne ainsi que leur distance au Soleil. A partir des déplacements propres et de la distance Objet-Soleil, je peux déterminer la position des objets dans le référentiel galactocentrique. Pour ce faire j'utilise la bibliothèque \textit{astropy} afin de transformer les mouvements propres en vitesses particulières observées $U_{obs}, V_{obs}, W_{obs}$. Puis je corrige ces vitesses de la vitesse du Soleil afin d'obtenir les vitesses dans le Local Standard of Rest: $U_{lsr} = U_{obs} + U_{sun}$ \linebreak
+	Les publications nous donnent les positions des objets en latitudes (b) et longitudes (l) galactiques. Afin d'effectuer le changement de référentiel en référentiel galactocentrique, je dois exprimer les valeurs: $X = R_0 - D\cdot cos(l)\cdot cos(b)$ ; $Y = D\cdot sin(l)\cdot cos(b)$ ; $\beta = arctan(\frac{Y}{X})$
+
+	\begin{figure}[H]
+		\centering % Centre l'ensemble des deux minipages
+		
+		% --- PREMIÈRE IMAGE (À GAUCHE) ---
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=2.5cm]{Cygnus_geometry_plane.png}
+			\caption{Géométrie dans le plan galactique ($X, Y$).}
+			\label{fig:geometry_plane} % Utile pour faire des références plus tard
+		\end{minipage}
+		\hfill % Cet outil crée l'espace élastique maximal entre les deux images
+		% --- DEUXIÈME IMAGE (À DROITE) ---
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=2.5cm]{Cygnus_geometry_Z.png}
+			\caption{Géométrie selon l'axe vertical ($Z$).}
+			\label{fig:geometry_Z}
+		\end{minipage}
+		
+	\end{figure}
+	Il faut ensuite rajouter la vitesse de rotation moyenne $\Theta_0$ de la galaxie à $R_0$ pour obtenir une vitesse galactocentrique absolue, cela n'a aucun impact sur les vitesses U et W: $U_{lsr,abs} = U_{lsr}$; $V_{lsr,abs} = V_{lsr} + \Theta_0$; $W_{lsr,abs} = W_{lsr}$
+
+	Il faut maintenant effectuer une rotation des axes afin d'obtenir les composantes de vitesses particulières des objets en référentiel galactocentrique, corrigée de la vitesse de rotation moyenne de la galaxie à $R_0$:
+	$U_{pec}=U_{lsr,abs}\cdot cos(\beta)\cdot -V_{lsr,abs}\cdot sin(\beta)$; $V_{pec}=U_{lsr,abs}\cdot sin(\beta) + V_{lsr,abs}\cdot cod(\beta)-\Theta_0$; $W_{pec}=W_{lsr,abs}$
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4cm]{Transform_Vlsr_Vpec.png}
+		\caption{Géométrie de la rotation des axes du référentiel LSR vers le référentiel particulier galactocentrique}
+		\label{fig:geometry_lsr_to_peculiar} % Utile pour faire des références plus tard
+	\end{figure}
+	
+	Ces composantes de vitesses sont celles que j'utiliserais dans la suite de ce rapport pour comparer les objets entre eux et établir des trajectoires de collisions. Cependant, la cinématique des objets du Cygne peut aussi être représentée dans d'autres référentiels qui seront utiles pour comparer les résultats à des publications existantes ou projeter les vecteurs en deux dimensions afin de visualiser les vitesses et les positions. Les vitesses longitudinales $v_l$ et latitudinales $v_b$ correspondent à la dérive observée en coordonnées galactiques. Je les retrouve en projetant les composantes de vitesses particulières sur les axes l et b: $v_{l,pec}=-U_{pec}\cdot sin(l)+V_{pec}\cdot cos(l)$; $v_b=-U_{pec}\cdot cos(l)\cdot sin(b)-V_{pec}\cdot sin(l)\cdot sin(b)+W_{pec}\cdot cos(b)$, je peux ainsi obtenir la norme de la vitesse galactique: $v_{lb}=\sqrt{v_{l,pec}^2+v_{b,pec}^2}$
+	 
+	L'ensemble des résultats de ces calculs appliqués aux nuages moléculaires et aux groupes d'étoiles OB du Cygne sont présentés dans le tableau 1 ci-dessous. Les distances des nuages moléculaires proviennent de \textit{Rygl et al 2019} et les distances aux groupes d'étoiles proviennent de \textit{Quintana et al 2021}.  Les données compilées des articles de \textit{Rygl et al 2019} et \textit{Quintana et al 2021} utilisées en entrée sont présentés dans le tableau 1. A en annexe. Les valeurs des calculs intermédiaires sont présentées dans le tableau 2. A en annexe. Pour les transformations linéaires, les incertitudes sont calculées par la formule de propagation des incertitudes du 1er ordre \textit{Taylor 1997}. Pour les autres incertitudes, j'effectue un échantillonnage par méthode de Monte-Carlo avec un tirage de 10 000 points. Le détail des calculs des incertitudes est disponible en Annexe 2.
+	
+	\begin{table}[H]
+		\centering
+		\label{tab:donnees_cinematiques}
+		\vspace{0.2cm}
+		
+		% On utilise 'l' pour la première colonne (gauche) et 'c' pour centrer les autres
+		\resizebox*{\textwidth}{!}{
+		\begin{tabular}{l c c c c c c c}
+			\hline
+			\textbf{Object Name} & \textbf{Distance} & $\mathbf{U_{pec}}$ & $\mathbf{V_{pec}}$ & $\mathbf{W_{pec}}$ & $\mathbf{v_l}$ & $\mathbf{v_b}$ & $\mathbf{v_{lb}}$ \\
+			& (pc) & (km/s) & (km/s) & (km/s) & (km/s) & (km/s) & (km/s) \\
+			\hline
+			
+			Group A & $1894.5 \pm 4$ & $14.24 \pm 2.37$ & $-12.25 \pm 2.73$ & $-4.67 \pm 1.53$ & $-17.25 \pm 2.39$ & $-4.40 \pm 1.53$ & $17.80 \pm 2.34$ \\
+			Group B & $1726.3 \pm 7$ & $3.19 \pm 4.12$ & $-15.00 \pm 10.42$ & $1.87 \pm 2.28$ & $-6.09 \pm 4.46$ & $2.68 \pm 2.29$ & $6.66 \pm 4.18$ \\
+			Group C & $1713.1 \pm 10$ & $11.22 \pm 2.38$ & $-15.64 \pm 2.94$ & $-1.94 \pm 0.99$ & $-14.64 \pm 2.40$ & $-1.83 \pm 0.99$ & $14.76 \pm 2.39$ \\
+			Group D & $2000.1 \pm 10$ & $2.57 \pm 2.09$ & $-3.62 \pm 3.72$ & $-4.95 \pm 1.34$ & $-3.39 \pm 2.16$ & $-4.89 \pm 1.34$ & $5.95 \pm 1.65$ \\
+			Group E & $1674.0 \pm 10$ & $-2.46 \pm 2.26$ & $-5.54 \pm 2.10$ & $0.10 \pm 1.98$ & $1.48 \pm 2.26$ & $0.19 \pm 1.98$ & $1.50 \pm 2.25$ \\
+			Group F & $1985.2 \pm 10$ & $7.48 \pm 3.30$ & $-11.51 \pm 4.83$ & $-4.95 \pm 0.96$ & $-10.36 \pm 3.36$ & $-4.72 \pm 0.96$ & $11.38 \pm 3.08$ \\
+			W75N & $1300.0 \pm 70$ & $-1.39 \pm 1.53$ & $-0.12 \pm 0.40$ & $1.88 \pm 0.34$ & $1.36 \pm 1.51$ & $1.88 \pm 0.34$ & $2.33 \pm 0.93$ \\
+			DR21 & $1500.0 \pm 80$ & $-0.71 \pm 1.84$ & $-12.11 \pm 0.49$ & $7.27 \pm 0.15$ & $-1.04 \pm 1.82$ & $7.39 \pm 0.15$ & $7.47 \pm 0.29$ \\
+			DR20 & $1460.0 \pm 90$ & $6.78 \pm 2.50$ & $-12.61 \pm 0.64$ & $5.76 \pm 0.19$ & $-8.70 \pm 2.46$ & $5.84 \pm 0.19$ & $10.48 \pm 2.04$ \\
+			IRAS20290+4052 & $1360.0 \pm 120$ & $1.09 \pm 2.81$ & $-12.01 \pm 0.73$ & $6.61 \pm 0.20$ & $-3.21 \pm 2.77$ & $6.81 \pm 0.20$ & $7.53 \pm 1.19$ \\
+			\hline
+		\end{tabular}
+		}
+		\caption{Paramètres cinématiques et distances des objets du Cygne.}
+	\end{table}
+	
+	\subsection{Remarque sur les incertitudes et la crédibilité des résultats}
+	Il est intéressant de comprendre quelles sont les incertitudes de mesures qui ont le plus d'impact sur les interprétations à venir. La propagation des incertitudes sur la vitesse du soleil et les distances donne des incertitudes élevées sur les composantes de vitesses, par exemple, on trouve pour le groupe D une vitesse tangentielle de: $V_{pec}=-3.62\pm 3.72 km/s$. Avec une telle incertitude, on pourrait penser qu’aucune interprétation valable ne peut être faite des résultats. Cependant, la très grande majorité de cette incertitude est due à l’incertitude sur la vitesse tangentielle du soleil issue de \textit{Bobylev et al 2025} et cette vitesse tangentielle du soleil s'applique de manière identique à tous les objets étudiées. Hors notre étude porte sur les mouvements relatifs des objets entre eux, ainsi, même si l’incertitude est importante, elle s’annule lorsque l’on étudie le mouvement des groupes d’étoiles et des nuages de moléculaires les uns par rapport aux autres. De même; l’incertitude sur la vitesse de rotation de la galaxie au niveau du soleil ou de Cygnus-X n’intervient pas dans les mouvements relatifs des objets entre eux.
+	Les sources d'incertitudes dominantes ayant un réel impact sur les interprétations sont les mesures des vitesses radiales des groupes d'étoiles OB issues de \textit{Quintana et al 2021} et les mesures de distances et de mouvements propres des nuages moléculaires issues de \textit{Rygl et al 2018}. Une meilleure précision de ces mesures astronomiques permettrait de réduire les incertitudes sur les vitesses particulières des objets du Cygne.
+	\linebreak
+	Afin de s'assurer de la véracité des calculs de changements de référentiels effectués, j'ai calculé les vitesses particulières des nuages moléculaires en utilisant les paramètres de \textit{Schönrich et al 2010}. J'ai retrouvé exactement les mêmes valeurs que \textit{Rygl et al 2018}. J'ai aussi mesuré la taille des flèches sur la Figure 12 de \textit{Rygl et al 2018}, puis je les aies converties en km/s grâce à l'échelle du graphique (2.3 cm = 10 km/s). J'obtiens:
+	\begin{itemize}
+		\item W75N : $v_{cm} = 0.35 \pm 0.1 \, \mathrm{cm} \Leftrightarrow v_{UW} = 1.5 \pm 0.4 \, \mathrm{km/s}$
+		\item DR21 : $v_{cm} = 1.6 \pm 0.1 \, \mathrm{cm} \Leftrightarrow v_{UW} = 6.7 \pm 0.4 \, \mathrm{km/s}$
+		\item DR20 : $v_{cm} = 2.1 \pm 0.1 \, \mathrm{cm} \Leftrightarrow v_{UW} = 9.1 \pm 0.4 \, \mathrm{km/s}$
+		\item IRAS 20290+4052 : $v_{cm} = 1.5 \pm 0.1 \, \mathrm{cm} \Leftrightarrow v_{UW} = 6.5 \pm 0.4 \, \mathrm{km/s}$
+	\end{itemize}
+	Je compare cela aux vitesses calculées pour les mêmes hypothèses (\textit{Schönrich et al 2010}):
+\begin{align*}
+	U_{W75N, \text{calculée}} &= -0.53 \, \text{km/s}; \qquad W_{W75N, \text{calculée}} = 1.23 \, \text{km/s} \\
+	v_{W75N, \text{calculée}} &= \sqrt{ U_{W75N, \text{calculée}}^2 + W_{W75N, \text{calculée}}^2 } = 1.3 \, \text{km/s} \\[0.5cm]
+	U_{DR21, \text{calculée}} &= -0.03 \, \text{km/s}; \qquad W_{DR21, \text{calculée}} = 6.62 \, \text{km/s} \\
+	v_{DR21, \text{calculée}} &= \sqrt{ U_{DR21, \text{calculée}}^2 + W_{DR21, \text{calculée}}^2 } = 6.7 \, \text{km/s} \\[0.5cm]
+	U_{DR20, \text{calculée}} &= 7.5 \, \text{km/s}; \qquad\quad\; W_{DR20, \text{calculée}} = 5.11 \, \text{km/s} \\
+	v_{DR20, \text{calculée}} &= \sqrt{ U_{DR20, \text{calculée}}^2 + W_{DR20, \text{calculée}}^2 } = 9.1 \, \text{km/s} \\[0.5cm]
+	U_{IRAS20290, \text{calculée}} &= 1.89 \, \text{km/s}; \qquad W_{IRAS20290, \text{calculée}} = 5.96 \, \text{km/s} \\
+	v_{IRAS20290, \text{calculée}} &= \sqrt{ U_{IRAS20290, \text{calculée}}^2 + W_{IRAS20290, \text{calculée}}^2 } = 6.3 \, \text{km/s}
+\end{align*}
+\begin{align*}
+	\Delta v_{UW, W75N} &= |v_{UW, \text{mesurée}, W75N} - v_{UW, \text{calculée}, W75N}| = |1.5 - 1.3| = 0.2 \pm 0.6 \, \text{km/s} \\[0.2cm]
+	\Delta v_{lb, DR21} &= |v_{lb, \text{mesurée}, DR21} - v_{lb, \text{calculée}, DR21}| = |6.7 - 6.7| = 0 \pm 0.6 \, \text{km/s} \\[0.2cm]
+	\Delta v_{lb, DR20} &= |v_{lb, \text{mesurée}, DR20} - v_{lb, \text{calculée}, DR20}| = |9.1 - 9.1| = 0 \pm 0.6 \, \text{km/s} \\[0.2cm]
+	\Delta v_{lb, IRAS20290} &= |v_{lb, \text{mesurée}, IRAS20290} - v_{lb, \text{calculée}, IRAS20290}| = |6.5 - 6.3| = 0.2 \pm 0.6 \, \text{km/s}
+\end{align*}
+Les résultats concordent dans les incertitudes utilisées, on peut donc en conclure que la méthode de calcul des vitesses est cohérente avec l’article de \textit{Rygl et al 2018}, et donc commencer à interpréter les résultats.
+
+\section{Visualisation des vitesses et des positions}
+\subsection{Projection en deux dimensions}
+J'utilise NASA Sky View pour extraire une image de Cygnus-X provenant d'une observation du télescope WISE à 12 $\mu$m. Le fichier FITS extrait peut ensuite être chargé comme image d'arrière-plan via la bibliothèque $astropy$ de python. Le graphique représentant les positions projetées sur l'image du Cygne est disponible en figure 4.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics{Positions_fond_Cygnus.png}
+	\caption{Projection des positions des nuages moléculaires et des groupes d'étoiles massives sur une image WISE à 12 $\mu$m. L'abscisse est la longitude galactique et l'ordonnée est la latitude galactique. Les nuages moléculaires sont en noir et les groupes d'étoiles en bleu}
+	\label{fig:cygnus_positions}
+\end{figure}
+A cette longueur d'onde, les nuages moléculaires sont bien visibles mais les groupes d'étoiles ne le sont pas directement. Indirectement, on voit des bulles au niveau des groupes d'étoiles qui éjectent la matière environnante par de forts vents solaires. Le groupe E semble très proche des nuages moléculaires, cependant cette vue ne tient pas compte des distances des objets au soleil, donc de la profondeur sur le graphique, et le groupe E est en réalité environ 300 pc plus lointain que les nuages moléculaires. On peut aussi voir que le groupe B est sur une latitude galactique beaucoup plus élevée que les autres objets. Je projette aussi les vitesses $v_l$ et $v_b$ sur le graphique en figure 5 afin de visualiser les trajectoire des nuages et des groupes d'étoiles dans ce plan.
+\begin{figure}[H]
+	\centering
+	\includegraphics{Bobylev_vl_vb_avec fond.png}
+	\caption{Projection des vitesses $v_l$ et $v_b$ des nuages moléculaires et des groupes d'étoiles massives sur une image WISE à 12 $\mu$m. L'abscisse est la longitude galactique et l'ordonnée est la latitude galactique. Les nuages moléculaires sont en noir et les groupes d'étoiles en bleu}
+	\label{fig:bobylev_vl_vb}
+\end{figure}
+La figure 4 nous permet de voir que les groupes A, B, C, D et F se dirigent tous vers le centre de la galaxie alors que le groupe E lui est presque immobile par rapport à la rotation moyenne de la galaxie. Pour les nuages, le groupe W75N suit lui aussi la vitesse de rotation moyenne alors que les nuages DR20, DR21 et IRAS20290+4052 sont entrainés vers le pôle nord galactique.
+\linebreak
+Afin d'apprécier les distances des objets au soleil, je projette les vitesses U et V des objets sur le plan galactique en figure 6. 
+\begin{figure}[H]
+	\centering
+	\includegraphics{Galactic plane view Bobylev 2026.png}
+	\caption{Projection des vitesses $U_{pec}$ et $V_{pec}$ des nuages moléculaires et des groupes d'étoiles massives sur le plan galactique. Le graphique est centré sur le groupe E (Cygnus OB2) L'abscisse est la distance selon la rotation de la galaxie et l'ordonnée est la distance vers le centre galactique. La ligne jaune indique la direction du Soleil. Les nuages moléculaires sont en cyan et les groupes d'étoiles en rouge. Les objets sont situés à la base des vecteurs}
+	\label{fig:bobylev_U_V_plane}
+\end{figure}
+
+
+	\bibliographystyle{alpha}
+	\bibliography{sample}
+	
+	\begin{abstract}
+		Français \\
+		
+		Les groupes d'étoiles massives de type OB sont rares et jouent un rôle important dans la compréhension de l'évolution de notre galaxie. Leur origine et leur cinématique est toujours à l'étude, et nécessite des mesures précises acquises récemment. Cette cinématique n'a pas encore été mise en relation avec les nuages de gaz moléculaires existants que l'on soupçonne de former actuellement des groupes d'étoiles OB. Je m'intéresse à la région du Cygne, située dans notre galaxie. L'objectif de ce travail est d'établir une vue d'ensemble des nuages moléculaires et des groupes d'étoiles OB afin de visualiser leur positions et leur vitesses en 3D. Je prévoit ensuite les positions des différents objets à des dates clés afin d'obtenir les positions théoriques des amas et leurs distances relatives lors de leur formation. Cela me permet par la suite de proposer un scénario complet de la formation des groupes d'étoiles OB au sein de la région du Cygne.
+		Les résultats permettent d'identifier deux super-amas contenant 3 amas chacun, avec leur positions et leur vitesses en 3D. Leur temps d'approche le plus proche est de 4.5 Myr et 8.5 Myr, ce qui prévoit deux évènements de formation de collision de nuages. En remontant encore dans le passé, on distingue deux objets qui suivent la rotation de la galaxie (W75N et Cyg OB2) alors que les autres objets ont une vitesse tangentielle inférieure à la vitesse de rotation de la galaxie (DR21, DR20, IRAS20290+4052, Groupes A, B, C, D, F) et rentrent donc en collision avec ces derniers.
+		
+		\vspace{1.5cm} 
+		English \\
+		
+		OB star clusters are rare and play an important role in our understanding of galactic evolution. Their origin and kinematic parameters are still being studied and necessitate precise distance and proper motion measurements. Their kinematics have yet to be compared to the molecular gas clouds. This report will focus on the Cygnus region of our galaxy. It aims to establish a broad 3D view of the molecular gases and the OB star clusters of Cygnus. I will then use the velocity components to calculate the positions of each object and their relative distances at the time of formation events. This result allows me to propose a global scenario of the formation of OB star clusters in Cygnus. I identify two super-clusters, each containing three OB star clusters. Their time of closest approach are respectively 4.5 Myr and 8.5 Myr, which predicts two formation events. By going even further back in time, I distinguish the two objects that follow the galactic rotation (W75N and Cyg OB2) while the rest (DR21, DR20, IRAS20290+4052, Groups A,B,C,D, F) are slower, and are colliding or collided with the latter two.
+		
+		
+	\end{abstract}
+	
+\end{document}
