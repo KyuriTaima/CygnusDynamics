@@ -1,3 +1,97 @@
-\begin{thebibliography}{}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{{Gra}22}
+
+\bibitem[AKS26]{azatyan2026}
+N.~Azatyan, L.~Kaper, and A.~et~al. Samsonyan.
+\newblock Ob runaway stars originating in the vel ob1 association.
+\newblock {\em Astronomy \& Astrophysics}, manuscript(59021-26), 2026.
+
+\bibitem[BB26]{bobylev2026}
+V.~V. Bobylev and A.~T. Bajkova.
+\newblock Analysis of spatial velocities of several samples of open star
+  clusters.
+\newblock {\em Astronomy Letters}, 51(11-12), 2026.
+
+\bibitem[BRM11]{brunthaler2011}
+A.~Brunthaler, M.~J. Reid, and K.~M. et~al. Menten.
+\newblock The bar and spiral structure legacy (bessel) survey: Mapping the
+  milky way with vlbi astrometry.
+\newblock {\em Astronomische Nachrichten}, 332(5):461--467, 2011.
+
+\bibitem[C{\etalchar{+}}21]{pasj2021}
+Vera Collaboration et~al.
+\newblock The vera outer scutum-crux arm survey and the bessel survey.
+\newblock {\em Publications of the Astronomical Society of Japan},
+  73(Supplement\_1):S1--S20, 2021.
+
+\bibitem[DVS25]{dannhauer2025}
+S.~M. Dannhauer, S.~Vider, and N.~et~al. Schneider.
+\newblock The diamond ring in cygnus x: Advanced stage of an expanding bubble
+  of ionised carbon.
+\newblock {\em Astronomy \& Astrophysics}, 703:A197, 2025.
+
+\bibitem[{Gra}22]{gravity2022}
+{Gravity Collaboration}.
+\newblock Mass distribution in the galactic center based on interferometric
+  astrometry of multiple stellar orbits.
+\newblock {\em Astronomy \& Astrophysics}, 657:L12, 2022.
+
+\bibitem[JS87]{johnson1987}
+D.~R.~H. Johnson and D.~R. Soderblom.
+\newblock Calculating galactic space velocities and their uncertainties, with
+  and application to the ursa major group.
+\newblock {\em The Astronomical Journal}, 93(4), 1987.
+
+\bibitem[PTB26]{povich2026}
+M.~S. Povich, L.~K. Townsley, and P.~S. et~al. Broos.
+\newblock Structure and large-scale kinematics of young stellar populations in
+  the ngc 6357 and ngc 6334 giant molecular cloud complex.
+\newblock {\em AAS Journals}, 2026.
+
+\bibitem[QW21]{quintana2021}
+A.~L. Quintana and N.~J. Wright.
+\newblock Revisiting the cygnus ob associations.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  508(2):2370--2385, 2021.
+
+\bibitem[QW22]{quintana2022}
+A.~L. Quintana and N~J. Wright.
+\newblock Large-scale expansion of ob stars in cygnus.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  515(1):687--703, 2022.
+
+\bibitem[RBS12]{rygl2012}
+K.~L.~J. Rygl, A.~Brunthaler, and A.~et~al. Sanna.
+\newblock Parallaxes and proper motions of interstellar masers toward the
+  cygnus x star-forming complex.
+\newblock {\em Astronomy \& Astrophysics}, 539:A79, 2012.
+
+\bibitem[RMB19]{reid2019}
+M.~J. Reid, K.~M. Menten, and A.~et~al. Brunthaler.
+\newblock Trigonometric parallaxes of high-mass star-forming regions: Our view
+  of the milky way.
+\newblock {\em The Astrophysical Journal}, 885(2):131, 2019.
+
+\bibitem[SBB23]{schneider2023}
+N.~Schneider, L.~Bonne, and S.~et~al. Bontemps.
+\newblock Ionized carbon as a tracer of the assembly of interstellar clouds.
+\newblock {\em Nature Astronomy}, 7:546--556, 2023.
+
+\bibitem[SBD10]{schonrich2010}
+R.~Sch{\"o}nrich, J.~Binney, and W.~Dehnen.
+\newblock Local kinematics and the local standard of rest.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  403(4):1829--1833, 2010.
+
+\bibitem[Tay97]{taylor1997}
+John~R. Taylor.
+\newblock {\em An Introduction to Error Analysis: The Study of Uncertainties in
+  Physical Measurements}.
+\newblock University Science Books, 2nd edition, 1997.
+
+\bibitem[XHB20]{xu2020}
+Y.~Xu, L.~G. Hou, and S.B. et~al. Bian.
+\newblock Local spiral structure based on the gaia edr3 parallaxes.
+\newblock {\em Astronomy \& Astrophysics}, 645:L8, 2020.
 
 \end{thebibliography}

@@ -4,47 +4,47 @@ The top-level auxiliary file: Rapport de stage.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: alpha.bst
 Reallocating 'name_of_file' (item size: 1) to 7 items.
-I found no \citation commands---while reading file Rapport de stage.aux
 Database file #1: sample.bib
-You've used 0 entries,
+Warning--I didn't find a database entry for "ionized2023"
+You've used 16 entries,
             2543 wiz_defined-function locations,
-            558 strings with 4457 characters,
-and the built_in function-call counts, 24 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 10
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 2
+            659 strings with 6974 characters,
+and the built_in function-call counts, 6236 in all, are:
+= -- 624
+> -- 336
+< -- 2
++ -- 119
+- -- 115
+* -- 478
+:= -- 1084
+add.period$ -- 48
+call.type$ -- 16
+change.case$ -- 102
+chr.to.int$ -- 16
+cite$ -- 16
+duplicate$ -- 223
+empty$ -- 417
+format.name$ -- 132
+if$ -- 1224
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+missing$ -- 17
+newline$ -- 84
+num.names$ -- 48
+pop$ -- 63
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 118
 quote$ -- 0
-skip$ -- 2
+skip$ -- 196
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
-text.prefix$ -- 0
+substring$ -- 320
+swap$ -- 16
+text.length$ -- 2
+text.prefix$ -- 2
 top$ -- 0
-type$ -- 0
+type$ -- 124
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+while$ -- 63
+width$ -- 19
+write$ -- 210
+(There was 1 warning)

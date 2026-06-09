@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  4 JUN 2026 11:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  9 JUN 2026 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -378,35 +378,63 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks27
 \@floatcapt=\box56
 )
+(C:\Users\Lucile\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+(C:\Users\Lucile\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\Lucile\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen184
+\captionmargin=\dimen185
+\caption@leftmargin=\dimen186
+\caption@rightmargin=\dimen187
+\caption@width=\dimen188
+\caption@indent=\dimen189
+\caption@parindent=\dimen190
+\caption@hangindent=\dimen191
+Package caption Info: Standard document class detected.
+Package caption Info: french babel package is loaded.
+)
+\c@caption@flags=\count321
+\c@continuedfloat=\count322
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count323
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count324
+)
 (C:\Users\Lucile\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
 ftex.def
 File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count321
+\l__color_backend_stack_int=\count325
 ) (Rapport de stage.aux
 Package babel Info: 'french' activates 'french' shorthands.
 (babel)             Reported on input line 11.
 )
 \openout1 = `"Rapport de stage.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Info: Redefining \degres on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Info: Redefining \degres on input line 27.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -446,16 +474,16 @@ LaTeX Info: Redefining \degres on input line 26.
 (C:\Users\Lucile\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count322
-\scratchdimen=\dimen184
+\scratchcounter=\count326
+\scratchdimen=\dimen192
 \scratchbox=\box57
-\nofMPsegments=\count323
-\nofMParguments=\count324
+\nofMPsegments=\count327
+\nofMParguments=\count328
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count325
-\MPscratchDim=\dimen185
-\MPnumerator=\count326
-\makeMPintoPDFobject=\count327
+\MPscratchCnt=\count329
+\MPscratchDim=\dimen193
+\MPnumerator=\count330
+\makeMPintoPDFobject=\count331
 \everyMPtoPDFconversion=\toks29
 )
 (C:\Users\Lucile\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
@@ -478,11 +506,13 @@ Package color Info: Driver file: pdftex.def on input line 149.
 
 (C:\Users\Lucile\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx
 ))
-Package hyperref Info: Link coloring ON on input line 26.
+Package hyperref Info: Link coloring ON on input line 27.
  (Rapport de stage.out) (Rapport de stage.out)
 \@outlinefile=\write3
 \openout3 = `"Rapport de stage.out"'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 Package epstopdf Info: Source file: <Logo_UF_Physique_cmjn.eps>
 (epstopdf)                    date: 2026-05-27 14:33:52
 (epstopdf)                    size: 1932474 bytes
@@ -492,21 +522,21 @@ Package epstopdf Info: Source file: <Logo_UF_Physique_cmjn.eps>
 (epstopdf)                    size: 22576 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=Logo_UF_Physique_cmj
 n-eps-converted-to.pdf Logo_UF_Physique_cmjn.eps>
-(epstopdf)             \includegraphics on input line 33.
+(epstopdf)             \includegraphics on input line 34.
 Package epstopdf Info: Output file is already uptodate.
-<Logo_UF_Physique_cmjn-eps-converted-to.pdf, id=35, 231.86626pt x 63.23625pt>
+<Logo_UF_Physique_cmjn-eps-converted-to.pdf, id=67, 231.86626pt x 63.23625pt>
 File: Logo_UF_Physique_cmjn-eps-converted-to.pdf Graphic file (type pdf)
 <use Logo_UF_Physique_cmjn-eps-converted-to.pdf>
 Package pdftex.def Info: Logo_UF_Physique_cmjn-eps-converted-to.pdf  used on in
-put line 33.
+put line 34.
 (pdftex.def)             Requested size: 208.65646pt x 56.9055pt.
-<logo.png, id=36, 302.12875pt x 204.765pt>
+<logo.png, id=68, 302.12875pt x 204.765pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 39.
+Package pdftex.def Info: logo.png  used on input line 40.
 (pdftex.def)             Requested size: 83.96388pt x 56.9055pt.
 
-Overfull \hbox (1.20793pt too wide) in paragraph at lines 31--42
+Overfull \hbox (1.20793pt too wide) in paragraph at lines 32--43
 []$[]$  $[]$ 
  []
 
@@ -522,120 +552,145 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.96 	\newpage
+l.97 	\newpage
                [1] [2] [3]
-<Cygnus_geometry_plane.png, id=83, 225.6594pt x 107.66756pt>
+<Cygnus_geometry_plane.png, id=137, 225.6594pt x 107.66756pt>
 File: Cygnus_geometry_plane.png Graphic file (type png)
 <use Cygnus_geometry_plane.png>
-Package pdftex.def Info: Cygnus_geometry_plane.png  used on input line 146.
+Package pdftex.def Info: Cygnus_geometry_plane.png  used on input line 147.
 (pdftex.def)             Requested size: 149.08714pt x 71.13188pt.
-<Cygnus_geometry_Z.png, id=85, 313.26833pt x 95.86836pt>
+<Cygnus_geometry_Z.png, id=139, 313.26833pt x 95.86836pt>
 File: Cygnus_geometry_Z.png Graphic file (type png)
 <use Cygnus_geometry_Z.png>
-Package pdftex.def Info: Cygnus_geometry_Z.png  used on input line 154.
+Package pdftex.def Info: Cygnus_geometry_Z.png  used on input line 155.
 (pdftex.def)             Requested size: 232.43634pt x 71.13188pt.
 
-Overfull \hbox (27.57788pt too wide) in paragraph at lines 154--155
+Overfull \hbox (27.57788pt too wide) in paragraph at lines 155--156
  [][] 
  []
 
-<Transform_Vlsr_Vpec.png, id=86, 166.72327pt x 157.79414pt>
+<Transform_Vlsr_Vpec.png, id=140, 166.72327pt x 157.79414pt>
 File: Transform_Vlsr_Vpec.png Graphic file (type png)
 <use Transform_Vlsr_Vpec.png>
-Package pdftex.def Info: Transform_Vlsr_Vpec.png  used on input line 167.
+Package pdftex.def Info: Transform_Vlsr_Vpec.png  used on input line 168.
 (pdftex.def)             Requested size: 120.25433pt x 113.81102pt.
-[4
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.173 	
-       
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.173 	
-       
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.173 	
-        <./Cygnus_geometry_plane.png> <./Cygnus_geometry_Z.png> <./Transform_Vl
-sr_Vpec.png>] [5
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.210 	\begin{itemize}
-                      ] [6]
-<Positions_fond_Cygnus.png, id=112, 379.91937pt x 266.9975pt>
+[4 <./Cygnus_geometry_plane.png> <./Cygnus_geometry_Z.png> <./Transform_Vlsr_Vp
+ec.png>] [5] [6]
+<Positions_fond_Cygnus.png, id=181, 379.91937pt x 266.9975pt>
 File: Positions_fond_Cygnus.png Graphic file (type png)
 <use Positions_fond_Cygnus.png>
-Package pdftex.def Info: Positions_fond_Cygnus.png  used on input line 241.
+Package pdftex.def Info: Positions_fond_Cygnus.png  used on input line 242.
 (pdftex.def)             Requested size: 379.91843pt x 266.99683pt.
-<Bobylev_vl_vb_avec fond.png, id=113, 375.4025pt x 252.945pt>
+<Bobylev_vl_vb_avec fond.png, id=182, 375.4025pt x 252.945pt>
 File: Bobylev_vl_vb_avec fond.png Graphic file (type png)
 <use Bobylev_vl_vb_avec fond.png>
-Package pdftex.def Info: Bobylev_vl_vb_avec fond.png  used on input line 248.
+Package pdftex.def Info: Bobylev_vl_vb_avec fond.png  used on input line 249.
 (pdftex.def)             Requested size: 375.40158pt x 252.94438pt.
- [7
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.252 L
-       a figure 4 nous permet de voir que les groupes A, B, C, D et F se dir...
- <./Positions_fond_Cygnus.png>]
-<Galactic plane view Bobylev 2026.png, id=120, 370.88562pt x 359.84438pt>
+ [7 <./Positions_fond_Cygnus.png>]
+<Galactic plane view Bobylev 2026.png, id=189, 370.88562pt x 359.84438pt>
 File: Galactic plane view Bobylev 2026.png Graphic file (type png)
 <use Galactic plane view Bobylev 2026.png>
 Package pdftex.def Info: Galactic plane view Bobylev 2026.png  used on input li
-ne 257.
+ne 258.
 (pdftex.def)             Requested size: 370.88472pt x 359.84349pt.
- [8
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.261 
-       <./Bobylev_vl_vb_avec fond.png>] (Rapport de stage.bbl
+ [8 <./Bobylev_vl_vb_avec fond.png>]
+<mu_l as a fct of l.png, id=196, 645.91313pt x 410.2828pt>
+File: mu_l as a fct of l.png Graphic file (type png)
+<use mu_l as a fct of l.png>
+Package pdftex.def Info: mu_l as a fct of l.png  used on input line 267.
+(pdftex.def)             Requested size: 358.34805pt x 227.62204pt.
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+Underfull \hbox (badness 2088) in paragraph at lines 262--270
+\T1/cmr/m/n/10.95 groupes est es-pacé d'en-vi-ron 200 par-secs se-lon la courbe
+ de ro-ta-tion de la ga-laxie.
+ []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+[9 <./Galactic plane view Bobylev 2026.png>]
+<3D_view_1.png, id=203, 655.44875pt x 359.84438pt>
+File: 3D_view_1.png Graphic file (type png)
+<use 3D_view_1.png>
+Package pdftex.def Info: 3D_view_1.png  used on input line 284.
+(pdftex.def)             Requested size: 155.48067pt x 85.35826pt.
+<3D_view_2.png, id=204, 656.4525pt x 235.37938pt>
+File: 3D_view_2.png Graphic file (type png)
+<use 3D_view_2.png>
+Package pdftex.def Info: 3D_view_2.png  used on input line 289.
+(pdftex.def)             Requested size: 238.0556pt x 85.35826pt.
+
+Overfull \hbox (33.19714pt too wide) in paragraph at lines 289--290
+ [][] 
+ []
+
+<linear_traceback_BEC_XY.png, id=205, 721.9773pt x 531.9072pt>
+File: linear_traceback_BEC_XY.png Graphic file (type png)
+<use linear_traceback_BEC_XY.png>
+Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 305.
+(pdftex.def)             Requested size: 231.72047pt x 170.71652pt.
+
+Overfull \hbox (26.86201pt too wide) in paragraph at lines 305--306
+ [][] 
+ []
+
+<linear_traceback_FAD_XY.png, id=206, 721.9773pt x 531.9072pt>
+File: linear_traceback_FAD_XY.png Graphic file (type png)
+<use linear_traceback_FAD_XY.png>
+Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 310.
+(pdftex.def)             Requested size: 231.72047pt x 170.71652pt.
+
+Overfull \hbox (26.86201pt too wide) in paragraph at lines 310--311
+ [][] 
+ []
+
+[10 <./mu_l as a fct of l.png> <./3D_view_1.png> <./3D_view_2.png>] [11 <./line
+ar_traceback_BEC_XY.png> <./linear_traceback_FAD_XY.png>]
+<traceback_gal_plane_4,5.png, id=225, 371.88937pt x 289.58188pt>
+File: traceback_gal_plane_4,5.png Graphic file (type png)
+<use traceback_gal_plane_4,5.png>
+Package pdftex.def Info: traceback_gal_plane_4,5.png  used on input line 325.
+(pdftex.def)             Requested size: 218.51521pt x 170.15808pt.
+<traceback_gal_plane_8,5.png, id=226, 374.90062pt x 307.64937pt>
+File: traceback_gal_plane_8,5.png Graphic file (type png)
+<use traceback_gal_plane_8,5.png>
+Package pdftex.def Info: traceback_gal_plane_8,5.png  used on input line 332.
+(pdftex.def)             Requested size: 218.51521pt x 179.31929pt.
+<traceback_gal_plane_10.png, id=227, 384.43625pt x 301.62688pt>
+File: traceback_gal_plane_10.png Graphic file (type png)
+<use traceback_gal_plane_10.png>
+Package pdftex.def Info: traceback_gal_plane_10.png  used on input line 340.
+(pdftex.def)             Requested size: 218.51521pt x 171.45044pt.
+<traceback_gal_plane_15.png, id=228, 370.88562pt x 301.62688pt>
+File: traceback_gal_plane_15.png Graphic file (type png)
+<use traceback_gal_plane_15.png>
+Package pdftex.def Info: traceback_gal_plane_15.png  used on input line 347.
+(pdftex.def)             Requested size: 218.51521pt x 177.71437pt.
+ [12 <./traceback_gal_plane_4,5.png> <./traceback_gal_plane_8,5.png> <./traceba
+ck_gal_plane_10.png> <./traceback_gal_plane_15.png>] [13] (Rapport de stage.bbl
+ [14])
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
-[9
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.271 		
-         <./Galactic plane view Bobylev 2026.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
-[10] (Rapport de stage.aux)
+[15] (Rapport de stage.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
  ***********
 Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
-(rerunfilecheck)             Checksum: D908C1F1C58D728DE966FF47106D6FBC;2301.
+(rerunfilecheck)             Checksum: 6DF34C8E9505990CC213D33E468EB845;4389.
  ) 
 Here is how much of TeX's memory you used:
- 12391 strings out of 467683
- 201392 string characters out of 5414238
- 649062 words of memory out of 5000000
- 41273 multiletter control sequences out of 15000+600000
+ 13928 strings out of 467683
+ 231780 string characters out of 5414238
+ 676455 words of memory out of 5000000
+ 42769 multiletter control sequences out of 15000+600000
  643369 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1551b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1566b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
 x1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecrm0800.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
@@ -654,14 +709,17 @@ ts/cm/cmbx10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmbx8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Lucile/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lucile/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lucil
-e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Use
-rs/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb>
-Output written on "Rapport de stage.pdf" (11 pages, 1415072 bytes).
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Lucile/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lucil
+e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Us
+ers/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pf
+b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb>
+Output written on "Rapport de stage.pdf" (16 pages, 2031638 bytes).
 PDF statistics:
- 631 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 805 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
