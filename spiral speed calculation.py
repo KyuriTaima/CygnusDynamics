@@ -20,3 +20,7 @@ v_W75N_E = np.sqrt((x_E - x_W75N)**2 + (y_E - y_W75N)**2) / t_2_myr
 v_E_D = np.sqrt((x_D - x_E)**2 + (y_D - y_E)**2) / (t_3_myr - t_2_myr)
 print(f"Vitesse moyenne de W75N à E: {v_W75N_E:.2f} pc/Myr")
 print(f"Vitesse moyenne de E à D: {v_E_D:.2f} pc/Myr")
+v_W75N_E_kms = v_W75N_E * 0.9778
+v_E_D_kms = v_E_D * 0.9778
+print(f"Vitesse moyenne de W75N à E: {v_W75N_E_kms:.2f} km/s")
+print(f"Vitesse moyenne de E à D: {v_E_D_kms:.2f} km/s")
