@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  9 JUN 2026 15:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  10 JUN 2026 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -670,32 +670,40 @@ File: cloud_collision.png Graphic file (type png)
 <use cloud_collision.png>
 Package pdftex.def Info: cloud_collision.png  used on input line 369.
 (pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
- (Rapport de stage.bbl [14 <./cloud_collision.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 386--387
+ [14 <./cloud_collision.png>] [15]
+(Rapport de stage.bbl [16])
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 392--393
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
 
  []
 
-[16] (Rapport de stage.aux)
+[17] [18] (Rapport de stage.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
  ***********
-Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
-(rerunfilecheck)             Checksum: 6DF34C8E9505990CC213D33E468EB845;4389.
+
+
+Package rerunfilecheck Warning: File `"Rapport de stage".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Rapport de stage".out':
+(rerunfilecheck)             Before: 6DF34C8E9505990CC213D33E468EB845;4389
+(rerunfilecheck)             After:  1659E1DBB223BFF035CF78E550DA44EE;4802.
  ) 
 Here is how much of TeX's memory you used:
- 13938 strings out of 467683
- 232007 string characters out of 5414238
+ 13941 strings out of 467683
+ 232035 string characters out of 5414238
  676587 words of memory out of 5000000
  42777 multiletter control sequences out of 15000+600000
  643369 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1566b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1566b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
 x1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecrm0800.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
@@ -722,9 +730,9 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (17 pages, 2057330 bytes).
+Output written on "Rapport de stage.pdf" (19 pages, 2067162 bytes).
 PDF statistics:
- 812 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
+ 827 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
  219 words of extra memory for PDF output out of 10000 (max. 10000000)
 
