@@ -33,6 +33,7 @@ slope, intercept, r_value, p_value, std_err = linregress(time_points, distance_p
 v_regression_kms = slope * 0.9778
 print(f"Vitesse de déplacement absolue estimée par régression linéaire: {v_regression_kms:.2f} km/s")
 v_regression_kms_corrected = theta_0 - v_regression_kms
+print(f"Vitesse de déplacement absolue corrigée par régression linéaire: {v_regression_kms_corrected:.2f} km/s")
 
 # Correction de la vitesse de rotation galactique afin d'obtenir la vitesse de déplacement absolue
 v_W75N_E_corrected = theta_0 - v_W75N_E_kms
