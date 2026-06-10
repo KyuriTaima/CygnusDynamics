@@ -24,3 +24,9 @@ v_W75N_E_kms = v_W75N_E * 0.9778
 v_E_D_kms = v_E_D * 0.9778
 print(f"Vitesse moyenne de W75N à E: {v_W75N_E_kms:.2f} km/s")
 print(f"Vitesse moyenne de E à D: {v_E_D_kms:.2f} km/s")
+
+# Correction de la vitesse de rotation galactique afin d'obtenir la vitesse de déplacement absolue
+v_W75N_E_corrected = theta_0 - v_W75N_E_kms
+v_E_D_corrected = theta_0 - v_E_D_kms
+print(f"Vitesse corrigée de W75N à E: {v_W75N_E_corrected:.2f} km/s")
+print(f"Vitesse corrigée de E à D: {v_E_D_corrected:.2f} km/s")
