@@ -17,4 +17,3 @@
 \contentsline {subsection}{\numberline {5.3}Influence du bras local dans la dynamique des nuages moléculaires}{16}{subsection.5.3}%
 \contentsline {section}{\numberline {6}Conclusion}{16}{section.6}%
 \contentsline {section}{\numberline {A}Données cinématiques complémentaires}{19}{section.A}%
-\contentsline {section}{\numberline {B}Détail de calcul des incertitudes}{19}{section.B}%
