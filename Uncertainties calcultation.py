@@ -207,6 +207,11 @@ print("\nLSR (Local Standard of Rest) :")
 print(f"  Position : X = {lsr_gc.x.to_value(u.kpc):.3f} kpc, Y = {lsr_gc.y.to_value(u.kpc):.3f} kpc, Z = {lsr_gc.z.to_value(u.kpc):.3f} kpc")
 print(f"  Vitesse  : vx = {lsr_gc.v_x.value:.2f} km/s, vy = {lsr_gc.v_y.value:.2f} km/s, vz = {lsr_gc.v_z.value:.2f} km/s")
 print("----------------------------------------------------\n")
+for i in range(len(names)):
+    if names[i] == "W75N":
+        W75N_X = X_gc
+        W75N_Y = Y_gc
+        W75N_Z = Z_gc
 
 # Boucle sur les groupes pour calculer les composantes de vitesses dans le référentiel LSR et Galactocentrique
 for i in range(len(names)):
