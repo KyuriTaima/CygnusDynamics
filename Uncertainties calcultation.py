@@ -425,20 +425,17 @@ for i in range(len(names)):
     vz_gc_err_list.append(gc_samples.v_z.std().value)
 
 # Local referential centered on W75N
-
 w75n_idx = names.index("W75N")
 
 X_gc_array_pc = np.array(X_gc_list) * 1000
 Y_gc_array_pc = np.array(Y_gc_list) * 1000
 Z_gc_array_pc = np.array(Z_gc_list) * 1000
 
-# 3. On soustrait les coordonnées de W75N à tous les objets pour centrer le repère
 X_local_list = list(X_gc_array_pc - X_gc_array_pc[w75n_idx])
 Y_local_list = list(Y_gc_array_pc - Y_gc_array_pc[w75n_idx])
 Z_local_list = list(Z_gc_array_pc - Z_gc_array_pc[w75n_idx])
 
-# 4. Calcul rigoureux des incertitudes locales
-# L'erreur de la distance relative est la combinaison quadratique des erreurs (en pc)
+# Uncertainty propagation for local coordinates using the uncertainties on galactocentric coordinates
 X_gc_err_array_pc = np.array(X_gc_err_list) * 1000 
 Y_gc_err_array_pc = np.array(Y_gc_err_list) * 1000
 Z_gc_err_array_pc = np.array(Z_gc_err_list) * 1000
