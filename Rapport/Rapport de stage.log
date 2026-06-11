@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  11 JUN 2026 12:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  11 JUN 2026 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -558,19 +558,19 @@ l.99 	\newpage
 File: Cygnus_geometry_plane.png Graphic file (type png)
 <use Cygnus_geometry_plane.png>
 Package pdftex.def Info: Cygnus_geometry_plane.png  used on input line 165.
-(pdftex.def)             Requested size: 178.90596pt x 85.35826pt.
+(pdftex.def)             Requested size: 149.08714pt x 71.13188pt.
 <Cygnus_geometry_Z.png, id=161, 313.26833pt x 95.86836pt>
 File: Cygnus_geometry_Z.png Graphic file (type png)
 <use Cygnus_geometry_Z.png>
 Package pdftex.def Info: Cygnus_geometry_Z.png  used on input line 172.
-(pdftex.def)             Requested size: 278.92265pt x 85.35826pt.
+(pdftex.def)             Requested size: 232.43634pt x 71.13188pt.
 
-Overfull \hbox (74.0642pt too wide) in paragraph at lines 172--173
+Overfull \hbox (27.57788pt too wide) in paragraph at lines 172--173
  [][] 
  []
 
 [4 <./Cygnus_geometry_plane.png> <./Cygnus_geometry_Z.png>]
-<Transform_Vlsr_Vpec.png, id=176, 166.72327pt x 157.79414pt>
+<Transform_Vlsr_Vpec.png, id=177, 166.72327pt x 157.79414pt>
 File: Transform_Vlsr_Vpec.png Graphic file (type png)
 <use Transform_Vlsr_Vpec.png>
 Package pdftex.def Info: Transform_Vlsr_Vpec.png  used on input line 192.
@@ -693,7 +693,7 @@ Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
 Here is how much of TeX's memory you used:
  13966 strings out of 467683
  232418 string characters out of 5414238
- 679759 words of memory out of 5000000
+ 680759 words of memory out of 5000000
  42789 multiletter control sequences out of 15000+600000
  643369 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -724,7 +724,7 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (20 pages, 2081344 bytes).
+Output written on "Rapport de stage.pdf" (20 pages, 2081337 bytes).
 PDF statistics:
  872 PDF objects out of 1000 (max. 8388607)
  79 named destinations out of 1000 (max. 500000)
