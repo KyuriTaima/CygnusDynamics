@@ -203,9 +203,12 @@
 	\end{align}
 	J'obtiens ainsi la norme du vecteur vitesse projeté sur le plan du ciel : $v_{lb} = \sqrt{v_l^2 + v_b^2}$.
 	
-	L'ensemble des résultats cinématiques appliqués aux nuages moléculaires et aux groupes d'étoiles OB de Cygnus X est compilé dans le Tableau \ref{tab:donnees_cinematiques}. Les distances d'entrée proviennent des travaux de Rygl et al. \cite{rygl2012} pour les nuages et de Quintana et al. \cite{quintana2021} pour les amas. Les données brutes utilisées pour ces calculs sont répertoriées dans le Tableau 1 en Annexe \ref{annexe:donnees_entree}, tandis que les résultats des calculs intermédiaires figurent dans le Tableau A.2 en Annexe \ref{annexe:calculs_intermediaires}.
+	L'ensemble des résultats cinématiques appliqués aux nuages moléculaires et aux groupes d'étoiles OB de Cygnus X est compilé dans le Tableau \ref{tab:donnees_cinematiques}. Les distances d'entrée proviennent des travaux de Rygl et al. \cite{rygl2012} pour les nuages et de Quintana et al. \cite{quintana2021} pour les amas. 
 	
-	Pour les transformations linéaires, je calcule les incertitudes via la formule de propagation des erreurs au premier ordre (Taylor \cite{taylor1997}). Pour les fonctions non linéaires, j'effectue un échantillonnage par méthode de Monte-Carlo comprenant $10\,000$ tirages. Le détail de ces calculs d'incertitudes est disponible en Annexe \ref{annexe:methode_incertitudes}.
+	Les données astrométriques brutes utilisées pour initialiser ce modèle sont répertoriées dans le Tableau \ref{tab:annexe_donnees_entree} (Annexe \ref{annexe:donnees_complémentaires}). L'ensemble des résultats intermédiaires générés par le modèle cinématique a ensuite été divisé par thématiques en annexe afin d'en faciliter la lecture : les coordonnées spatiales héliocentriques (Tableau \ref{tab:annexe_positions}), les changements de référentiels de vitesse (Tableau \ref{tab:annexe_vitesses_intermediaires}) et enfin les propriétés internes des amas stellaires (Tableau \ref{tab:annexe_masses_gradients}).
+	
+	Pour les transformations linéaires, je calcule les incertitudes via la formule de propagation des erreurs au premier ordre (Taylor \cite{taylor1997}). Pour les fonctions non linéaires, j'effectue un échantillonnage par méthode de Monte-Carlo comprenant $10\,000$ tirages. La méthodologie complète et détaillée de ces calculs d'incertitudes est documentée en Annexe \ref{annexe:methode_incertitudes}.
+
 	
 	\begin{table}[H]
 		\centering
