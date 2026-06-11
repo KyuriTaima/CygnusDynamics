@@ -3,8 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.stats import linregress
 
-theta_0 = 234.8  # km/s
-
 x_W75N = -376
 y_W75N = -26
 x_E = -1054
