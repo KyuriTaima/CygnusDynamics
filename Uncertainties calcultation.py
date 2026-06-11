@@ -423,7 +423,35 @@ for i in range(len(names)):
     vx_gc_err_list.append(gc_samples.v_x.std().value)
     vy_gc_err_list.append(gc_samples.v_y.std().value)
     vz_gc_err_list.append(gc_samples.v_z.std().value)
-    
+
+# Local referential centered on W75N
+
+w75n_idx = names.index("W75N")
+
+X_gc_array_pc = np.array(X_gc_list) * 1000
+Y_gc_array_pc = np.array(Y_gc_list) * 1000
+Z_gc_array_pc = np.array(Z_gc_list) * 1000
+
+# 3. On soustrait les coordonnées de W75N à tous les objets pour centrer le repère
+X_local_list = list(X_gc_array_pc - X_gc_array_pc[w75n_idx])
+Y_local_list = list(Y_gc_array_pc - Y_gc_array_pc[w75n_idx])
+Z_local_list = list(Z_gc_array_pc - Z_gc_array_pc[w75n_idx])
+
+# 4. Calcul rigoureux des incertitudes locales
+# L'erreur de la distance relative est la combinaison quadratique des erreurs (en pc)
+X_gc_err_array_pc = np.array(X_gc_err_list) * 1000 
+Y_gc_err_array_pc = np.array(Y_gc_err_list) * 1000
+Z_gc_err_array_pc = np.array(Z_gc_err_list) * 1000
+
+X_local_err_list = list(np.sqrt(X_gc_err_array_pc**2 + X_gc_err_array_pc[w75n_idx]**2))
+Y_local_err_list = list(np.sqrt(Y_gc_err_array_pc**2 + Y_gc_err_array_pc[w75n_idx]**2))
+Z_local_err_list = list(np.sqrt(Z_gc_err_array_pc**2 + Z_gc_err_array_pc[w75n_idx]**2))
+
+# L'incertitude locale de W75N par rapport à lui-même est nulle par définition
+X_local_err_list[w75n_idx] = 0.0
+Y_local_err_list[w75n_idx] = 0.0
+Z_local_err_list[w75n_idx] = 0.0
+
 
 # --- CRÉATION DU DATAFRAME PANDAS ---
 # Mapping de chaque colonne avec les données correspondantes dans le script
