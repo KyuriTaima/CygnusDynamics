@@ -416,9 +416,9 @@ for i in range(len(names)):
     gc_samples = c_samples.transform_to(gc_frame)
 
     # Uncertainties on galactocentric coordinates and velocities from the Monte-Carlo simulation
-    X_gc_err_list.append(gc_samples.x.std().to_value(u.pc))
-    Y_gc_err_list.append(gc_samples.y.std().to_value(u.pc))
-    Z_gc_err_list.append(gc_samples.z.std().to_value(u.pc))
+    X_gc_err_list.append(gc_samples.x.std().to_value(u.kpc))
+    Y_gc_err_list.append(gc_samples.y.std().to_value(u.kpc))
+    Z_gc_err_list.append(gc_samples.z.std().to_value(u.kpc))
 
     vx_gc_err_list.append(gc_samples.v_x.std().value)
     vy_gc_err_list.append(gc_samples.v_y.std().value)
