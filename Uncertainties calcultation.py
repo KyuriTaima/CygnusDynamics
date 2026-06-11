@@ -321,9 +321,9 @@ for i in range(len(names)):
     vx_gc_list.append(vx_gc)
     vy_gc_list.append(vy_gc)
     vz_gc_list.append(vz_gc)
-    X_local = X_gc - X_local_zero
-    Y_local = Y_gc - Y_local_zero
-    Z_local = Z_gc - Z_local_zero
+    X_local = gc_coord.x.to_value(u.pc) - X_local_zero
+    Y_local = gc_coord.y.to_value(u.pc) - Y_local_zero
+    Z_local = gc_coord.z.to_value(u.pc) - Z_local_zero
     X_local_list.append(X_local)
     Y_local_list.append(Y_local)
     Z_local_list.append(Z_local)
