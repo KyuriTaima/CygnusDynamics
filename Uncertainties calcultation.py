@@ -317,8 +317,8 @@ for i in range(len(names)):
     vx_gc_list.append(vx_gc)
     vy_gc_list.append(vy_gc)
     vz_gc_list.append(vz_gc)
-    for i in range(len(names)):
-        if names[i] == "W75N":
+    for j in range(len(names)):
+        if names[j] == "W75N":
             W75N_X = X_gc
             W75N_Y = Y_gc
             W75N_Z = Z_gc
