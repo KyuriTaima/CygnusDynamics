@@ -321,14 +321,9 @@ for i in range(len(names)):
     vx_gc_list.append(vx_gc)
     vy_gc_list.append(vy_gc)
     vz_gc_list.append(vz_gc)
-    for j in range(len(names)):
-        if names[j] == "W75N":
-            W75N_X = X_gc
-            W75N_Y = Y_gc
-            W75N_Z = Z_gc
-    X_local = X_gc - W75N_X
-    Y_local = Y_gc - W75N_Y
-    Z_local = Z_gc - W75N_Z
+    X_local = X_gc - X_local_zero
+    Y_local = Y_gc - Y_local_zero
+    Z_local = Z_gc - Z_local_zero
     X_local_list.append(X_local)
     Y_local_list.append(Y_local)
     Z_local_list.append(Z_local)
