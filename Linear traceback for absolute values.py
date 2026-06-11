@@ -155,5 +155,5 @@ for t in target_times:
         paper_bgcolor='rgb(10, 10, 20)', font=dict(color='white'),
         margin=dict(l=0, r=0, b=0, t=40)
     )
-    fig.write_html(f"Carte_Cygnus_3D_quiver_{t:.1f}Myr.html")
+    fig.write_html(f"Carte_Cygnus_3D_quiver_{t:.1f}Myr_abs.html")
 
