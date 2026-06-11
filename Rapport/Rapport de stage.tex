@@ -108,35 +108,40 @@
 	\newpage
 	
 	\section{Cinématique des nuages moléculaires et des groupes d'étoiles massives}
-	\subsection{Notions utilisées}
-	Afin de caractériser la cinématique des nuages et des groupes d'étoiles OB au sein du Cygne, nous utiliserons plusieurs concepts importants. 
-	Les composantes de vitesse galactique U, V et W représentent:
-	\begin{itemize}
-		\item U: la vitesse radiale galactique, c'est la vitesse radiale d’un objet en mouvement circulaire autour du centre galactique. Une vitesse U positive indique que l’objet va vers le centre galactique
-		\item V: la vitesse tangentielle galactique, elle représente la vitesse de l’objet, tangente à sa trajectoire circulaire, si elle est positive, cela signifie que l’objet va plus vite que le repère
-		\item W: la vitesse orthogonale au plan galactique, une vitesse positive indique que l’objet monte vers le pôle nord galactique
-	\end{itemize}
-	le Local Standard of Rest (LSR) est un point de référence imaginaire situé à la distance $R_0$ du centre galactique, qui possède des composantes de vitesses nulles dans le référentiel LSR. Dans le référentiel galactocentrique, le point LSR a des vitesses radiales (U) et orthogonales (W) nulles, et a une vitesse tangentielle $\Theta_0$ qui est la moyenne de la vitesse tangentielle dans la galaxie à $R_0$.
-	\linebreak
-	Les mouvements propres des objets sont les dérives des objets observés sur la voûte céleste par rapport à leur point initial, exprimés en arc-secondes/an.
 	
-	\subsection{Paramètres déterminants}
-	Toutes les observations astronomiques que nous possédons sont influencées par des paramètres invisibles: la position et la vitesse du Soleil. En effet, le Soleil est situé à une distance $R_0$ du centre galactique et à une hauteur $Z_0$ par rapport au plan galactique. De plus, il possède trois composantes de vitesses $U_{sun}$, $V_{sun}$, $W_{sun}$, qui n'ont pas toujours les mêmes valeurs selon les publications. Les déplacements propres des nuages moléculaires ont été publiés dans Rygl et al. \cite{rygl2012}, ils ont aussi publié les vitesses particulières U,V et W des nuages, en utilisant les paramètres de Schönrich et al. \cite{schonrich2010}:
+	\subsection{Notions cinématiques}
+	L'analyse de la dynamique des structures de la région du Cygne repose sur plusieurs concepts fondamentaux de la cinématique galactique. Les composantes de la vitesse particulière d'un objet par rapport au référentiel local sont définies par les variables cartésiennes $U$, $V$ et $W$ :
 	\begin{itemize}
-		\item $R_0 = 8.3 \ kpc$;
-		\item $\Theta_0 = 236 \ km/s$
-		\item $U_{sun} = 11.10 \pm 0.71 \ km/s$
-		\item $V_{sun} = 12.24 \pm 0.47 \ km/s$
-		\item $W_{sun} = 7.25 \pm 0.35 \ km/s$
+		\item $U$ : la composante radiale galactocentrique, projetée le long du rayon reliant l'objet au centre de la Galaxie. Selon la convention adoptée, une valeur positive de $U$ indique un mouvement dirigé vers le centre galactique.
+		\item $V$ : la composante tangentielle, orientée dans le sens de la rotation galactique. Une valeur positive de $V$ signifie que l'objet possède une vitesse de rotation supérieure à celle du repère de référence.
+		\item $W$ : la composante perpendiculaire au plan galactique. Une valeur positive indique un déplacement vers le pôle Nord galactique.
 	\end{itemize}
-	Cependant ces valeurs sont débattues depuis 2010, et de nouvelles observations permettent de les affiner et de prendre des valeurs avec de plus faibles incertitudes. Dans la suite du rapport, j'utiliserais les valeurs de Gravity Collaboration \cite{gravity2022} et V. Bobylev et al. \cite{bobylev2026} obtenues grâces aux données Gaia DR3:
+	
+	Le Référentiel Local au Repos, ou \textit{Local Standard of Rest} (LSR), est défini comme un repère idéal situé à la distance du Soleil du centre galactique ($R_0$) et décrivant une orbite parfaitement circulaire dans le plan galactique. Par définition, les composantes de vitesse $U$ et $W$ y sont nulles, tandis que sa vitesse tangentielle correspond à la vitesse circulaire moyenne de la Galaxie à cette distance, notée $\Theta_0$.
+	
+	Enfin, les mouvements propres correspondent au déplacement angulaire séculaire des objets projeté sur le plan du ciel. Ils expriment la dérive de la position apparente au cours du temps et sont mesurés en millisecondes d'arc par an ($\mathrm{mas}\cdot\mathrm{an}^{-1}$).
+	
+	\subsection{Paramètres fondamentaux du modèle galactique}
+	Les mouvements observés depuis la Terre dépendent directement de la position et de la vitesse du Soleil au sein de la Galaxie. Le Soleil est situé à une distance $R_0$ du centre galactique, présente un écart vertical $Z_0$ par rapport au plan moyen du disque, et possède des composantes de vitesse particulière ($U_{\odot}$, $V_{\odot}$, $W_{\odot}$) par rapport au LSR. Ces constantes de référence varient sensiblement selon les modèles cinématiques adoptés dans la littérature.
+	
+	Les mouvements propres et les vitesses particulières $U, V, W$ des nuages moléculaires de Cygnus X ont été publiés par Rygl et al. \cite{rygl2012} en adoptant les paramètres de Schönrich et al. \cite{schonrich2010} :
 	\begin{itemize}
-		\item $R_0 = 8.277 \pm 0.041 \ kpc$;
-		\item $\Theta_0 = 234.8 \pm 3.0 \ km/s$
-		\item $U_{sun} = 9.83 \pm 0.42 \ km/s$
-		\item $V_{sun} = 13.33 \pm 0.50 \ km/s$
-		\item $W_{sun} = 7.89 \pm 0.41 \ km/s$
+		\item $R_0 = 8.3 \ \mathrm{kpc}$ ;
+		\item $\Theta_0 = 236 \ \mathrm{km}\cdot\mathrm{s}^{-1}$ ;
+		\item $U_{\odot} = 11.10 \pm 0.71 \ \mathrm{km}\cdot\mathrm{s}^{-1}$ ;
+		\item $V_{\odot} = 12.24 \pm 0.47 \ \mathrm{km}\cdot\mathrm{s}^{-1}$ ;
+		\item $W_{\odot} = 7.25 \pm 0.35 \ \mathrm{km}\cdot\mathrm{s}^{-1}$.
 	\end{itemize}
+	
+	Afin d'intégrer les contraintes observationnelles les plus récentes et de réduire les incertitudes de notre modèle, nous utiliserons les paramètres révisés issus des mesures de la Gravity Collaboration \cite{gravity2022} et des analyses de V. Bobylev et al. \cite{bobylev2026} basées sur les données cinématiques du catalogue Gaia DR3 :
+	\begin{itemize}
+		\item $R_0 = 8.277 \pm 0.041 \ \mathrm{kpc}$ ;
+		\item $\Theta_0 = 234.8 \pm 3.0 \ \mathrm{km}\cdot\mathrm{s}^{-1}$ ;
+		\item $U_{\odot} = 9.83 \pm 0.42 \ \mathrm{km}\cdot\mathrm{s}^{-1}$ ;
+		\item $V_{\odot} = 13.33 \pm 0.50 \ \mathrm{km}\cdot\mathrm{s}^{-1}$ ;
+		\item $W_{\odot} = 7.89 \pm 0.41 \ \mathrm{km}\cdot\mathrm{s}^{-1}$.
+	\end{itemize}
+	Ces constantes mis à jour serviront de base à l'unification des différents jeux de données dans un référentiel galactocentrique commun.
 	
 	\subsection{Détermination des vitesses particulières et des positions dans le référentiel galactocentrique}
 	L'article de Quintana et al. \cite{quintana2021} nous donne les déplacements propres des groupes d'étoiles OB au sein de la région du Cygne ainsi que leur distance au Soleil. A partir des déplacements propres et de la distance Objet-Soleil, je peux déterminer la position des objets dans le référentiel galactocentrique. Pour ce faire j'utilise la bibliothèque \textit{astropy} afin de transformer les mouvements propres en vitesses particulières observées $U_{obs}, V_{obs}, W_{obs}$. Puis je corrige ces vitesses de la vitesse du Soleil afin d'obtenir les vitesses dans le Local Standard of Rest: $U_{lsr} = U_{obs} + U_{sun}$ \linebreak
