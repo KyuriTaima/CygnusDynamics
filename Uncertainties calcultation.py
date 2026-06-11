@@ -551,7 +551,10 @@ data = {
     "Z_gc_err_kpc": Z_gc_err_list,
     "vx_gc_err_kms": vx_gc_err_list,
     "vy_gc_err_kms": vy_gc_err_list,
-    "vz_gc_err_kms": vz_gc_err_list
+    "vz_gc_err_kms": vz_gc_err_list,
+    "X_local_err_kpc": X_local_err_list,
+    "Y_local_err_kpc": Y_local_err_list,
+    "Z_local_err_kpc": Z_local_err_list
 }
 
 # Display the length of each list to ensure they match
