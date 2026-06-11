@@ -25,6 +25,10 @@ U_old = 10.3 # km/s
 V_old = 15.3 # km/s
 W_old = 7.7 # km/s
 
+X_local_zero = -8090 # pc Position locale centrée sur W75N, X local = 0 correspond à la position de W75N
+Y_local_zero = 1290 # pc Position locale centrée sur W75N, Y local = 0 correspond à la position de W75N
+Z_local_zero = 20 # pc Position locale centrée sur W75N, Z local = 0 correspond à la position de W75N
+
 names = ["Group A", "Group B", "Group C", "Group D", "Group E", "Group F", "W75N", "DR21", "DR20", "IRAS20290+4052"]
 
 # --- Coordonnées et distances ---
