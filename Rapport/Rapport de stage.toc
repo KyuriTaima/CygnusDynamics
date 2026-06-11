@@ -1,10 +1,10 @@
 \babel@toc {french}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
 \contentsline {section}{\numberline {2}Cinématique des nuages moléculaires et des groupes d'étoiles massives}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Notions utilisées}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Paramètres déterminants}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.1}Notions cinématiques}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Paramètres fondamentaux du modèle galactique}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Détermination des vitesses particulières et des positions dans le référentiel galactocentrique}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Remarque sur les incertitudes et la crédibilité des résultats}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}Remarque sur les incertitudes et la crédibilité des résultats}{6}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Visualisation des vitesses et des positions}{7}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Projection en deux dimensions}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Projection en trois dimensions}{10}{subsection.3.2}%
