@@ -12,7 +12,7 @@ r0 = 8.277        # kpc Distance du soleil au centre galactique
 z_sun = 5.5      # pc Hauteur du soleil au-dessus du plan galactique (Bennett & Bovy 2019)
 theta0 = 234.8  # km/s Vitesse de rotation fixe des objets autour du centre galactique
 theta0_err = 3.0 # km/s Incertitude sur la vitesse de rotation homogène de la galaxie au LSR
-# Schönrich et al. (2010) : Vitesse du Soleil par rapport au LSR
+# Bobylev 2026 Vitesse du Soleil par rapport au LSR
 U_sun = 9.1 # km/s
 V_sun = 8.66 # km/s
 W_sun = 7.90 # km/s
