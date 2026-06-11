@@ -196,14 +196,14 @@
 	
 	Ces composantes ($U_{pec}, V_{pec}, W_{pec}$) sont celles que j'utiliserai dans la suite de ce rapport pour comparer les objets entre eux et établir les trajectoires de collision. 
 	
-	Afin de permettre des comparaisons directes avec d'autres publications ou de réaliser des projections cartographiques bidimensionnelles, je projette également ces vecteurs sur les axes galactiques apparents pour obtenir les vitesses propres longitudinale ($v_l$) et latitudinale ($v_b$) :
+	Cependant, pour faciliter la comparaison avec d'autres études et visualiser ces mouvements en 2D, je projette également ces vecteurs sur le plan du ciel. J'obtiens ainsi les vitesses propres en longitude ($v_l$) et en latitude ($v_b$):
 	\begin{align}
 		v_l &= -U_{pec}\sin(l) + V_{pec}\cos(l) \\
 		v_b &= -U_{pec}\cos(l)\sin(b) - V_{pec}\sin(l)\sin(b) + W_{pec}\cos(b)
 	\end{align}
 	J'obtiens ainsi la norme du vecteur vitesse projeté sur le plan du ciel : $v_{lb} = \sqrt{v_l^2 + v_b^2}$.
 	
-	L'ensemble des résultats cinématiques appliqués aux nuages moléculaires et aux groupes d'étoiles OB de Cygnus X est compilé dans le Tableau \ref{tab:donnees_cinematiques}. Les distances d'entrée proviennent des travaux de Rygl et al. \cite{rygl2012} pour les nuages et de Quintana et al. \cite{quintana2021} pour les amas. Les données brutes utilisées pour ces calculs sont répertoriées dans le Tableau 1.A en Annexe \ref{annexe:donnees_entree}, tandis que les résultats des calculs intermédiaires figurent dans le Tableau 2.A en Annexe \ref{annexe:calculs_intermediaires}. 
+	L'ensemble des résultats cinématiques appliqués aux nuages moléculaires et aux groupes d'étoiles OB de Cygnus X est compilé dans le Tableau \ref{tab:donnees_cinematiques}. Les distances d'entrée proviennent des travaux de Rygl et al. \cite{rygl2012} pour les nuages et de Quintana et al. \cite{quintana2021} pour les amas. Les données brutes utilisées pour ces calculs sont répertoriées dans le Tableau 1.A en Annexe \ref{annexe:donnees_entree}, tandis que les résultats des calculs intermédiaires figurent dans le Tableau 2.A en Annexe \ref{annexe:calculs_intermediaires}.
 	
 	Pour les transformations linéaires, je calcule les incertitudes via la formule de propagation des erreurs au premier ordre (Taylor \cite{taylor1997}). Pour les fonctions non linéaires, j'effectue un échantillonnage par méthode de Monte-Carlo comprenant $10\,000$ tirages. Le détail de ces calculs d'incertitudes est disponible en Annexe \ref{annexe:methode_incertitudes}.
 	
@@ -426,6 +426,16 @@
 	\bibliographystyle{alpha}
 	\nocite{*}
 	\bibliography{sample}
+	
+	\newpage
+	
+	\appendix
+	\section{Données cinématiques d'entrée}
+	\label{annexe:donnees_entree}
+	\section{Résultats des calculs intermédiaires}
+	\label{annexe:calculs_intermediaires}
+	\section{Détail de calcul des incertitudes}
+	\label{annexe:methode_incertitudes}
 	
 	\begin{abstract}
 		Français \\
