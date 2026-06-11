@@ -444,7 +444,6 @@ X_local_err_list = list(np.sqrt(X_gc_err_array_pc**2 + X_gc_err_array_pc[w75n_id
 Y_local_err_list = list(np.sqrt(Y_gc_err_array_pc**2 + Y_gc_err_array_pc[w75n_idx]**2))
 Z_local_err_list = list(np.sqrt(Z_gc_err_array_pc**2 + Z_gc_err_array_pc[w75n_idx]**2))
 
-# L'incertitude locale de W75N par rapport à lui-même est nulle par définition
 X_local_err_list[w75n_idx] = 0.0
 Y_local_err_list[w75n_idx] = 0.0
 Z_local_err_list[w75n_idx] = 0.0
