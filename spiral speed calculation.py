@@ -30,8 +30,6 @@ distance_points = np.array([0, np.sqrt((x_E - x_W75N)**2 + (y_E - y_W75N)**2),
 slope, intercept, r_value, p_value, std_err = linregress(time_points, distance_points)
 v_regression_kms = slope * 0.9778
 print(f"Vitesse de déplacement absolue estimée par régression linéaire: {v_regression_kms:.2f} km/s")
-v_regression_kms_corrected = v_regression_kms
-print(f"Vitesse de déplacement absolue corrigée par régression linéaire: {v_regression_kms_corrected:.2f} km/s")
 
 # Correction de la vitesse de rotation galactique afin d'obtenir la vitesse de déplacement absolue
 v_W75N_E_corrected = v_W75N_E_kms
