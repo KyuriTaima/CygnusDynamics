@@ -173,6 +173,11 @@ vx_gc_err_list = []
 vy_gc_err_list = []
 vz_gc_err_list = []
 
+# Local referential centerd on W75N
+X_local_list = []
+Y_local_list = []
+Z_local_list = []
+
 # Add referential data for the sun and LSR 
 v_sun_vector_ref = coord_module.CartesianDifferential([U_sun, V_sun + theta0, W_sun] * u.km / u.s)
 gc_frame_ref = Galactocentric(galcen_distance=r0 * u.kpc, galcen_v_sun=v_sun_vector_ref, z_sun=z_sun * u.pc)
