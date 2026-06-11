@@ -143,73 +143,94 @@
 	\end{itemize}
 	Ces constantes mis à jour serviront de base à l'unification des différents jeux de données dans un référentiel galactocentrique commun.
 	
-	\subsection{Détermination des vitesses particulières et des positions dans le référentiel galactocentrique}
-	L'article de Quintana et al. \cite{quintana2021} nous donne les déplacements propres des groupes d'étoiles OB au sein de la région du Cygne ainsi que leur distance au Soleil. A partir des déplacements propres et de la distance Objet-Soleil, je peux déterminer la position des objets dans le référentiel galactocentrique. Pour ce faire j'utilise la bibliothèque \textit{astropy} afin de transformer les mouvements propres en vitesses particulières observées $U_{obs}, V_{obs}, W_{obs}$. Puis je corrige ces vitesses de la vitesse du Soleil afin d'obtenir les vitesses dans le Local Standard of Rest: $U_{lsr} = U_{obs} + U_{sun}$ \linebreak
-	Les publications nous donnent les positions des objets en latitudes (b) et longitudes (l) galactiques. Afin d'effectuer le changement de référentiel en référentiel galactocentrique, je dois exprimer les valeurs: $X = R_0 - D\cdot cos(l)\cdot cos(b)$ ; $Y = D\cdot sin(l)\cdot cos(b)$ ; $\beta = arctan(\frac{Y}{X})$
-
-	\begin{figure}[H]
-		\centering % Centre l'ensemble des deux minipages
-		
-		% --- PREMIÈRE IMAGE (À GAUCHE) ---
-		\begin{minipage}{0.45\textwidth}
-			\centering
-			\includegraphics[height=2.5cm]{Cygnus_geometry_plane.png}
-			\caption{Géométrie dans le plan galactique ($X, Y$).}
-			\label{fig:geometry_plane} % Utile pour faire des références plus tard
-		\end{minipage}
-		\hfill % Cet outil crée l'espace élastique maximal entre les deux images
-		% --- DEUXIÈME IMAGE (À DROITE) ---
-		\begin{minipage}{0.45\textwidth}
-			\centering
-			\includegraphics[height=2.5cm]{Cygnus_geometry_Z.png}
-			\caption{Géométrie selon l'axe vertical ($Z$).}
-			\label{fig:geometry_Z}
-		\end{minipage}
-		
-	\end{figure}
-	Il faut ensuite rajouter la vitesse de rotation moyenne $\Theta_0$ de la galaxie à $R_0$ pour obtenir une vitesse galactocentrique absolue, cela n'a aucun impact sur les vitesses U et W: $U_{lsr,abs} = U_{lsr}$; $V_{lsr,abs} = V_{lsr} + \Theta_0$; $W_{lsr,abs} = W_{lsr}$
-
-	Il faut maintenant effectuer une rotation des axes afin d'obtenir les composantes de vitesses particulières des objets en référentiel galactocentrique, corrigée de la vitesse de rotation moyenne de la galaxie à $R_0$:
-	$U_{pec}=U_{lsr,abs}\cdot cos(\beta)\cdot -V_{lsr,abs}\cdot sin(\beta)$; $V_{pec}=U_{lsr,abs}\cdot sin(\beta) + V_{lsr,abs}\cdot cod(\beta)-\Theta_0$; $W_{pec}=W_{lsr,abs}$
-
+	\subsection{Détermination des positions et des vitesses dans le référentiel galactocentrique}
+	
+	L'étude de Quintana et al. \cite{quintana2021} fournit les mouvements propres ainsi que les distances héliocentriques des groupes d'étoiles OB de la région du Cygne. À partir de ces données astrométriques, je détermine la position spatiale absolue de ces objets dans le référentiel galactocentrique cartésien. 
+	
+	Dans un premier temps, je convertis les mouvements propres en vitesses particulières observées ($U_{obs}, V_{obs}, W_{obs}$) à l'aide de la bibliothèque Python \textit{astropy}. Je corrige ensuite ces vitesses du mouvement propre du Soleil afin de les exprimer dans le référentiel du \textit{Local Standard of Rest} (LSR) :
+	\begin{equation}
+		U_{lsr} = U_{obs} + U_{\odot} \quad ; \quad V_{lsr} = V_{obs} + V_{\odot} \quad ; \quad W_{lsr} = W_{obs} + W_{\odot}
+	\end{equation}
+	
+	Les publications de référence fournissent les coordonnées spatiales en longitude ($l$) et latitude ($b$) galactiques, ainsi que la distance héliocentrique ($D$). J'effectue la transformation vers le référentiel galactocentrique cartésien ($X, Y, Z$) selon la géométrie illustrée par les Figures \ref{fig:geometry_plane} et \ref{fig:geometry_Z} :
+	\begin{equation}
+		X = R_0 - D \cos(l) \cos(b) \quad ; \quad Y = D \sin(l) \cos(b) \quad ; \quad Z = D \sin(b)
+	\end{equation}
+	L'angle d'azimut galactocentrique $\beta$ est défini par $\beta = \arctan\left(\frac{Y}{X}\right)$.
+	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=4cm]{Transform_Vlsr_Vpec.png}
-		\caption{Géométrie de la rotation des axes du référentiel LSR vers le référentiel particulier galactocentrique}
-		\label{fig:geometry_lsr_to_peculiar} % Utile pour faire des références plus tard
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=4cm]{Cygnus_geometry_plane.png}
+			\caption{Géométrie de projection dans le plan galactique ($X, Y$).}
+			\label{fig:geometry_plane}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=4cm]{Cygnus_geometry_Z.png}
+			\caption{Géométrie de projection selon l'axe vertical ($Z$).}
+			\label{fig:geometry_Z}
+		\end{minipage}
 	\end{figure}
 	
-	Ces composantes de vitesses sont celles que j'utiliserais dans la suite de ce rapport pour comparer les objets entre eux et établir des trajectoires de collisions. Cependant, la cinématique des objets du Cygne peut aussi être représentée dans d'autres référentiels qui seront utiles pour comparer les résultats à des publications existantes ou projeter les vecteurs en deux dimensions afin de visualiser les vitesses et les positions. Les vitesses longitudinales $v_l$ et latitudinales $v_b$ correspondent à la dérive observée en coordonnées galactiques. Je les retrouve en projetant les composantes de vitesses particulières sur les axes l et b: $v_{l,pec}=-U_{pec}\cdot sin(l)+V_{pec}\cdot cos(l)$; $v_b=-U_{pec}\cdot cos(l)\cdot sin(b)-V_{pec}\cdot sin(l)\cdot sin(b)+W_{pec}\cdot cos(b)$, je peux ainsi obtenir la norme de la vitesse galactique: $v_{lb}=\sqrt{v_{l,pec}^2+v_{b,pec}^2}$
-	 
-	L'ensemble des résultats de ces calculs appliqués aux nuages moléculaires et aux groupes d'étoiles OB du Cygne sont présentés dans le tableau 1 ci-dessous. Les distances des nuages moléculaires proviennent de Rygl et al. \cite{rygl2012} et les distances aux groupes d'étoiles proviennent de Quintana et al. \cite{quintana2021}.  Les données compilées des articles de Rygl et al. \cite{rygl2012} et Quintana et al. \cite{quintana2021} utilisées en entrée sont présentés dans le tableau 1. A en annexe. Les valeurs des calculs intermédiaires sont présentées dans le tableau 2. A en annexe. Pour les transformations linéaires, les incertitudes sont calculées par la formule de propagation des incertitudes du 1er ordre (Taylor \cite{taylor1997}). Pour les autres incertitudes, j'effectue un échantillonnage par méthode de Monte-Carlo avec un tirage de 10 000 points. Le détail des calculs des incertitudes est disponible en Annexe 2.
+	J'ajoute ensuite la vitesse de rotation circulaire moyenne de la Galaxie au niveau du Soleil ($\Theta_0$) pour obtenir la composante de vitesse galactocentrique absolue. Ce terme n'affecte que la composante tangentielle :
+	\begin{equation}
+		U_{lsr,abs} = U_{lsr} \quad ; \quad V_{lsr,abs} = V_{lsr} + \Theta_0 \quad ; \quad W_{lsr,abs} = W_{lsr}
+	\end{equation}
+	
+	Enfin, pour corriger la perspective orbitale induite par l'angle $\beta$, j'applique une rotation matricielle des axes (Figure \ref{fig:geometry_lsr_to_peculiar}). Je soustrais également la vitesse circulaire locale $\Theta_0$ pour isoler la composante de vitesse galactocentrique particulière, notée $V_{pec}$ :
+	\begin{align}
+		U_{pec} &= U_{lsr,abs}\cos(\beta) - V_{lsr,abs}\sin(\beta) \\
+		V_{pec} &= U_{lsr,abs}\sin(\beta) + V_{lsr,abs}\cos(\beta) - \Theta_0 \\
+		W_{pec} &= W_{lsr,abs}
+	\end{align}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=5cm]{Transform_Vlsr_Vpec.png}
+		\caption{Représentation géométrique de la rotation des axes cinématiques vers le référentiel galactocentrique.}
+		\label{fig:geometry_lsr_to_peculiar}
+	\end{figure}
+	
+	Ces composantes ($U_{pec}, V_{pec}, W_{pec}$) sont celles que j'utiliserai dans la suite de ce rapport pour comparer les objets entre eux et établir les trajectoires de collision. 
+	
+	Afin de permettre des comparaisons directes avec d'autres publications ou de réaliser des projections cartographiques bidimensionnelles, je projette également ces vecteurs sur les axes galactiques apparents pour obtenir les vitesses propres longitudinale ($v_l$) et latitudinale ($v_b$) :
+	\begin{align}
+		v_l &= -U_{pec}\sin(l) + V_{pec}\cos(l) \\
+		v_b &= -U_{pec}\cos(l)\sin(b) - V_{pec}\sin(l)\sin(b) + W_{pec}\cos(b)
+	\end{align}
+	J'obtiens ainsi la norme du vecteur vitesse projeté sur le plan du ciel : $v_{lb} = \sqrt{v_l^2 + v_b^2}$.
+	
+	L'ensemble des résultats cinématiques appliqués aux nuages moléculaires et aux groupes d'étoiles OB de Cygnus X est compilé dans le Tableau \ref{tab:donnees_cinematiques}. Les distances d'entrée proviennent des travaux de Rygl et al. \cite{rygl2012} pour les nuages et de Quintana et al. \cite{quintana2021} pour les amas. Les données brutes utilisées pour ces calculs sont répertoriées dans le Tableau 1.A en Annexe \ref{annexe:donnees_entree}, tandis que les résultats des calculs intermédiaires figurent dans le Tableau 2.A en Annexe \ref{annexe:calculs_intermediaires}. 
+	
+	Pour les transformations linéaires, je calcule les incertitudes via la formule de propagation des erreurs au premier ordre (Taylor \cite{taylor1997}). Pour les fonctions non linéaires, j'effectue un échantillonnage par méthode de Monte-Carlo comprenant $10\,000$ tirages. Le détail de ces calculs d'incertitudes est disponible en Annexe \ref{annexe:methode_incertitudes}.
 	
 	\begin{table}[H]
 		\centering
-		\label{tab:donnees_cinematiques}
 		\vspace{0.2cm}
-		
-		% On utilise 'l' pour la première colonne (gauche) et 'c' pour centrer les autres
 		\resizebox*{\textwidth}{!}{
-		\begin{tabular}{l c c c c c c c}
-			\hline
-			\textbf{Object Name} & \textbf{Distance} & $\mathbf{U_{pec}}$ & $\mathbf{V_{pec}}$ & $\mathbf{W_{pec}}$ & $\mathbf{v_l}$ & $\mathbf{v_b}$ & $\mathbf{v_{lb}}$ \\
-			& (pc) & (km/s) & (km/s) & (km/s) & (km/s) & (km/s) & (km/s) \\
-			\hline
-			
-			Group A & $1894.5 \pm 4$ & $14.24 \pm 2.37$ & $-12.25 \pm 2.73$ & $-4.67 \pm 1.53$ & $-17.25 \pm 2.39$ & $-4.40 \pm 1.53$ & $17.80 \pm 2.34$ \\
-			Group B & $1726.3 \pm 7$ & $3.19 \pm 4.12$ & $-15.00 \pm 10.42$ & $1.87 \pm 2.28$ & $-6.09 \pm 4.46$ & $2.68 \pm 2.29$ & $6.66 \pm 4.18$ \\
-			Group C & $1713.1 \pm 10$ & $11.22 \pm 2.38$ & $-15.64 \pm 2.94$ & $-1.94 \pm 0.99$ & $-14.64 \pm 2.40$ & $-1.83 \pm 0.99$ & $14.76 \pm 2.39$ \\
-			Group D & $2000.1 \pm 10$ & $2.57 \pm 2.09$ & $-3.62 \pm 3.72$ & $-4.95 \pm 1.34$ & $-3.39 \pm 2.16$ & $-4.89 \pm 1.34$ & $5.95 \pm 1.65$ \\
-			Group E & $1674.0 \pm 10$ & $-2.46 \pm 2.26$ & $-5.54 \pm 2.10$ & $0.10 \pm 1.98$ & $1.48 \pm 2.26$ & $0.19 \pm 1.98$ & $1.50 \pm 2.25$ \\
-			Group F & $1985.2 \pm 10$ & $7.48 \pm 3.30$ & $-11.51 \pm 4.83$ & $-4.95 \pm 0.96$ & $-10.36 \pm 3.36$ & $-4.72 \pm 0.96$ & $11.38 \pm 3.08$ \\
-			W75N & $1300.0 \pm 70$ & $-1.39 \pm 1.53$ & $-0.12 \pm 0.40$ & $1.88 \pm 0.34$ & $1.36 \pm 1.51$ & $1.88 \pm 0.34$ & $2.33 \pm 0.93$ \\
-			DR21 & $1500.0 \pm 80$ & $-0.71 \pm 1.84$ & $-12.11 \pm 0.49$ & $7.27 \pm 0.15$ & $-1.04 \pm 1.82$ & $7.39 \pm 0.15$ & $7.47 \pm 0.29$ \\
-			DR20 & $1460.0 \pm 90$ & $6.78 \pm 2.50$ & $-12.61 \pm 0.64$ & $5.76 \pm 0.19$ & $-8.70 \pm 2.46$ & $5.84 \pm 0.19$ & $10.48 \pm 2.04$ \\
-			IRAS20290+4052 & $1360.0 \pm 120$ & $1.09 \pm 2.81$ & $-12.01 \pm 0.73$ & $6.61 \pm 0.20$ & $-3.21 \pm 2.77$ & $6.81 \pm 0.20$ & $7.53 \pm 1.19$ \\
-			\hline
-		\end{tabular}
+			\begin{tabular}{l c c c c c c c}
+				\hline
+				\textbf{Nom de l'objet} & \textbf{Distance} & $\mathbf{U_{pec}}$ & $\mathbf{V_{pec}}$ & $\mathbf{W_{pec}}$ & $\mathbf{v_l}$ & $\mathbf{v_b}$ & $\mathbf{v_{lb}}$ \\
+				& ($\mathrm{pc}$) & ($\mathrm{km/s}$) & ($\mathrm{km/s}$) & ($\mathrm{km/s}$) & ($\mathrm{km/s}$) & ($\mathrm{km/s}$) & ($\mathrm{km/s}$) \\
+				\hline
+				Group A & $1894.5 \pm 4$ & $14.24 \pm 2.37$ & $-12.25 \pm 2.73$ & $-4.67 \pm 1.53$ & $-17.25 \pm 2.39$ & $-4.40 \pm 1.53$ & $17.80 \pm 2.34$ \\
+				Group B & $1726.3 \pm 7$ & $3.19 \pm 4.12$ & $-15.00 \pm 10.42$ & $1.87 \pm 2.28$ & $-6.09 \pm 4.46$ & $2.68 \pm 2.29$ & $6.66 \pm 4.18$ \\
+				Group C & $1713.1 \pm 10$ & $11.22 \pm 2.38$ & $-15.64 \pm 2.94$ & $-1.94 \pm 0.99$ & $-14.64 \pm 2.40$ & $-1.83 \pm 0.99$ & $14.76 \pm 2.39$ \\
+				Group D & $2000.1 \pm 10$ & $2.57 \pm 2.09$ & $-3.62 \pm 3.72$ & $-4.95 \pm 1.34$ & $-3.39 \pm 2.16$ & $-4.89 \pm 1.34$ & $5.95 \pm 1.65$ \\
+				Group E & $1674.0 \pm 10$ & $-2.46 \pm 2.26$ & $-5.54 \pm 2.10$ & $0.10 \pm 1.98$ & $1.48 \pm 2.26$ & $0.19 \pm 1.98$ & $1.50 \pm 2.25$ \\
+				Group F & $1985.2 \pm 10$ & $7.48 \pm 3.30$ & $-11.51 \pm 4.83$ & $-4.95 \pm 0.96$ & $-10.36 \pm 3.36$ & $-4.72 \pm 0.96$ & $11.38 \pm 3.08$ \\
+				W75N & $1300.0 \pm 70$ & $-1.39 \pm 1.53$ & $-0.12 \pm 0.40$ & $1.88 \pm 0.34$ & $1.36 \pm 1.51$ & $1.88 \pm 0.34$ & $2.33 \pm 0.93$ \\
+				DR21 & $1500.0 \pm 80$ & $-0.71 \pm 1.84$ & $-12.11 \pm 0.49$ & $7.27 \pm 0.15$ & $-1.04 \pm 1.82$ & $7.39 \pm 0.15$ & $7.47 \pm 0.29$ \\
+				DR20 & $1460.0 \pm 90$ & $6.78 \pm 2.50$ & $-12.61 \pm 0.64$ & $5.76 \pm 0.19$ & $-8.70 \pm 2.46$ & $5.84 \pm 0.19$ & $10.48 \pm 2.04$ \\
+				IRAS20290 & $1360.0 \pm 120$ & $1.09 \pm 2.81$ & $-12.01 \pm 0.73$ & $6.61 \pm 0.20$ & $-3.21 \pm 2.77$ & $6.81 \pm 0.20$ & $7.53 \pm 1.19$ \\
+				\hline
+			\end{tabular}
 		}
-		\caption{Paramètres cinématiques et distances des objets du Cygne.}
+		\caption{Paramètres cinématiques corrigés et distances héliocentriques des structures de Cygnus X.}
+		\label{tab:donnees_cinematiques}
 	\end{table}
 	
 	\subsection{Remarque sur les incertitudes et la crédibilité des résultats}
