@@ -432,6 +432,14 @@ for i in range(len(names)):
     vx_gc_err_list.append(gc_samples.v_x.std().value)
     vy_gc_err_list.append(gc_samples.v_y.std().value)
     vz_gc_err_list.append(gc_samples.v_z.std().value)
+
+    # uncertainties on local coordinates centered on W75N
+    X_local_err = gc_samples.x.std().to_value(u.pc)
+    Y_local_err = gc_samples.y.std().to_value(u.pc)
+    Z_local_err = gc_samples.z.std().to_value(u.pc)
+    X_local_err_list.append(X_local_err)
+    Y_local_err_list.append(Y_local_err)
+    Z_local_err_list.append(Z_local_err)
     
 
 # --- CRÉATION DU DATAFRAME PANDAS ---
