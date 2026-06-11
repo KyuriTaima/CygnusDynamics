@@ -635,4 +635,97 @@ Overfull \hbox (26.86201pt too wide) in paragraph at lines 314--315
 File: linear_traceback_FAD_XY.png Graphic file (type png)
 <use linear_traceback_FAD_XY.png>
 Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 319.
-(pdftex.def)             Requested size: 231.
+(pdftex.def)             Requested size: 231.72047pt x 170.71652pt.
+
+Overfull \hbox (26.86201pt too wide) in paragraph at lines 319--320
+ [][] 
+ []
+
+[10 <./mu_l as a fct of l.png> <./3D_view_1.png> <./3D_view_2.png>] [11 <./line
+ar_traceback_BEC_XY.png> <./linear_traceback_FAD_XY.png>]
+<traceback_gal_plane_4,5.png, id=231, 371.88937pt x 289.58188pt>
+File: traceback_gal_plane_4,5.png Graphic file (type png)
+<use traceback_gal_plane_4,5.png>
+Package pdftex.def Info: traceback_gal_plane_4,5.png  used on input line 334.
+(pdftex.def)             Requested size: 218.51521pt x 170.15808pt.
+<traceback_gal_plane_8,5.png, id=232, 374.90062pt x 307.64937pt>
+File: traceback_gal_plane_8,5.png Graphic file (type png)
+<use traceback_gal_plane_8,5.png>
+Package pdftex.def Info: traceback_gal_plane_8,5.png  used on input line 341.
+(pdftex.def)             Requested size: 218.51521pt x 179.31929pt.
+<traceback_gal_plane_10.png, id=233, 384.43625pt x 301.62688pt>
+File: traceback_gal_plane_10.png Graphic file (type png)
+<use traceback_gal_plane_10.png>
+Package pdftex.def Info: traceback_gal_plane_10.png  used on input line 349.
+(pdftex.def)             Requested size: 218.51521pt x 171.45044pt.
+<traceback_gal_plane_15.png, id=234, 370.88562pt x 301.62688pt>
+File: traceback_gal_plane_15.png Graphic file (type png)
+<use traceback_gal_plane_15.png>
+Package pdftex.def Info: traceback_gal_plane_15.png  used on input line 356.
+(pdftex.def)             Requested size: 218.51521pt x 177.71437pt.
+ [12 <./traceback_gal_plane_4,5.png> <./traceback_gal_plane_8,5.png> <./traceba
+ck_gal_plane_10.png> <./traceback_gal_plane_15.png>] [13]
+<cloud_collision.png, id=249, 721.9773pt x 531.9072pt>
+File: cloud_collision.png Graphic file (type png)
+<use cloud_collision.png>
+Package pdftex.def Info: cloud_collision.png  used on input line 378.
+(pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
+ [14 <./cloud_collision.png>] [15]
+(Rapport de stage.bbl [16])
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
+ []
+
+[18] (Rapport de stage.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-04-28>
+ ***********
+Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
+(rerunfilecheck)             Checksum: 85231CD2AE333EC4C35C533820FCDA14;4931.
+ ) 
+Here is how much of TeX's memory you used:
+ 13944 strings out of 467683
+ 232074 string characters out of 5414238
+ 676621 words of memory out of 5000000
+ 42779 multiletter control sequences out of 15000+600000
+ 643369 words of font info for 70 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,13n,79p,1243b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
+x1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
+600\ecrm0800.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\eccc1095.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\ecti1095.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Lucile\AppData\Local\MiK
+TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Lucile\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Lucile\App
+Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Luc
+ile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Us
+ers\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk>
+ <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1
+200.pk><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmbx8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Lucile/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Lucile/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lucil
+e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Us
+ers/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pf
+b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb>
+Output written on "Rapport de stage.pdf" (19 pages, 2072654 bytes).
+PDF statistics:
+ 832 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
+ 227 words of extra memory for PDF output out of 10000 (max. 10000000)
+
