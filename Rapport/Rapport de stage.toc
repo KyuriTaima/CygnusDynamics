@@ -22,3 +22,4 @@
 \contentsline {subsection}{\numberline {B.2}Vitesses héliocentriques}{21}{subsection.B.2}%
 \contentsline {subsection}{\numberline {B.3}Vitesses LSR}{21}{subsection.B.3}%
 \contentsline {subsection}{\numberline {B.4}Composantes U, V et W dans le référentiel galactocentrique particulier}{21}{subsection.B.4}%
+\contentsline {subsection}{\numberline {B.5}Vitesses selon les coordonnées galactiques}{22}{subsection.B.5}%

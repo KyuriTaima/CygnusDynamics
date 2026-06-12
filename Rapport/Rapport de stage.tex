@@ -614,6 +614,16 @@
 		\Delta W_{pec} &= \Delta W_{lsr,abs}
 	\end{align}
 	
+	\subsection{Vitesses selon les coordonnées galactiques}
+	\begin{align}
+		v_l &= -U_{pec} \sin(l) + V_{pec} \cos(l) \\
+		\Delta v_l &= \sqrt{\sin^2(l) \Delta U_{pec}^2 + \cos^2(l) \Delta V_{pec}^2} \\[1.5em]
+		v_b &= -U_{pec} \cos(l) \sin(b) - V_{pec} \sin(l) \sin(b) + W_{pec} \cos(b) \\
+		\Delta v_b &= \sqrt{\cos^2(l)\sin^2(b) \Delta U_{pec}^2 + \sin^2(l)\sin^2(b) \Delta V_{pec}^2 + \cos^2(b) \Delta W_{pec}^2} \\[1.5em]
+		v_{lb} &= \sqrt{v_l^2 + v_b^2} \\
+		\Delta v_{lb} &= \sqrt{\frac{v_l^2}{v_l^2 + v_b^2} \Delta v_l^2 + \frac{v_b^2}{v_l^2 + v_b^2} \Delta v_b^2}
+	\end{align}
+	
 	
 	
 	\begin{abstract}
