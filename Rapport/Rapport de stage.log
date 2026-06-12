@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 15:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 15:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,40 +581,7 @@ File: Transform_Vlsr_Vpec.png Graphic file (type png)
 Package pdftex.def Info: Transform_Vlsr_Vpec.png  used on input line 211.
 (pdftex.def)             Requested size: 120.25433pt x 113.81102pt.
 [5 <./Cygnus_geometry_plane.png> <./Cygnus_geometry_vertical.png> <./Transform_
-Vlsr_Vpec.png>]
-
-LaTeX Warning: Command \= invalid in math mode on input line 259.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.259 ...e vitesse tangentielle de: $V_{pec} \= \-
-                                                  3.62 \ \pm \ 3.72 \ km/s$....
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \discretionary 
-l.259 ...e vitesse tangentielle de: $V_{pec} \= \-
-                                                  3.62 \ \pm \ 3.72 \ km/s$....
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.259 ...: $V_{pec} \= \-3.62 \ \pm \ 3.72 \ km/s$
-                                                  . Avec une telle incertitu...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[6] [7]
+Vlsr_Vpec.png>] [6] [7]
 <Positions_fond_Cygnus.png, id=254, 379.91937pt x 266.9975pt>
 File: Positions_fond_Cygnus.png Graphic file (type png)
 <use Positions_fond_Cygnus.png>
@@ -729,13 +696,13 @@ Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
 (rerunfilecheck)             Checksum: ADC6F7F9DC9BB8E61057A968A0238F52;6488.
  ) 
 Here is how much of TeX's memory you used:
- 14013 strings out of 467683
- 233299 string characters out of 5414238
+ 14012 strings out of 467683
+ 233291 string characters out of 5414238
  693883 words of memory out of 5000000
- 42806 multiletter control sequences out of 15000+600000
+ 42805 multiletter control sequences out of 15000+600000
  643369 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1254b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1255b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
 x1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecrm0800.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
@@ -762,7 +729,7 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (24 pages, 2393918 bytes).
+Output written on "Rapport de stage.pdf" (24 pages, 2393600 bytes).
 PDF statistics:
  961 PDF objects out of 1000 (max. 8388607)
  109 named destinations out of 1000 (max. 500000)
