@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 14:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 14:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -678,16 +678,16 @@ Package pdftex.def Info: cloud_collision.png  used on input line 421.
 (pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
  [15 <./cloud_collision.png>] [16]
 (Rapport de stage.bbl [17]) [18] [19] [20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 617--618
+Underfull \hbox (badness 10000) in paragraph at lines 620--621
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--624
+Underfull \hbox (badness 10000) in paragraph at lines 626--627
 
  []
 
-[22] (Rapport de stage.aux)
+[22] [23] (Rapport de stage.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
@@ -696,13 +696,13 @@ Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
 (rerunfilecheck)             Checksum: C75DC008E99601A174632FACA6B87E3D;6205.
  ) 
 Here is how much of TeX's memory you used:
- 14003 strings out of 467683
- 233188 string characters out of 5414238
+ 14004 strings out of 467683
+ 233195 string characters out of 5414238
  693883 words of memory out of 5000000
  42804 multiletter control sequences out of 15000+600000
  643369 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1243b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1243b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
 x1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecrm0800.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
@@ -729,9 +729,9 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (23 pages, 2389761 bytes).
+Output written on "Rapport de stage.pdf" (24 pages, 2390854 bytes).
 PDF statistics:
- 943 PDF objects out of 1000 (max. 8388607)
- 101 named destinations out of 1000 (max. 500000)
+ 947 PDF objects out of 1000 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
  280 words of extra memory for PDF output out of 10000 (max. 10000000)
 
