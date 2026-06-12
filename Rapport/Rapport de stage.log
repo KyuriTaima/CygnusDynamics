@@ -554,12 +554,16 @@ been already used, duplicate ignored
                    \relax 
 l.99 	\newpage
                [1] [2]
+
+LaTeX Warning: Reference `galactocentric_cartesian' on page 3 undefined on inpu
+t line 122.
+
 <galactocentric_cartesian.png, id=134, 437.2537pt x 265.6629pt>
 File: galactocentric_cartesian.png Graphic file (type png)
 <use galactocentric_cartesian.png>
 Package pdftex.def Info: galactocentric_cartesian.png  used on input line 128.
 (pdftex.def)             Requested size: 187.32153pt x 113.81102pt.
- [3 <./galactocentric_cartesian.png>] [4]
+[3 <./galactocentric_cartesian.png>] [4]
 <Cygnus_geometry_plane.png, id=165, 221.7375pt x 122.77687pt>
 File: Cygnus_geometry_plane.png Graphic file (type png)
 <use Cygnus_geometry_plane.png>
@@ -692,14 +696,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 571--572
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
 (rerunfilecheck)             Checksum: EBFD68385389C4C6B26245EA554823BB;5323.
  ) 
 Here is how much of TeX's memory you used:
- 13982 strings out of 467683
- 232909 string characters out of 5414238
+ 13983 strings out of 467683
+ 232935 string characters out of 5414238
  693658 words of memory out of 5000000
- 42799 multiletter control sequences out of 15000+600000
+ 42800 multiletter control sequences out of 15000+600000
  643369 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,79p,1243b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -729,9 +737,9 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (22 pages, 2367466 bytes).
+Output written on "Rapport de stage.pdf" (22 pages, 2367838 bytes).
 PDF statistics:
- 891 PDF objects out of 1000 (max. 8388607)
+ 892 PDF objects out of 1000 (max. 8388607)
  85 named destinations out of 1000 (max. 500000)
  248 words of extra memory for PDF output out of 10000 (max. 10000000)
 
