@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 14:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 14:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -524,13 +524,13 @@ Package epstopdf Info: Source file: <Logo_UF_Physique_cmjn.eps>
 n-eps-converted-to.pdf Logo_UF_Physique_cmjn.eps>
 (epstopdf)             \includegraphics on input line 34.
 Package epstopdf Info: Output file is already uptodate.
-<Logo_UF_Physique_cmjn-eps-converted-to.pdf, id=83, 231.86626pt x 63.23625pt>
+<Logo_UF_Physique_cmjn-eps-converted-to.pdf, id=91, 231.86626pt x 63.23625pt>
 File: Logo_UF_Physique_cmjn-eps-converted-to.pdf Graphic file (type pdf)
 <use Logo_UF_Physique_cmjn-eps-converted-to.pdf>
 Package pdftex.def Info: Logo_UF_Physique_cmjn-eps-converted-to.pdf  used on in
 put line 34.
 (pdftex.def)             Requested size: 208.65646pt x 56.9055pt.
-<logo.png, id=84, 302.12875pt x 204.765pt>
+<logo.png, id=92, 302.12875pt x 204.765pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 40.
@@ -554,18 +554,18 @@ been already used, duplicate ignored
                    \relax 
 l.101 	\newpage
                 [1] [2]
-<galactocentric_cartesian.png, id=140, 437.2537pt x 265.6629pt>
+<galactocentric_cartesian.png, id=150, 437.2537pt x 265.6629pt>
 File: galactocentric_cartesian.png Graphic file (type png)
 <use galactocentric_cartesian.png>
 Package pdftex.def Info: galactocentric_cartesian.png  used on input line 130.
 (pdftex.def)             Requested size: 234.15192pt x 142.26378pt.
  [3 <./galactocentric_cartesian.png>] [4]
-<Cygnus_geometry_plane.png, id=176, 224.89993pt x 98.69708pt>
+<Cygnus_geometry_plane.png, id=186, 224.89993pt x 98.69708pt>
 File: Cygnus_geometry_plane.png Graphic file (type png)
 <use Cygnus_geometry_plane.png>
 Package pdftex.def Info: Cygnus_geometry_plane.png  used on input line 184.
 (pdftex.def)             Requested size: 162.0891pt x 71.13188pt.
-<Cygnus_geometry_vertical.png, id=177, 287.12675pt x 90.04451pt>
+<Cygnus_geometry_vertical.png, id=187, 287.12675pt x 90.04451pt>
 File: Cygnus_geometry_vertical.png Graphic file (type png)
 <use Cygnus_geometry_vertical.png>
 Package pdftex.def Info: Cygnus_geometry_vertical.png  used on input line 191.
@@ -575,32 +575,32 @@ Overfull \hbox (21.97356pt too wide) in paragraph at lines 191--192
  [][] 
  []
 
-<Transform_Vlsr_Vpec.png, id=179, 166.72327pt x 157.79414pt>
+<Transform_Vlsr_Vpec.png, id=189, 166.72327pt x 157.79414pt>
 File: Transform_Vlsr_Vpec.png Graphic file (type png)
 <use Transform_Vlsr_Vpec.png>
 Package pdftex.def Info: Transform_Vlsr_Vpec.png  used on input line 211.
 (pdftex.def)             Requested size: 120.25433pt x 113.81102pt.
 [5 <./Cygnus_geometry_plane.png> <./Cygnus_geometry_vertical.png> <./Transform_
 Vlsr_Vpec.png>] [6] [7]
-<Positions_fond_Cygnus.png, id=234, 379.91937pt x 266.9975pt>
+<Positions_fond_Cygnus.png, id=244, 379.91937pt x 266.9975pt>
 File: Positions_fond_Cygnus.png Graphic file (type png)
 <use Positions_fond_Cygnus.png>
 Package pdftex.def Info: Positions_fond_Cygnus.png  used on input line 294.
 (pdftex.def)             Requested size: 379.91843pt x 266.99683pt.
-<Bobylev_vl_vb_avec fond.png, id=235, 375.4025pt x 252.945pt>
+<Bobylev_vl_vb_avec fond.png, id=245, 375.4025pt x 252.945pt>
 File: Bobylev_vl_vb_avec fond.png Graphic file (type png)
 <use Bobylev_vl_vb_avec fond.png>
 Package pdftex.def Info: Bobylev_vl_vb_avec fond.png  used on input line 301.
 (pdftex.def)             Requested size: 375.40158pt x 252.94438pt.
  [8 <./Positions_fond_Cygnus.png>]
-<Galactic plane view Bobylev 2026.png, id=242, 370.88562pt x 359.84438pt>
+<Galactic plane view Bobylev 2026.png, id=252, 370.88562pt x 359.84438pt>
 File: Galactic plane view Bobylev 2026.png Graphic file (type png)
 <use Galactic plane view Bobylev 2026.png>
 Package pdftex.def Info: Galactic plane view Bobylev 2026.png  used on input li
 ne 310.
 (pdftex.def)             Requested size: 370.88472pt x 359.84349pt.
  [9 <./Bobylev_vl_vb_avec fond.png>]
-<mu_l as a fct of l.png, id=249, 645.91313pt x 410.2828pt>
+<mu_l as a fct of l.png, id=259, 645.91313pt x 410.2828pt>
 File: mu_l as a fct of l.png Graphic file (type png)
 <use mu_l as a fct of l.png>
 Package pdftex.def Info: mu_l as a fct of l.png  used on input line 319.
@@ -612,12 +612,12 @@ Underfull \hbox (badness 2088) in paragraph at lines 314--322
  []
 
 [10 <./Galactic plane view Bobylev 2026.png>]
-<3D_view_1.png, id=256, 655.44875pt x 359.84438pt>
+<3D_view_1.png, id=266, 655.44875pt x 359.84438pt>
 File: 3D_view_1.png Graphic file (type png)
 <use 3D_view_1.png>
 Package pdftex.def Info: 3D_view_1.png  used on input line 336.
 (pdftex.def)             Requested size: 155.48067pt x 85.35826pt.
-<3D_view_2.png, id=257, 656.4525pt x 235.37938pt>
+<3D_view_2.png, id=267, 656.4525pt x 235.37938pt>
 File: 3D_view_2.png Graphic file (type png)
 <use 3D_view_2.png>
 Package pdftex.def Info: 3D_view_2.png  used on input line 341.
@@ -627,7 +627,7 @@ Overfull \hbox (33.19714pt too wide) in paragraph at lines 341--342
  [][] 
  []
 
-<linear_traceback_BEC_XY.png, id=258, 721.9773pt x 531.9072pt>
+<linear_traceback_BEC_XY.png, id=268, 721.9773pt x 531.9072pt>
 File: linear_traceback_BEC_XY.png Graphic file (type png)
 <use linear_traceback_BEC_XY.png>
 Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 357.
@@ -637,7 +637,7 @@ Overfull \hbox (26.86201pt too wide) in paragraph at lines 357--358
  [][] 
  []
 
-<linear_traceback_FAD_XY.png, id=259, 721.9773pt x 531.9072pt>
+<linear_traceback_FAD_XY.png, id=269, 721.9773pt x 531.9072pt>
 File: linear_traceback_FAD_XY.png Graphic file (type png)
 <use linear_traceback_FAD_XY.png>
 Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 362.
@@ -649,67 +649,71 @@ Overfull \hbox (26.86201pt too wide) in paragraph at lines 362--363
 
 [11 <./mu_l as a fct of l.png> <./3D_view_1.png> <./3D_view_2.png>] [12 <./line
 ar_traceback_BEC_XY.png> <./linear_traceback_FAD_XY.png>]
-<traceback_gal_plane_4,5.png, id=279, 371.88937pt x 289.58188pt>
+<traceback_gal_plane_4,5.png, id=289, 371.88937pt x 289.58188pt>
 File: traceback_gal_plane_4,5.png Graphic file (type png)
 <use traceback_gal_plane_4,5.png>
 Package pdftex.def Info: traceback_gal_plane_4,5.png  used on input line 377.
 (pdftex.def)             Requested size: 218.51521pt x 170.15808pt.
-<traceback_gal_plane_8,5.png, id=280, 374.90062pt x 307.64937pt>
+<traceback_gal_plane_8,5.png, id=290, 374.90062pt x 307.64937pt>
 File: traceback_gal_plane_8,5.png Graphic file (type png)
 <use traceback_gal_plane_8,5.png>
 Package pdftex.def Info: traceback_gal_plane_8,5.png  used on input line 384.
 (pdftex.def)             Requested size: 218.51521pt x 179.31929pt.
-<traceback_gal_plane_10.png, id=281, 384.43625pt x 301.62688pt>
+<traceback_gal_plane_10.png, id=291, 384.43625pt x 301.62688pt>
 File: traceback_gal_plane_10.png Graphic file (type png)
 <use traceback_gal_plane_10.png>
 Package pdftex.def Info: traceback_gal_plane_10.png  used on input line 392.
 (pdftex.def)             Requested size: 218.51521pt x 171.45044pt.
-<traceback_gal_plane_15.png, id=282, 370.88562pt x 301.62688pt>
+<traceback_gal_plane_15.png, id=292, 370.88562pt x 301.62688pt>
 File: traceback_gal_plane_15.png Graphic file (type png)
 <use traceback_gal_plane_15.png>
 Package pdftex.def Info: traceback_gal_plane_15.png  used on input line 399.
 (pdftex.def)             Requested size: 218.51521pt x 177.71437pt.
  [13 <./traceback_gal_plane_4,5.png> <./traceback_gal_plane_8,5.png> <./traceba
 ck_gal_plane_10.png> <./traceback_gal_plane_15.png>] [14]
-<cloud_collision.png, id=296, 721.9773pt x 531.9072pt>
+<cloud_collision.png, id=306, 721.9773pt x 531.9072pt>
 File: cloud_collision.png Graphic file (type png)
 <use cloud_collision.png>
 Package pdftex.def Info: cloud_collision.png  used on input line 421.
 (pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
  [15 <./cloud_collision.png>] [16]
 (Rapport de stage.bbl [17]) [18] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 596--597
+! Misplaced alignment tab character &.
+l.596 	Donc $\Delta V_{lsr,abs} &
+                                 = \sqrt{(\Delta V_{lsr})^2 + (\Delta \Theta...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--601
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 602--603
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 606--607
 
  []
 
-[21] [22] (Rapport de stage.aux)
+[22] (Rapport de stage.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
  ***********
-
-
-Package rerunfilecheck Warning: File `"Rapport de stage".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"Rapport de stage".out':
-(rerunfilecheck)             Before: 15A5E8D6C798BD486A72908B595C992E;5459
-(rerunfilecheck)             After:  D3DFCF372961A26B774982C95885CE00;5764.
+Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
+(rerunfilecheck)             Checksum: D3DFCF372961A26B774982C95885CE00;5764.
  ) 
 Here is how much of TeX's memory you used:
- 13993 strings out of 467683
- 233060 string characters out of 5414238
+ 13995 strings out of 467683
+ 233092 string characters out of 5414238
  693883 words of memory out of 5000000
- 42801 multiletter control sequences out of 15000+600000
+ 42803 multiletter control sequences out of 15000+600000
  643369 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1243b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1243b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
 x1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecrm0800.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
@@ -736,9 +740,9 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (23 pages, 2384289 bytes).
+Output written on "Rapport de stage.pdf" (23 pages, 2385634 bytes).
 PDF statistics:
- 919 PDF objects out of 1000 (max. 8388607)
+ 927 PDF objects out of 1000 (max. 8388607)
  94 named destinations out of 1000 (max. 500000)
- 256 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 272 words of extra memory for PDF output out of 10000 (max. 10000000)
 
