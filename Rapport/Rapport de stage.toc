@@ -18,3 +18,4 @@
 \contentsline {section}{\numberline {6}Conclusion}{16}{section.6}%
 \contentsline {section}{\numberline {A}Données cinématiques complémentaires}{19}{section.A}%
 \contentsline {section}{\numberline {B}Méthode de calcul des incertitudes}{20}{section.B}%
+\contentsline {subsection}{\numberline {B.1}Vitesse radiale}{21}{subsection.B.1}%
