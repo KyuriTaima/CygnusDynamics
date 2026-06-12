@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 14:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -678,31 +678,6 @@ Package pdftex.def Info: cloud_collision.png  used on input line 421.
 (pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
  [15 <./cloud_collision.png>] [16]
 (Rapport de stage.bbl [17]) [18] [19]
-! Missing delimiter (. inserted).
-<to be read again> 
-                   {
-l.570 ...n} (\left \frac{\partial f}{\partial u_i}
-                                                   \right)^2 (\left \Delta u...
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \Delta 
-l.570 ... f}{\partial u_i} \right)^2 (\left \Delta
-                                                   u_i \right)^2}$$
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 574--575
 
  []
@@ -754,7 +729,7 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (22 pages, 2378095 bytes).
+Output written on "Rapport de stage.pdf" (22 pages, 2378282 bytes).
 PDF statistics:
  899 PDF objects out of 1000 (max. 8388607)
  86 named destinations out of 1000 (max. 500000)
