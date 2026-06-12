@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 15:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -587,18 +587,13 @@ File: spatial_distribution_legended.png Graphic file (type png)
 <use spatial_distribution_legended.png>
 Package pdftex.def Info: spatial_distribution_legended.png  used on input line 
 296.
-(pdftex.def)             Requested size: 556.07614pt x 384.4353pt.
-
-Overfull \hbox (100.83203pt too wide) in paragraph at lines 296--297
- [][] 
- []
-
+(pdftex.def)             Requested size: 246.94035pt x 170.71652pt.
 <Bobylev_vl_vb_avec fond.png, id=255, 375.4025pt x 252.945pt>
 File: Bobylev_vl_vb_avec fond.png Graphic file (type png)
 <use Bobylev_vl_vb_avec fond.png>
 Package pdftex.def Info: Bobylev_vl_vb_avec fond.png  used on input line 303.
 (pdftex.def)             Requested size: 375.40158pt x 252.94438pt.
-[8 <./spatial_distribution_legended.png>]
+ [8 <./spatial_distribution_legended.png>]
 <Galactic plane view Bobylev 2026.png, id=262, 370.88562pt x 359.84438pt>
 File: Galactic plane view Bobylev 2026.png Graphic file (type png)
 <use Galactic plane view Bobylev 2026.png>
@@ -735,7 +730,7 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (24 pages, 2883304 bytes).
+Output written on "Rapport de stage.pdf" (24 pages, 2883345 bytes).
 PDF statistics:
  961 PDF objects out of 1000 (max. 8388607)
  109 named destinations out of 1000 (max. 500000)
