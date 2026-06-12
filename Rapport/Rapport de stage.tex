@@ -305,7 +305,15 @@
 		\label{fig:bobylev_vl_vb}
 	\end{figure}
 	La figure 4 nous permet de voir que les groupes A, B, C, D et F se dirigent tous vers le centre de la galaxie alors que le groupe E lui est presque immobile par rapport à la rotation moyenne de la galaxie. Pour les nuages, le groupe W75N suit lui aussi la vitesse de rotation moyenne alors que les nuages DR20, DR21 et IRAS20290+4052 sont entrainés vers le pôle nord galactique.
-	\linebreak
+	
+	Je trace aussi les mouvements propres selon la longitude galactique $\mu_b$ en fonction de la longitude galactique en figure 7. On retrouve les super-groupes cinématiques cohérents en remarquant que l'on a une linéarité entre les mouvements propres et la longitude galactique au sein d'un super-groupe. Je trace aussi $\mu_l$ en fonction de $\mu_b$ en annexe 4 mais aucun regroupement particulier n'en ressort.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=8cm]{mu_l as a fct of l.png}
+		\caption{Mouvement propre selon la longitude galactique $\mu_l$ en fonction de la longitude galactique $l$, les nuages moléculaires sont en bleus et les amas d'étoiles OB en rouge}
+		\label{fig:proper_motion_galactic_longitude}
+	\end{figure}
+	
 	Afin d'apprécier les distances des objets au soleil, je projette les vitesses $U_pec$ et $V_pec$ des objets sur le plan galactique en figure 6. La vitesse $U_pec$ est positive selon l'axe des ordonnées et la vitesse $V_pec$ est positive selon l'axe des abscisses. Le vecteur résultant est la somme de ces deux vitesses.  
 	\begin{figure}[H]
 		\centering
@@ -314,14 +322,8 @@
 		\label{fig:bobylev_U_V_plane}
 	\end{figure}
 	Cette vue nous permet de distinguer trois groupes d'objets distincts. Les deux super-groupes d'étoiles massives BEC et FAD, et le groupe des nuages moléculaires. Chacun de ces deux super groupes est espacé d'environ 200 parsecs selon la courbe de rotation de la galaxie.
-
-	Je trace aussi les mouvements propres selon la longitude galactique $\mu_b$ en fonction de la longitude galactique en figure 7. On retrouve les super-groupes cinématiques cohérents en remarquant que l'on a une linéarité entre les mouvements propres et la longitude galactique au sein d'un super-groupe. Je trace aussi $\mu_l$ en fonction de $\mu_b$ en annexe 4 mais aucun regroupement particulier n'en ressort. Ces projections en 2D ne permettent pas de visualiser la cinématique globale des la région du Cygne, pour cela, il est nécessaire de faire une modélisation en 3D.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[height=8cm]{mu_l as a fct of l.png}
-		\caption{Mouvement propre selon la longitude galactique $\mu_l$ en fonction de la longitude galactique $l$, les nuages moléculaires sont en bleus et les amas d'étoiles OB en rouge}
-		\label{fig:proper_motion_galactic_longitude}
-	\end{figure}
+	
+	Ces projections en 2D ne permettent pas de visualiser la cinématique globale des la région du Cygne, pour cela, il est nécessaire de faire une modélisation en 3D.
 	
 	\subsection{Projection en trois dimensions}
 	Afin de modéliser les positions et les vitesses des objets en 3D, je prends pour origine du repère le groupe E (Cygnus OB2). Il est donc nécessaire d'effectuer une translation du repère galactocentrique puis une rotation du repère, avec $x_{gal}$,$y_{gal}$,$z_{gal}$ les coordonnées des objets dans le référentiel galactocentrique; $x_E$,$y_E$,$z_E$ les coordonnées du groupe E dans le référentiel galactocentrique:
