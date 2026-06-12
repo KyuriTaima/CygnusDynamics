@@ -597,6 +597,21 @@
 	
 	Donc $$\Delta V_{lsr,abs} = \sqrt{(\Delta V_{lsr})^2 + (\Delta \Theta_0)^2}$$
 	
+	\subsection{Composantes U, V et W dans le référentiel galactocentrique particulier}
+	Le référentiel galactocentrique particulier est le référentiel LSR déplacé au niveau de l'objet observé. L'angle $\beta$ est déterminé à partir des angles $l$ et $b$ qui ont des incertitudes très faibles. Donc les incertitudes sur $\beta$ peuvent être négligées par rapport aux incertitudes sur les vitesses:
+	\begin{align}
+		U_{pec} &= U_{lsr,abs} \cos(\beta) - V_{lsr,abs} \sin(\beta) \\
+		V_{pec} &= U_{lsr,abs} \sin(\beta) - V_{lsr,abs} \cos(\beta) - \Theta_0 \\
+		W_{pec} &= W_{lsr,abs}
+	\end{align}
+	
+	\begin{align}
+		\Delta U_{pec} &= \sqrt{\cos^2(\beta) \Delta U_{lsr,abs}^2 + \sin^2(\beta) \Delta V_{lsr,abs}^2} \\
+		\Delta V_{pec} &= \sqrt{\sin^2(\beta) \Delta U_{lsr,abs}^2 + \cos^2(\beta) \Delta V_{lsr,abs}^2 + \Delta\Theta_0^2} \\
+		\Delta W_{pec} &= \Delta W_{lsr,abs}
+	\end{align}
+	
+	
 	
 	\begin{abstract}
 		Français \\
