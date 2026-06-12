@@ -576,6 +576,20 @@
 	
 	Donc: $\Delta V_{RV} \ = \ \Delta v_{lsr}$
 	
+	\subsection{Vitesses héliocentriques}
+	Les incertitudes sur les composantes héliocentriques $U_{helio}$, $V_{helio}$, $W_{helio}$ sont dérivées des incertitudes sur les mouvements propres et les composantes de vitesse du Soleil. La transformation est non linéaire donc elles sont propagées par méthode de Monte-Carlo.
+	
+	\subsection{Vitesses LSR}
+	\begin{equation}
+		U_{lsr} = U_{obs} + U_{\odot} \quad ; \quad V_{lsr} = V_{obs} + V_{\odot} \quad ; \quad W_{lsr} = W_{obs} + W_{\odot}
+	\end{equation}
+	C'est une addition simple donc je peux obtenir l'incertitude par la formule de propagation des incertitudes:
+	
+	\begin{align}
+		\Delta U_{lsr} &= \sqrt{(\Delta U_{obs})^2 + (\Delta U_{\odot})^2} \\
+		\Delta V_{lsr} &= \sqrt{(\Delta V_{obs})^2 + (\Delta V_{\odot})^2} \\
+		\Delta W_{lsr} &= \sqrt{(\Delta W_{obs})^2 + (\Delta W_{\odot})^2}
+	\end{align}
 	
 	
 	\begin{abstract}
