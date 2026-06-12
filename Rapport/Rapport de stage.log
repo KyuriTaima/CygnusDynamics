@@ -678,17 +678,6 @@ Package pdftex.def Info: cloud_collision.png  used on input line 421.
 (pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
  [15 <./cloud_collision.png>] [16]
 (Rapport de stage.bbl [17]) [18] [19] [20]
-! Misplaced alignment tab character &.
-l.596 	Donc $\Delta V_{lsr,abs} &
-                                 = \sqrt{(\Delta V_{lsr})^2 + (\Delta \Theta...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 600--601
 
  []
