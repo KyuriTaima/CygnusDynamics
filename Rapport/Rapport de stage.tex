@@ -569,6 +569,12 @@
 	Pour les transformations linéaires, je propage les incertitudes en utilisant la formule de propagation des incertitudes de Taylor \cite{taylor1997} du premier ordre:
 	$$\Delta f(u_1,...,u_n) = \sqrt{\sum_{i=1}^{n} \left(\frac{\partial f}{\partial u_i} \right)^2 (\Delta u_i)^2}$$
 	
+	Pour les autres, j'effectue un échantillonnage de Monte-Carlo avec un tirage de 10 000 points.
+	\subsection{Vitesse radiale}
+	La projection de la vitesse du soleil dans le standard LSR dépend des incertitudes sur les longitudes et latitudes galactiques qui sont négligeables par rapport aux incertitudes sur la vitesse LSR des objets observés, donc: $\Delta V_{RV} \ = \ \Delta v_{lsr}$
+	$$V_{RV} = v_{lsr} \ - \ v_{sun,old,proj}$$
+	
+	
 	
 	\begin{abstract}
 		Français \\
