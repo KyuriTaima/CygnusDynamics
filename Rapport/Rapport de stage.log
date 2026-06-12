@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 13:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -560,23 +560,28 @@ File: galactocentric_cartesian.png Graphic file (type png)
 Package pdftex.def Info: galactocentric_cartesian.png  used on input line 130.
 (pdftex.def)             Requested size: 234.15192pt x 142.26378pt.
  [3 <./galactocentric_cartesian.png>] [4]
-<Cygnus_geometry_plane.png, id=171, 221.7375pt x 122.77687pt>
+<Cygnus_geometry_plane.png, id=171, 224.89993pt x 98.69708pt>
 File: Cygnus_geometry_plane.png Graphic file (type png)
 <use Cygnus_geometry_plane.png>
 Package pdftex.def Info: Cygnus_geometry_plane.png  used on input line 184.
-(pdftex.def)             Requested size: 128.46573pt x 71.13188pt.
-<Cygnus_geometry_vertical.png, id=172, 224.89993pt x 98.69708pt>
+(pdftex.def)             Requested size: 162.0891pt x 71.13188pt.
+<Cygnus_geometry_vertical.png, id=172, 287.12675pt x 90.04451pt>
 File: Cygnus_geometry_vertical.png Graphic file (type png)
 <use Cygnus_geometry_vertical.png>
 Package pdftex.def Info: Cygnus_geometry_vertical.png  used on input line 191.
-(pdftex.def)             Requested size: 162.0891pt x 71.13188pt.
+(pdftex.def)             Requested size: 226.83202pt x 71.13188pt.
+
+Overfull \hbox (21.97356pt too wide) in paragraph at lines 191--192
+ [][] 
+ []
+
 <Transform_Vlsr_Vpec.png, id=174, 166.72327pt x 157.79414pt>
 File: Transform_Vlsr_Vpec.png Graphic file (type png)
 <use Transform_Vlsr_Vpec.png>
 Package pdftex.def Info: Transform_Vlsr_Vpec.png  used on input line 211.
 (pdftex.def)             Requested size: 120.25433pt x 113.81102pt.
- [5 <./Cygnus_geometry_plane.png> <./Cygnus_geometry_vertical.png> <./Transform
-_Vlsr_Vpec.png>] [6] [7]
+[5 <./Cygnus_geometry_plane.png> <./Cygnus_geometry_vertical.png> <./Transform_
+Vlsr_Vpec.png>] [6] [7]
 <Positions_fond_Cygnus.png, id=229, 379.91937pt x 266.9975pt>
 File: Positions_fond_Cygnus.png Graphic file (type png)
 <use Positions_fond_Cygnus.png>
@@ -724,7 +729,7 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (22 pages, 2371562 bytes).
+Output written on "Rapport de stage.pdf" (22 pages, 2376154 bytes).
 PDF statistics:
  899 PDF objects out of 1000 (max. 8388607)
  86 named destinations out of 1000 (max. 500000)
