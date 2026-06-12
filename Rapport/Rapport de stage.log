@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 13:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  12 JUN 2026 13:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -559,12 +559,7 @@ File: galactocentric_cartesian.png Graphic file (type png)
 <use galactocentric_cartesian.png>
 Package pdftex.def Info: galactocentric_cartesian.png  used on input line 128.
 (pdftex.def)             Requested size: 234.15192pt x 142.26378pt.
-
-Overfull \hbox (29.29346pt too wide) in paragraph at lines 128--129
- [][] 
- []
-
-[3 <./galactocentric_cartesian.png>] [4]
+ [3 <./galactocentric_cartesian.png>] [4]
 <Cygnus_geometry_plane.png, id=166, 221.7375pt x 122.77687pt>
 File: Cygnus_geometry_plane.png Graphic file (type png)
 <use Cygnus_geometry_plane.png>
@@ -734,7 +729,7 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (22 pages, 2367693 bytes).
+Output written on "Rapport de stage.pdf" (22 pages, 2367684 bytes).
 PDF statistics:
  892 PDF objects out of 1000 (max. 8388607)
  85 named destinations out of 1000 (max. 500000)
