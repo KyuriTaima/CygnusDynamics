@@ -167,9 +167,9 @@
 	
 	Les publications de référence fournissent les coordonnées spatiales en longitude ($l$) et latitude ($b$) galactiques, ainsi que la distance héliocentrique ($D$). J'effectue la transformation vers le référentiel galactocentrique cartésien ($X, Y, Z$) selon la géométrie illustrée par les Figures \ref{fig:geometry_plane} et \ref{fig:geometry_Z} :
 	\begin{equation}
-		X = R_0 - D \cos(l) \cos(b) \quad ; \quad Y = D \sin(l) \cos(b) \quad ; \quad Z = D \sin(b)
+		X = -R_0 + D \cos(l) \cos(b) \quad ; \quad Y = D \sin(l) \cos(b) \quad ; \quad Z = D \sin(b)
 	\end{equation}
-	L'angle d'azimut galactocentrique $\beta$ est défini par $\beta = \arctan\left(\frac{Y}{X}\right)$.
+	L'angle d'azimut galactocentrique $\beta$ est défini par $\beta = \arctan\left(\frac{Y}{-X}\right)$.
 	
 	\begin{figure}[H]
 		\centering
