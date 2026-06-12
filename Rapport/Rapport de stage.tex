@@ -137,6 +137,29 @@
 	\subsection{Paramètres fondamentaux du modèle galactique}
 	Les mouvements observés depuis la Terre dépendent directement de la position et de la vitesse du Soleil au sein de la Galaxie. Le Soleil est situé à une distance $R_0$ du centre galactique, présente un écart vertical $Z_0$ par rapport au plan moyen du disque, et possède des composantes de vitesse particulière ($U_{\odot}$, $V_{\odot}$, $W_{\odot}$) par rapport au LSR. Ces constantes de référence varient sensiblement selon les modèles cinématiques adoptés dans la littérature.
 	
+	Les mouvements propres et les vitesses particulières $U, V, W$ des nuages moléculaires de Cygnus X ont été initialement publiés par Rygl et al. \cite{rygl2012} en adoptant les paramètres de Schönrich et al. \cite{schonrich2010}. Afin d'intégrer les contraintes observationnelles les plus récentes et de réduire les incertitudes de mon modèle, j'utilise les paramètres révisés issus des mesures de la Gravity Collaboration \cite{gravity2022} et de Bobylev et al. \cite{bobylev2026} basées sur Gaia DR3. La comparaison de ces deux jeux de paramètres est synthétisée dans le Tableau \ref{tab:comparatif_parametres}.
+	
+	\begin{table}[H]
+		\centering
+		\vspace{0.2cm}
+		\begin{tabular}{l c c}
+			\hline
+			\textbf{Paramètre galactique} & \textbf{Valeurs historiques} & \textbf{Valeurs révisées} \\
+			& (Schönrich et al. \cite{schonrich2010}) & (Gravity Col. \cite{gravity2022} ; Bobylev \cite{bobylev2026}) \\
+			\hline
+			$R_0$ ($\mathrm{kpc}$) & $8,3$ & $8,277 \pm 0,041$ \\
+			$\Theta_0$ ($\mathrm{km\cdot s^{-1}}$) & $236$ & $234,8 \pm 3,0$ \\
+			$U_{\odot}$ ($\mathrm{km\cdot s^{-1}}$) & $11,10 \pm 0,71$ & $9,83 \pm 0,42$ \\
+			$V_{\odot}$ ($\mathrm{km\cdot s^{-1}}$) & $12,24 \pm 0,47$ & $13,33 \pm 0,50$ \\
+			$W_{\odot}$ ($\mathrm{km\cdot s^{-1}}$) & $7,25 \pm 0,35$ & $7,89 \pm 0,41$ \\
+			\hline
+		\end{tabular}
+		\caption{Comparaison des paramètres du LSR et des composantes du mouvement solaire particulier entre le modèle historique et le modèle révisé utilisé dans cette étude.}
+		\label{tab:comparatif_parametres}
+	\end{table}
+	
+	Ces constantes mises à jour me servent de base pour l'unification des différents jeux de données dans le référentiel galactocentrique commun.
+	
 	Les mouvements propres et les vitesses particulières $U, V, W$ des nuages moléculaires de Cygnus X ont été publiés par Rygl et al. \cite{rygl2012} en adoptant les paramètres de Schönrich et al. \cite{schonrich2010} :
 	\begin{itemize}
 		\item $R_0 = 8.3 \ \mathrm{kpc}$ ;
@@ -146,7 +169,7 @@
 		\item $W_{\odot} = 7.25 \pm 0.35 \ \mathrm{km}\cdot\mathrm{s}^{-1}$.
 	\end{itemize}
 	
-	Afin d'intégrer les contraintes observationnelles les plus récentes et de réduire les incertitudes de notre modèle, nous utiliserons les paramètres révisés issus des mesures de la Gravity Collaboration \cite{gravity2022} et des analyses de V. Bobylev et al. \cite{bobylev2026} basées sur les données cinématiques du catalogue Gaia DR3 :
+	Afin d'intégrer les contraintes observationnelles les plus récentes et de réduire les incertitudes de notre modèle, j'utilise les paramètres révisés issus des mesures de la Gravity Collaboration \cite{gravity2022} et des analyses de V. Bobylev et al. \cite{bobylev2026} basées sur les données cinématiques du catalogue Gaia DR3 :
 	\begin{itemize}
 		\item $R_0 = 8.277 \pm 0.041 \ \mathrm{kpc}$ ;
 		\item $\Theta_0 = 234.8 \pm 3.0 \ \mathrm{km}\cdot\mathrm{s}^{-1}$ ;
