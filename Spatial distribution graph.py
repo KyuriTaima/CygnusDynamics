@@ -72,6 +72,3 @@ plt.xlim(83, 71)
 plt.ylim(-1, 5)
 
 plt.show()
-
-
-
