@@ -117,7 +117,7 @@ plt.axvline(0, color='black', linewidth=0.8, linestyle='--')
 
 plt.xlabel('Distance along Galactic Rotation (pc)')
 plt.ylabel('Distance towards Galactic Center (pc)')
-plt.title('Local Kinematics of Cygnus X (Centered on Cygnus OB2 / Group E)')
+plt.title('Local Kinematics of Cygnus X (Centered on W75N)')
 
 plt.grid(True, linestyle=':', alpha=0.7)
 plt.legend(loc='upper right')
