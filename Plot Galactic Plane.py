@@ -98,7 +98,8 @@ for i in range(len(names)):
         fontweight='bold',
         color=couleur_texte
     )
-    plt.scatter(X_local[i], Y_local[i], marker='o', s=20, edgecolor='black', zorder=2)
+    if names[i] != "W75N":
+        plt.scatter(X_local[i], Y_local[i], marker='o', s=20, edgecolor='black', zorder=2)
 
 
 
