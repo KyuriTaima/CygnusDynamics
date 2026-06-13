@@ -78,6 +78,8 @@ for i in range(len(names)):
     # Adjust the text position for IRAS to avoid overlap
     if names[i] == "IRAS20290+4052":
         xytext = (-5, -13)
+    elif names[i] == "Group A":
+        xytext = (5, -13)
     else:
         xytext = (5, 5)
 
