@@ -60,7 +60,7 @@ plt.scatter(0, 0, marker='o', s=50, color='black', edgecolor='black', zorder=2, 
 X_gal_sun = R0
 Y_gal_sun = 0
 
-# Translation to the local frame centered on Group E
+# Translation to the local frame centered on W75N
 delta_X_sun = X_gal_sun - X_W75N
 delta_Y_sun = Y_gal_sun - Y_W75N
 
