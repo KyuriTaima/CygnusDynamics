@@ -312,7 +312,13 @@
 	
 	\hfill
 	
-	Afin d'apprécier les distances des objets au soleil, je projette les vitesses $U_{pec}$ et $V_{pec}$ des objets sur le plan galactique en figure \ref{fig:bobylev_U_V_plane}. La vitesse $U_{pec}$ est positive selon l'axe des ordonnées et la vitesse $V_pec$ est positive selon l'axe des abscisses. Le vecteur résultant est la somme de ces deux vitesses. Je prends pour origine le nuage W75N car c'est ce nuage qui se déplace selon la courbe de rotation standard de la galaxie et qui se situe sur le plan galactique, de plus c'est au niveau des nuages actuels que se déroule la formation d'étoiles. 
+	Afin d'apprécier les distances des objets au soleil, je projette les vitesses $U_{pec}$ et $V_{pec}$ des objets sur le plan galactique en figure \ref{fig:bobylev_U_V_plane}. La vitesse $U_{pec}$ est positive selon l'axe des ordonnées et la vitesse $V_pec$ est positive selon l'axe des abscisses. Le vecteur résultant est la somme de ces deux vitesses. Je prends pour origine le nuage W75N car c'est ce nuage qui se déplace selon la courbe de rotation standard de la galaxie et qui se situe sur le plan galactique, de plus c'est au niveau des nuages actuels que se déroule la formation d'étoiles. Il est donc nécessaire d'effectuer une translation du repère galactocentrique puis une rotation du repère, avec $x_{gal}$,$y_{gal}$,$z_{gal}$ les coordonnées des objets dans le référentiel galactocentrique; $x_{W75N}$,$y_{W75N}$,$z_{W75N}$ les coordonnées de W75N dans le référentiel galactocentrique:
+	$dx = x_{gal}-x_{W75N}$;$dy = y_{gal}-y_{W75N}$;$dz = z_{gal}-z_{W75N}$;
+	$\beta = arctan(\frac{y_W75N}{x_W75N})$
+	
+	$y_{3D}=-(dx\cdot cos(\beta))+dy\cdot sin(\beta)$;
+	$x_{3D}=-dx\cdot sin(\beta)+dy\cdot cos(\beta)$;
+	$z_{3D}=dz$
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=7cm]{mu_l as a fct of l.png}
@@ -331,13 +337,7 @@
 	Ces projections en 2D ne permettent cependant pas de visualiser la cinématique globale des la région du Cygne, pour cela, il est nécessaire de faire une modélisation en 3D et d'étudier la cinématique sous différents angles.
 	
 	\subsection{Projection en trois dimensions}
-	Afin de modéliser les positions et les vitesses des objets en 3D, je prends pour origine du repère le nuage W75N. Il est donc nécessaire d'effectuer une translation du repère galactocentrique puis une rotation du repère, avec $x_{gal}$,$y_{gal}$,$z_{gal}$ les coordonnées des objets dans le référentiel galactocentrique; $x_E$,$y_E$,$z_E$ les coordonnées du groupe E dans le référentiel galactocentrique:
-	$dx = x_{gal}-x_{E}$;$dy = y_{gal}-y_{E}$;$dz = z_{gal}-z_{E}$;
-	$\beta = arctan(\frac{y_E}{x_E})$
-	
-	$y_{3D}=-(dx\cdot cos(\beta))+dy\cdot sin(\beta)$;
-	$x_{3D}=-dx\cdot sin(\beta)+dy\cdot cos(\beta)$;
-	$z_{3D}=dz$
+	Afin de modéliser les positions et les vitesses des objets en 3D, je prends pour origine du repère le nuage W75N. 
 	\begin{figure}[H]
 		\centering
 		\begin{minipage}{0.45\textwidth}
