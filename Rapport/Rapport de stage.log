@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  13 JUN 2026 19:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  13 JUN 2026 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,7 +598,7 @@ Package pdftex.def Info: Bobylev_vl_vb_avec fond.png  used on input line 303.
 File: mu_l as a fct of l.png Graphic file (type png)
 <use mu_l as a fct of l.png>
 Package pdftex.def Info: mu_l as a fct of l.png  used on input line 320.
-(pdftex.def)             Requested size: 313.55331pt x 199.16928pt.
+(pdftex.def)             Requested size: 447.92767pt x 284.52756pt.
 <Galactic plane view Bobylev 2026 v2.png, id=262, 820.2645pt x 599.1183pt>
 File: Galactic plane view Bobylev 2026 v2.png Graphic file (type png)
 <use Galactic plane view Bobylev 2026 v2.png>
@@ -731,7 +731,7 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (26 pages, 2882355 bytes).
+Output written on "Rapport de stage.pdf" (26 pages, 2882356 bytes).
 PDF statistics:
  976 PDF objects out of 1000 (max. 8388607)
  113 named destinations out of 1000 (max. 500000)
