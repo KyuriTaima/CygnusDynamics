@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Import csv data
-objects_data = pd.read_csv('Cygnus_Objects_Datas_Uncertainties_v3.csv')
+objects_data = pd.read_csv('Cygnus_Objects_Datas_Uncertainties.csv')
 
 # Extract relevant columns
 names = objects_data['Object_Name'].values
