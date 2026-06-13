@@ -8,14 +8,14 @@
 \contentsline {section}{\numberline {3}Visualisation des vitesses et des positions}{8}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Projection en deux dimensions}{8}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Projection en trois dimensions}{11}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Traceback des objets du Cygne}{11}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Traceback linéaire des amas d'étoiles OB}{11}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Traceback avec un potentiel gravitationnel local}{14}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Scénario de formation des groupes d'étoiles massives au sein de la région du Cygne}{14}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Processus de collision de nuages moléculaires}{14}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Proposition de scénario}{15}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Influence du bras local dans la dynamique des nuages moléculaires}{16}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Conclusion}{16}{section.6}%
-\contentsline {section}{\numberline {A}Données cinématiques complémentaires}{19}{section.A}%
-\contentsline {section}{\numberline {B}Méthode de calcul des incertitudes}{20}{section.B}%
-\contentsline {section}{\numberline {C}Graphiques complémentaires}{23}{section.C}%
+\contentsline {section}{\numberline {4}Traceback des objets du Cygne}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Traceback linéaire des amas d'étoiles OB}{12}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Traceback avec un potentiel gravitationnel local}{15}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Scénario de formation des groupes d'étoiles massives au sein de la région du Cygne}{15}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Processus de collision de nuages moléculaires}{15}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Proposition de scénario}{16}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Influence du bras local dans la dynamique des nuages moléculaires}{17}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Conclusion}{17}{section.6}%
+\contentsline {section}{\numberline {A}Données cinématiques complémentaires}{20}{section.A}%
+\contentsline {section}{\numberline {B}Méthode de calcul des incertitudes}{21}{section.B}%
+\contentsline {section}{\numberline {C}Graphiques complémentaires}{24}{section.C}%
