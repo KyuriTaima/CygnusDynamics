@@ -65,8 +65,8 @@ delta_X_sun = X_gal_sun - X_W75N
 delta_Y_sun = Y_gal_sun - Y_W75N
 
 # Frame rotation to get the sun's position in the local frame
-Y_local_sun = -(delta_X_sun * np.cos(beta_E) + delta_Y_sun * np.sin(beta_E))
-X_local_sun = -delta_X_sun * np.sin(beta_E) + delta_Y_sun * np.cos(beta_E)
+Y_local_sun = -(delta_X_sun * np.cos(beta_W75N) + delta_Y_sun * np.sin(beta_W75N))
+X_local_sun = -delta_X_sun * np.sin(beta_W75N) + delta_Y_sun * np.cos(beta_W75N)
 
 # Trace the dashed line from the origin to the sun
 # The sun is at ~1600 pc, so the line will extend well beyond the frame
