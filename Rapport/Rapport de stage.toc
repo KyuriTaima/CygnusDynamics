@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {2.4}Remarque sur les incertitudes et la crédibilité des résultats}{6}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Visualisation des vitesses et des positions}{8}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Projection en deux dimensions}{8}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Projection en trois dimensions}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Projection en trois dimensions}{12}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Traceback des objets du Cygne}{12}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Traceback linéaire des amas d'étoiles OB}{12}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Traceback avec un potentiel gravitationnel local}{15}{subsection.4.2}%
