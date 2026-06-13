@@ -75,11 +75,17 @@ plt.plot([0, X_local_sun], [0, Y_local_sun], color='orange', linestyle='--', lin
 # Add object names
 for i in range(len(names)):
     couleur_texte = 'darkred' if 'Group' in str(names[i]) else 'teal'
+    # Adjust the text position for IRAS to avoid overlap
+    if names[i] == "IRAS20290+4052":
+        xytext = (-5, -13)
+    else:
+        xytext = (5, 5)
+
     plt.annotate(
         names[i], 
         (X_local[i], Y_local[i]),      
         textcoords="offset points",    
-        xytext=(6, 6),                 
+        xytext=xytext,                 
         ha='left',                     
         fontsize=10,
         fontweight='bold',
