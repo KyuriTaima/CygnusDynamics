@@ -27,7 +27,7 @@ X_W75N = X_gal[index_W75N]
 Y_W75N = Y_gal[index_W75N]
 
 # Global angle of Group E in the galactic plane relative to the galactic center
-beta_E = np.arctan2(Y_W75N, X_W75N)
+beta_W75N = np.arctan2(Y_W75N, X_W75N)
 
 # Frame transformation from Galactic to Local (centered on Group E) for the kinematic vectors
 # Translation (Origin = Group E)
@@ -36,10 +36,10 @@ delta_Y = Y_gal - Y_W75N
 
 # Rotation of the axis
 # Y_local towards the galactic center (aligned with U_pec)
-Y_local = -(delta_X * np.cos(beta_E) + delta_Y * np.sin(beta_E))
+Y_local = -(delta_X * np.cos(beta_W75N) + delta_Y * np.sin(beta_W75N))
 
 # X_local axis : Points in the direction of the galactic rotation (aligned with V_pec)
-X_local = -delta_X * np.sin(beta_E) + delta_Y * np.cos(beta_E)
+X_local = -delta_X * np.sin(beta_W75N) + delta_Y * np.cos(beta_W75N)
 
 
 # Graph creation
