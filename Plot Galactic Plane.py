@@ -52,7 +52,7 @@ plt.quiver(X_local, Y_local, V_pec_kms, U_pec_kms,
            angles='xy', scale_units='xy', scale=0.2, 
            color=arrow_colors, width=0.003, headwidth=3.5, headlength=4, zorder=3)
 
-# Set the origin (Cygnus OB 2 / Group E) with a distinct marker
+# Set the origin (W75N) with a distinct marker
 plt.scatter(0, 0, marker='o', s=50, color='black', edgecolor='black', zorder=2, label="W75N (Origin)")
 
 # Add Sun direction
