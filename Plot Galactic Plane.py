@@ -130,6 +130,15 @@ plt.title('Local Kinematics of Cygnus X (Centered on W75N)')
 plt.grid(True, linestyle=':', alpha=0.7)
 plt.legend(loc='upper right')
 
+# Add arrow for 10 km/s scale
+plt.annotate(
+    '', 
+    xy=(0, -400),             
+    xytext=(100, -400),       
+    arrowprops=dict(facecolor='black', width=2, headwidth=5, alpha=0.6, shrink=0.05),
+    zorder=4
+)
+
 # Set equal ratio for x and y axes
 plt.gca().set_aspect('equal', adjustable='box')
 plt.xlim(-100, 700)
