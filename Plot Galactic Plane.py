@@ -29,8 +29,8 @@ Y_W75N = Y_gal[index_W75N]
 # Global angle of Group E in the galactic plane relative to the galactic center
 beta_W75N = np.arctan2(Y_W75N, X_W75N)
 
-# Frame transformation from Galactic to Local (centered on Group E) for the kinematic vectors
-# Translation (Origin = Group E)
+# Frame transformation from Galactic to Local (centered on W75N) for the kinematic vectors
+# Translation (Origin = W75N)
 delta_X = X_gal - X_W75N
 delta_Y = Y_gal - Y_W75N
 
