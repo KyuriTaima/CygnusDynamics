@@ -53,7 +53,7 @@ plt.quiver(X_local, Y_local, V_pec_kms, U_pec_kms,
            color=arrow_colors, width=0.003, headwidth=3.5, headlength=4, zorder=3)
 
 # Set the origin (Cygnus OB 2 / Group E) with a distinct marker
-plt.scatter(0, 0, marker='o', s=50, color='black', edgecolor='black', zorder=2, label="Cygnus OB 2 (Origin)")
+plt.scatter(0, 0, marker='o', s=50, color='black', edgecolor='black', zorder=2, label="W75N (Origin)")
 
 # Add Sun direction
 # The sun is located at (R0,0) in the galactic frame
@@ -61,8 +61,8 @@ X_gal_sun = R0
 Y_gal_sun = 0
 
 # Translation to the local frame centered on Group E
-delta_X_sun = X_gal_sun - X_E
-delta_Y_sun = Y_gal_sun - Y_E
+delta_X_sun = X_gal_sun - X_W75N
+delta_Y_sun = Y_gal_sun - Y_W75N
 
 # Frame rotation to get the sun's position in the local frame
 Y_local_sun = -(delta_X_sun * np.cos(beta_E) + delta_Y_sun * np.sin(beta_E))
