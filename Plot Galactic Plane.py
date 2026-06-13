@@ -23,16 +23,16 @@ Y_gal = distances * np.sin(l_rad) * np.cos(b_rad)
 
 # We set the origin of the local frame on W75N
 index_W75N = list(names).index("W75N")  # Index of W75N in the names list
-X_E = X_gal[index_W75N]
-Y_E = Y_gal[index_W75N]
+X_W75N = X_gal[index_W75N]
+Y_W75N = Y_gal[index_W75N]
 
 # Global angle of Group E in the galactic plane relative to the galactic center
-beta_E = np.arctan2(Y_E, X_E)
+beta_E = np.arctan2(Y_W75N, X_W75N)
 
 # Frame transformation from Galactic to Local (centered on Group E) for the kinematic vectors
 # Translation (Origin = Group E)
-delta_X = X_gal - X_E
-delta_Y = Y_gal - Y_E
+delta_X = X_gal - X_W75N
+delta_Y = Y_gal - Y_W75N
 
 # Rotation of the axis
 # Y_local towards the galactic center (aligned with U_pec)
