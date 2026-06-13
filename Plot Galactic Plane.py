@@ -21,10 +21,10 @@ b_rad = np.radians(b_deg)
 X_gal = R0 - distances * np.cos(l_rad) * np.cos(b_rad)
 Y_gal = distances * np.sin(l_rad) * np.cos(b_rad)
 
-# We set the origin of the local frame on Cygnus OB 2 (Group E)
-index_E = list(names).index("Group E") 
-X_E = X_gal[index_E]
-Y_E = Y_gal[index_E]
+# We set the origin of the local frame on W75N
+index_W75N = list(names).index("W75N")  # Index of W75N in the names list
+X_E = X_gal[index_W75N]
+Y_E = Y_gal[index_W75N]
 
 # Global angle of Group E in the galactic plane relative to the galactic center
 beta_E = np.arctan2(Y_E, X_E)
