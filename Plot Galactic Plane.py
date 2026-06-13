@@ -58,7 +58,7 @@ plt.quiverkey(Q, X=0.70, Y=0.97, U=10,
               color='black')
 
 # Set the origin (W75N) with a distinct marker
-plt.scatter(0, 0, marker='o', s=50, color='black', edgecolor='black', zorder=2, label="W75N (Origin)")
+plt.scatter(0, 0, marker='o', s=20, color='black', edgecolor='black', zorder=2, label="W75N (Origin)")
 
 # Add Sun direction
 # The sun is located at (R0,0) in the galactic frame
@@ -98,7 +98,7 @@ for i in range(len(names)):
         fontweight='bold',
         color=couleur_texte
     )
-    plt.scatter(X_local[i], Y_local[i], marker='o', s=10, color='black', edgecolor='black', zorder=2)
+    plt.scatter(X_local[i], Y_local[i], marker='o', s=20, color='black', edgecolor='black', zorder=2)
 
 
 
