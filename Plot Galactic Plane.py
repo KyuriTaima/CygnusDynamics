@@ -77,9 +77,9 @@ for i in range(len(names)):
     couleur_texte = 'darkred' if 'Group' in str(names[i]) else 'teal'
     # Adjust the text position for IRAS to avoid overlap
     if names[i] == "IRAS20290+4052":
-        xytext = (-10, 6)
+        xytext = (-50, 6)
     elif names[i] == "Group A":
-        xytext = (-7, 6)
+        xytext = (-10, 6)
     else:
         xytext = (5, 5)
 
