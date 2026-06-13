@@ -103,8 +103,8 @@ plt.annotate(
 # Arrow in the direction of the galactic rotation
 plt.annotate(
     'Galactic Rotation', 
-    xy=(380, 0),           
-    xytext=(300, 0),       
+    xy=(600, 0),           
+    xytext=(500, 0),       
     arrowprops=dict(facecolor='black', width=2, headwidth=5, alpha=0.6, shrink=0.05),
     fontsize=10, fontweight='bold', color='black',
     ha='right', va='center', zorder=3,
