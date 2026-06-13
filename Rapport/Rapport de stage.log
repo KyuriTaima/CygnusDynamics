@@ -605,14 +605,19 @@ File: Galactic plane view Bobylev 2026 v2.png Graphic file (type png)
 <use Galactic plane view Bobylev 2026 v2.png>
 Package pdftex.def Info: Galactic plane view Bobylev 2026 v2.png  used on input
  line 322.
-(pdftex.def)             Requested size: 451.93341pt x 227.62204pt.
- [10 <./mu_l as a fct of l.png> <./Galactic plane view Bobylev 2026 v2.png>]
-<3D_view_1.png, id=266, 655.44875pt x 359.84438pt>
+(pdftex.def)             Requested size: 564.93263pt x 284.52756pt.
+
+Overfull \hbox (109.68852pt too wide) in paragraph at lines 322--323
+ [][] 
+ []
+
+[10 <./mu_l as a fct of l.png>]
+<3D_view_1.png, id=265, 655.44875pt x 359.84438pt>
 File: 3D_view_1.png Graphic file (type png)
 <use 3D_view_1.png>
 Package pdftex.def Info: 3D_view_1.png  used on input line 342.
 (pdftex.def)             Requested size: 155.48067pt x 85.35826pt.
-<3D_view_2.png, id=267, 656.4525pt x 235.37938pt>
+<3D_view_2.png, id=266, 656.4525pt x 235.37938pt>
 File: 3D_view_2.png Graphic file (type png)
 <use 3D_view_2.png>
 Package pdftex.def Info: 3D_view_2.png  used on input line 347.
@@ -622,7 +627,8 @@ Overfull \hbox (33.19714pt too wide) in paragraph at lines 347--348
  [][] 
  []
 
-<linear_traceback_BEC_XY.png, id=268, 721.9773pt x 531.9072pt>
+[11 <./Galactic plane view Bobylev 2026 v2.png>]
+<linear_traceback_BEC_XY.png, id=273, 721.9773pt x 531.9072pt>
 File: linear_traceback_BEC_XY.png Graphic file (type png)
 <use linear_traceback_BEC_XY.png>
 Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 363.
@@ -632,7 +638,7 @@ Overfull \hbox (26.86201pt too wide) in paragraph at lines 363--364
  [][] 
  []
 
-<linear_traceback_FAD_XY.png, id=269, 721.9773pt x 531.9072pt>
+<linear_traceback_FAD_XY.png, id=274, 721.9773pt x 531.9072pt>
 File: linear_traceback_FAD_XY.png Graphic file (type png)
 <use linear_traceback_FAD_XY.png>
 Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 368.
@@ -642,43 +648,43 @@ Overfull \hbox (26.86201pt too wide) in paragraph at lines 368--369
  [][] 
  []
 
-[11 <./3D_view_1.png> <./3D_view_2.png>] [12 <./linear_traceback_BEC_XY.png> <.
+[12 <./3D_view_1.png> <./3D_view_2.png>] [13 <./linear_traceback_BEC_XY.png> <.
 /linear_traceback_FAD_XY.png>]
-<traceback_gal_plane_4,5.png, id=287, 371.88937pt x 289.58188pt>
+<traceback_gal_plane_4,5.png, id=291, 371.88937pt x 289.58188pt>
 File: traceback_gal_plane_4,5.png Graphic file (type png)
 <use traceback_gal_plane_4,5.png>
 Package pdftex.def Info: traceback_gal_plane_4,5.png  used on input line 383.
 (pdftex.def)             Requested size: 218.51521pt x 170.15808pt.
-<traceback_gal_plane_8,5.png, id=288, 374.90062pt x 307.64937pt>
+<traceback_gal_plane_8,5.png, id=292, 374.90062pt x 307.64937pt>
 File: traceback_gal_plane_8,5.png Graphic file (type png)
 <use traceback_gal_plane_8,5.png>
 Package pdftex.def Info: traceback_gal_plane_8,5.png  used on input line 390.
 (pdftex.def)             Requested size: 218.51521pt x 179.31929pt.
-<traceback_gal_plane_10.png, id=289, 384.43625pt x 301.62688pt>
+<traceback_gal_plane_10.png, id=293, 384.43625pt x 301.62688pt>
 File: traceback_gal_plane_10.png Graphic file (type png)
 <use traceback_gal_plane_10.png>
 Package pdftex.def Info: traceback_gal_plane_10.png  used on input line 398.
 (pdftex.def)             Requested size: 218.51521pt x 171.45044pt.
-<traceback_gal_plane_15.png, id=290, 370.88562pt x 301.62688pt>
+<traceback_gal_plane_15.png, id=294, 370.88562pt x 301.62688pt>
 File: traceback_gal_plane_15.png Graphic file (type png)
 <use traceback_gal_plane_15.png>
 Package pdftex.def Info: traceback_gal_plane_15.png  used on input line 405.
 (pdftex.def)             Requested size: 218.51521pt x 177.71437pt.
- [13 <./traceback_gal_plane_4,5.png> <./traceback_gal_plane_8,5.png> <./traceba
+ [14 <./traceback_gal_plane_4,5.png> <./traceback_gal_plane_8,5.png> <./traceba
 ck_gal_plane_10.png> <./traceback_gal_plane_15.png>]
-<cloud_collision.png, id=300, 721.9773pt x 531.9072pt>
+<cloud_collision.png, id=304, 721.9773pt x 531.9072pt>
 File: cloud_collision.png Graphic file (type png)
 <use cloud_collision.png>
 Package pdftex.def Info: cloud_collision.png  used on input line 427.
 (pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
- [14] [15 <./cloud_collision.png>] [16] (Rapport de stage.bbl [17]) [18]
-[19] [20] [21]
-<mu_b as a fct of mu_l.png, id=357, 646.66594pt x 420.06938pt>
+ [15] [16 <./cloud_collision.png>] [17] (Rapport de stage.bbl [18]) [19]
+[20] [21] [22]
+<mu_b as a fct of mu_l.png, id=361, 646.66594pt x 420.06938pt>
 File: mu_b as a fct of mu_l.png Graphic file (type png)
 <use mu_b as a fct of mu_l.png>
 Package pdftex.def Info: mu_b as a fct of mu_l.png  used on input line 638.
 (pdftex.def)             Requested size: 350.40808pt x 227.62204pt.
- [22] [23 <./mu_b as a fct of mu_l.png>]
+ [23] [24 <./mu_b as a fct of mu_l.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 646--647
 
  []
@@ -688,7 +694,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 652--653
 
  []
 
-[24] (Rapport de stage.aux)
+[25] (Rapport de stage.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
@@ -697,8 +703,8 @@ Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
 (rerunfilecheck)             Checksum: 8B25FD7C239A9CDEE96CAFFE217773FF;5503.
  ) 
 Here is how much of TeX's memory you used:
- 14020 strings out of 467683
- 233591 string characters out of 5414238
+ 14021 strings out of 467683
+ 233598 string characters out of 5414238
  694152 words of memory out of 5000000
  42810 multiletter control sequences out of 15000+600000
  643369 words of font info for 70 fonts, out of 8000000 for 9000
@@ -730,9 +736,9 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (25 pages, 2886244 bytes).
+Output written on "Rapport de stage.pdf" (26 pages, 2887023 bytes).
 PDF statistics:
- 963 PDF objects out of 1000 (max. 8388607)
- 112 named destinations out of 1000 (max. 500000)
+ 967 PDF objects out of 1000 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
  261 words of extra memory for PDF output out of 10000 (max. 10000000)
 
