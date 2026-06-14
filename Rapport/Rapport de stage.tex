@@ -360,7 +360,11 @@
 	
 	Les traceback linéaires des super-groupes BEC et FAD sur le plan galactique sont tracés en annexe \ref{appendix:complementary_graphs} en figure \ref{fig:linear_traceback_BEC_XY} et \ref{fig:linear_traceback_FAD_XY} Le calcul effectué pour tracer la position à chaque instant $t$ est détaillé en annexe \ref{appendix:linear_traceback}.
 	
-	On constate que les deux super-amas semblent avoir été les plus compacts il y a environ 10 millions d'années. Mais cette représentation comporte un biais important, car il s'agit d'une projection sur le plan XY et que, par conséquent, la composante Z n'est pas prise en compte. Or, nous avons montré que le groupe B se trouve en réalité en hauteur sur le plan XZ ; il faut donc également tenir compte de cette composante Z. Alors que le super-groupe FAD est toujours relativement compact, même il y a environ 20 millions d'années, les amas du super-groupe BEC semblent s'être éloignés les uns des autres depuis leur formation.
+	On constate que les deux super-amas semblent avoir été les plus compacts il y a environ 10 millions d'années. Mais cette représentation comporte un biais important, car il s'agit d'une projection sur le plan XY et que, par conséquent, la composante Z n'est pas prise en compte. Or, nous avons montré que le groupe B se trouve en réalité en hauteur sur le plan XZ ; il faut donc également tenir compte de cette composante Z. 
+	
+	Alors que le super-groupe FAD est toujours relativement compact, même il y a environ 20 millions d'années, les amas du super-groupe BEC semblent s'être éloignés les uns des autres depuis leur formation.
+	
+	
 	Afin d'approfondir cette analyse, je peux déterminer le moment où les amas étaient les plus proches les uns des autres en appliquant la méthode des moindres carrés à des intervalles de 100 000 ans, entre 0 et 20 millions d'années. Je calcule la moyenne des distances entre les amas pour chaque intervalle de temps et détermine la valeur la plus faible. La valeur ainsi obtenue est le TCA (Time of Closest Approach), son calcul est détaillé en annexe 5.
 	Pour le super-amas BEC, je trouve un TCA de $-4.5 \ Myr$ avec une distance relative minimale de $95.6 \ pc$. Pour le groupe FAD, je trouve un TCA de $-9.8 \ Myr$ avec une distance relative minimale de $62.2 \ pc$. Ces valeurs concordent parfaitement avec celles de Quintana et al. \cite{quintana2022}, qui datent les associations B, C et E de 3 à 5 millions d'années et les associations F, A et D d'environ 10 millions d'années.
 	Le groupe B se trouvant bien au-dessus du plan galactique, la force de rappel qui le ramène vers le plan galactique n'est pas négligeable et je ne peux donc pas utiliser une approximation de vitesse linéaire, même pour quelques millions d'années en arrière. De plus, rien n'indique que le TCA devrait être le même entre E et C et entre E et B. Je peux donc déterminer le TCA linéaire entre C et E, car ils se trouvent tous deux dans le plan galactique, et obtenir $-4.1 \ Myr$ avec une distance relative minimale de $93.9 \ pc$.
@@ -646,6 +650,17 @@
 	
 	\section{Calculs de traceback linéaires}
 	\label{appendix:linear_traceback}
+	
+	Je détermine les coordonnées $x(t)$, $y(t)$, et $z(t)$ de chaque objet à un instant $t$ dans le passé. Avec $V_x$, $V_y$ et $V_z$ les vitesses des objets selon les axes $\vec{x}$, $\vec{y}$, $\vec{z}$.
+	
+	\begin{align}
+		x(t) \ = \ x(0) \ - \ V_xt \\
+		y(t) \ = \ y(0) \ - \ V_yt \\
+		z(t) \ = \ z(0) \ - \ V_zt \\
+	\end{align}
+	
+	Et je détermine la distance euclidienne entre chaque objet d'un super-amas à l'instant t:
+	$$d \ = \ \sqrt{(x(t)_1 \ - \ x(t)_2)^2 \ + \ (y(t)_1 \ - \ y(t)_2)^2 \ + \ (z(t)_1 \ - \ z(t)_2)^2}$$
 	
 	\newpage
 	
