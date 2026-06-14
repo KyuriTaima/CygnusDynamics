@@ -672,12 +672,12 @@ Package pdftex.def Info: mu_b as a fct of mu_l.png  used on input line 628.
 File: linear_traceback_BEC_XY.png Graphic file (type png)
 <use linear_traceback_BEC_XY.png>
 Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 635.
-(pdftex.def)             Requested size: 305.7542pt x 227.62204pt.
+(pdftex.def)             Requested size: 382.20929pt x 284.52756pt.
 <linear_traceback_FAD_XY.png, id=381, 617.1858pt x 457.4691pt>
 File: linear_traceback_FAD_XY.png Graphic file (type png)
 <use linear_traceback_FAD_XY.png>
 Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 642.
-(pdftex.def)             Requested size: 307.09476pt x 227.62204pt.
+(pdftex.def)             Requested size: 383.88493pt x 284.52756pt.
  [23 <./mu_b as a fct of mu_l.png> <./linear_traceback_BEC_XY.png>] [24 <./line
 ar_traceback_FAD_XY.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 653--654
