@@ -64,3 +64,5 @@ plt.title('Traceback Local Linéaire du Supergroupe BEC (Plan XY Galactique)')
 plt.legend()
 plt.grid(True, linestyle=':', alpha=0.7)
 plt.show()
+
+# Plot the 
