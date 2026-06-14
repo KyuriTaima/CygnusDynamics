@@ -632,19 +632,19 @@ png>] [12]
 File: traceback_gal_plane_4,5.png Graphic file (type png)
 <use traceback_gal_plane_4,5.png>
 Package pdftex.def Info: traceback_gal_plane_4,5.png  used on input line 373.
-(pdftex.def)             Requested size: 298.24634pt x 170.7203pt.
+(pdftex.def)             Requested size: 364.20456pt x 208.47571pt.
 <traceback_gal_plane_9,8.png, id=300, 623.6901pt x 356.2911pt>
 File: traceback_gal_plane_9,8.png Graphic file (type png)
 <use traceback_gal_plane_9,8.png>
 Package pdftex.def Info: traceback_gal_plane_9,8.png  used on input line 377.
-(pdftex.def)             Requested size: 298.84442pt x 170.71877pt.
- [13 <./traceback_gal_plane_4,5.png> <./traceback_gal_plane_9,8.png>]
-<cloud_collision.png, id=308, 721.9773pt x 531.9072pt>
+(pdftex.def)             Requested size: 364.19582pt x 208.0516pt.
+ [13 <./traceback_gal_plane_4,5.png> <./traceback_gal_plane_9,8.png>] [14]
+<cloud_collision.png, id=312, 721.9773pt x 531.9072pt>
 File: cloud_collision.png Graphic file (type png)
 <use cloud_collision.png>
 Package pdftex.def Info: cloud_collision.png  used on input line 398.
 (pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
-[14] [15 <./cloud_collision.png>] [16] (Rapport de stage.bbl [17]) [18]
+ [15 <./cloud_collision.png>] [16] (Rapport de stage.bbl [17]) [18]
 [19] [20] [21]
 <mu_b as a fct of mu_l.png, id=366, 646.66594pt x 420.06938pt>
 File: mu_b as a fct of mu_l.png Graphic file (type png)
@@ -715,7 +715,7 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (26 pages, 2615212 bytes).
+Output written on "Rapport de stage.pdf" (26 pages, 2615278 bytes).
 PDF statistics:
  989 PDF objects out of 1000 (max. 8388607)
  119 named destinations out of 1000 (max. 500000)
