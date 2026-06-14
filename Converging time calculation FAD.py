@@ -7,21 +7,21 @@ from itertools import combinations
 data_file = 'Cygnus_Objects_Datas_Uncertainties.csv'
 objects_data = pd.read_csv(data_file)
 
-# Filter data to isolate the FAD supergroup
+# Filter data to isolate the BEC supergroup
 target_clusters = ["Group F", "Group A", "Group D"]
-fad_data = objects_data[objects_data['Object_Name'].isin(target_clusters)].reset_index(drop=True)
-cluster_names = fad_data['Object_Name'].values
+bec_data = objects_data[objects_data['Object_Name'].isin(target_clusters)].reset_index(drop=True)
+cluster_names = bec_data['Object_Name'].values
 
 # --- Parameter Extraction and Unit Conversion ---
 # Convert Galactocentric spatial coordinates from kpc to pc for precision
-X_0 = fad_data['X_gc_pc'].values * 1000  
-Y_0 = fad_data['Y_gc_pc'].values * 1000
-Z_0 = fad_data['Z_gc_pc'].values * 1000
+X_0 = bec_data['X_gc_kpc'].values * 1000  
+Y_0 = bec_data['Y_gc_kpc'].values * 1000
+Z_0 = bec_data['Z_gc_kpc'].values * 1000
 
 # Galactocentric velocity components in km/s
-Vx = fad_data['vx_gc_kms'].values
-Vy = fad_data['vy_gc_kms'].values
-Vz = fad_data['vz_gc_kms'].values
+Vx = bec_data['vx_gc_kms'].values
+Vy = bec_data['vy_gc_kms'].values
+Vz = bec_data['vz_gc_kms'].values
 
 # --- Kinematic Traceback Setup ---
 # Time array from 0 to 20 Myr with a 0.1 Myr resolution
@@ -52,7 +52,7 @@ for t in time_array_myr:
 
 mean_distances_array = np.array(mean_distances_array)
 
-#Kinematic Age Determination (Time of Closest Approach), we take the minimum value of the mean distance
+# --- Kinematic Age Determination (Time of Closest Approach) ---
 min_distance_index = np.argmin(mean_distances_array)
 kinematic_age = time_array_myr[min_distance_index]
 minimum_mean_distance = mean_distances_array[min_distance_index]
@@ -65,4 +65,19 @@ print("-" * 50)
 
 # --- Visualization ---
 plt.figure(figsize=(9, 6))
+
+# Add y axis label
+plt.ylabel('Mean Relative Distance (pc)', fontsize=12, fontweight='bold')
+# Add x axis label
+plt.xlabel('Time (Myr)', fontsize=12, fontweight='bold')
+# Add title
+plt.title('Kinematic Traceback of the FAD Supergroup', fontsize=14, fontweight='bold')
+
+# Add minimal mean relative distance point
+plt.scatter(kinematic_age, minimum_mean_distance, color='red', s=100, zorder=5, label=f'Min Distance: {minimum_mean_distance:.1f} pc at -{kinematic_age:.1f} Myr')  
+
+# Add a vertical dashed line at the time of closest approach
+plt.axvline(x=kinematic_age, color='red', linestyle='--', lw=2, label=f'TCA: -{kinematic_age:.1f} Myr')
 plt.plot(time_array_myr, mean_distances_array, lw=2.5, color='royalblue', label='Mean Relative Distance')
+plt.legend()
+plt.show()
