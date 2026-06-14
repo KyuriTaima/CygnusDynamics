@@ -124,6 +124,8 @@ for t in target_times:
     plt.xlim(-100, 1000)
     plt.ylim(500, -100)
 
+    plt.plot([0, X_local_sun], [0, Y_local_sun], color='orange', linestyle='--', linewidth=1, zorder=1)
+
     plt.annotate(
         'To Galactic Center', 
         xy=(0, 380),             
