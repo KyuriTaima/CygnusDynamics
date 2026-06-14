@@ -19,4 +19,4 @@
 \contentsline {section}{\numberline {A}Données cinématiques complémentaires}{19}{section.A}%
 \contentsline {section}{\numberline {B}Méthode de calcul des incertitudes}{20}{section.B}%
 \contentsline {section}{\numberline {C}Graphiques complémentaires}{23}{section.C}%
-\contentsline {section}{\numberline {D}Calculs de traceback linéaires}{24}{section.D}%
+\contentsline {section}{\numberline {D}Calculs de traceback linéaires}{26}{section.D}%
