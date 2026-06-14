@@ -104,7 +104,7 @@ fig.write_html("Carte_Cygnus_3D_quiver.html")
 
 # Now we go back in time using the velocity vectors to see the past positions of the objects, we can use the same time_array_myr for this purpose
 past_positions = []
-target_times = [0, 4.5, 9.8, 10, 15]  # Time steps in Myr for which we want to plot the past positions
+target_times = [0.0, 4.5, 9.8, 10, 15]  # Time steps in Myr for which we want to plot the past positions
 for t in target_times:
     x_past = x_local - v_pec * t * velocity_to_pc_myr  # V affects X
     y_past = y_local - u_pec * t * velocity_to_pc_myr  # U affects Y
