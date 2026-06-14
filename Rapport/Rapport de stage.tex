@@ -358,21 +358,8 @@
 	\subsection{Traceback linéaire des amas d'étoiles OB}
 	Je peux effectuer un traceback linéaire des amas à partir des positions et des vitesses calculées. Bien que ce type de traceback du premier ordre soit très imprécis pour les intervalles de temps antérieurs à 10 millions d'années, car il ne tient pas compte de la rotation de la galaxie ni des variations des influences gravitationnelles, il donne une bonne estimation des positions relatives des amas à moins de 10 millions d'années. Effectuer un traceback des nuages moléculaires n'a pas vraiment de sens car ils commencent seulement actuellement leur formation d'étoiles. 
 	
-	Les traceback linéaires des super-groupes BEC et FAD sont tracés en figure \ref{fig:linear_traceback_XY_global} Le calcul effectué pour tracer la position à chaque instant $t$ est détaillé en annexe \ref{appendix:linear_traceback}.
-	\begin{figure}[H]
-		\centering
-		\begin{minipage}{0.45\textwidth}
-			\centering
-			\includegraphics[height=7cm]{linear_traceback_BEC_XY.png}
-		\end{minipage}
-		\hfill
-		\begin{minipage}{0.45\textwidth}
-			\centering
-			\includegraphics[height=7cm]{linear_traceback_FAD_XY.png}
-		\end{minipage}
-		\caption{Traceback linéaire des amas d'étoiles selon le plan galactique. \textbf{À gauche :} les amas B, E et C. \textbf{À droite :} les amas F, A et D. L'axe des abscisses représente la distance au centre galactique, et l'axe des ordonnées représente la tangente à la trajectoire de rotation moyenne de la galaxie au niveau du groupe E.}
-		\label{fig:linear_traceback_XY_global}
-	\end{figure}
+	Les traceback linéaires des super-groupes BEC et FAD sur le plan galactique sont tracés en annexe \ref{appendix:complementary_graphs} en figure \ref{fig:linear_traceback_XY_global} Le calcul effectué pour tracer la position à chaque instant $t$ est détaillé en annexe \ref{appendix:linear_traceback}.
+	
 	On constate que les deux super-amas semblent avoir été les plus compacts il y a environ 10 millions d'années. Mais cette représentation comporte un biais important, car il s'agit d'une projection sur le plan XY et que, par conséquent, la composante Z n'est pas prise en compte. Or, nous avons montré que le groupe B se trouve en réalité en hauteur sur le plan XZ ; il faut donc également tenir compte de cette composante Z. Alors que le super-groupe FAD est toujours relativement compact, même il y a environ 20 millions d'années, les amas du super-groupe BEC semblent s'être éloignés les uns des autres depuis leur formation.
 	Afin d'approfondir cette analyse, je peux déterminer le moment où les amas étaient les plus proches les uns des autres en appliquant la méthode des moindres carrés à des intervalles de 100 000 ans, entre 0 et 20 millions d'années. Je calcule la moyenne des distances entre les amas pour chaque intervalle de temps et détermine la valeur la plus faible. La valeur ainsi obtenue est le TCA (Time of Closest Approach), son calcul est détaillé en annexe 5.
 	Pour le super-amas BEC, je trouve un TCA de $-4.5 \ Myr$ avec une distance relative minimale de $95.6 \ pc$. Pour le groupe FAD, je trouve un TCA de $-9.8 \ Myr$ avec une distance relative minimale de $62.2 \ pc$. Ces valeurs concordent parfaitement avec celles de Quintana et al. \cite{quintana2022}, qui datent les associations B, C et E de 3 à 5 millions d'années et les associations F, A et D d'environ 10 millions d'années.
@@ -641,6 +628,13 @@
 		\includegraphics[height=8cm]{mu_b as a fct of mu_l.png}
 		\caption{Mouvement propre selon la latitude galactique $\mu_b$ en fonction du mouvement propre selon la longitude galactique $\mu_l$, les nuages moléculaires sont en bleus et les amas d'étoiles OB en rouge}
 		\label{fig:proper_motions}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\includegraphics[height=6.5cm]{linear_traceback_BEC_XY.png}
+		\includegraphics[height=7cm]{linear_traceback_FAD_XY.png}
+		\caption{Traceback linéaire des amas d'étoiles selon le plan galactique. \textbf{À gauche :} les amas B, E et C. \textbf{À droite :} les amas F, A et D. L'axe des abscisses représente la distance au centre galactique, et l'axe des ordonnées représente la tangente à la trajectoire de rotation moyenne de la galaxie au niveau du Cygne.}
+		\label{fig:linear_traceback_XY_global}
 	\end{figure}
 	
 	\section{Calculs de traceback linéaires}
