@@ -125,6 +125,16 @@ for t in target_times:
     plt.ylim(500, -100)
 
     plt.annotate(
+        'To Galactic Center', 
+        xy=(0, 380),             
+        xytext=(0, 300),         
+        arrowprops=dict(facecolor='black', width=2, headwidth=8, alpha=0.6, shrink=0.05),
+        fontsize=10, fontweight='bold', color='black',
+        ha='center', va='top', zorder=4,
+        bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1)
+    )
+
+    plt.annotate(
         'Galactic Rotation', 
         xy=(600, 0),           
         xytext=(500, 0),       
