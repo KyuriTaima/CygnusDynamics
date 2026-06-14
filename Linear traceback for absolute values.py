@@ -145,7 +145,6 @@ for t in target_times:
         ha='right', va='center', zorder=3,
         bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1)
     )
-    plt.legend()
     plt.grid(True, linestyle=':', alpha=0.6)
     plt.show()
 
