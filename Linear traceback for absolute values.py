@@ -28,7 +28,7 @@ velocity_to_pc_myr = 1.022
 R0 = 8277 
 l_rad, b_rad = np.radians(l_deg), np.radians(b_deg)
 
-# CALCUL DES COORDONNÉES 3D (Centrées sur OB2)
+# CALCUL DES COORDONNÉES 3D (Centrées sur W75N)
 x_gal = R0 - distances_pc * np.cos(l_rad) * np.cos(b_rad)
 y_gal = distances_pc * np.sin(l_rad) * np.cos(b_rad)
 z_gal = distances_pc * np.sin(b_rad)
