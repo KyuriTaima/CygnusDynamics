@@ -15,7 +15,7 @@ l_deg = objects_data['l_deg'].values
 b_deg = objects_data['b_deg'].values
 
 u_pec = objects_data['U_pec_kms'].values
-v_pec = objects_data['V_pec_kms'].values + theta_0
+v_pec = objects_data['V_pec_kms'].values
 w_pec = objects_data['W_pec_kms'].values
 
 # Création d'un pas de temps de 20 Myr avec une résolution de 0.1 Myr
