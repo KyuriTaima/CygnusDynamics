@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  14 JUN 2026 16:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  14 JUN 2026 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -671,21 +671,21 @@ Package pdftex.def Info: mu_b as a fct of mu_l.png  used on input line 628.
 <linear_traceback_BEC_XY.png, id=380, 619.3539pt x 461.0826pt>
 File: linear_traceback_BEC_XY.png Graphic file (type png)
 <use linear_traceback_BEC_XY.png>
-Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 634.
+Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 635.
 (pdftex.def)             Requested size: 305.7542pt x 227.62204pt.
 <linear_traceback_FAD_XY.png, id=381, 617.1858pt x 457.4691pt>
 File: linear_traceback_FAD_XY.png Graphic file (type png)
 <use linear_traceback_FAD_XY.png>
-Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 640.
+Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 642.
 (pdftex.def)             Requested size: 307.09476pt x 227.62204pt.
  [23 <./mu_b as a fct of mu_l.png> <./linear_traceback_BEC_XY.png>] [24 <./line
 ar_traceback_FAD_XY.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 651--652
+Underfull \hbox (badness 10000) in paragraph at lines 653--654
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 657--658
+Underfull \hbox (badness 10000) in paragraph at lines 659--660
 
  []
 
@@ -735,7 +735,7 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (26 pages, 2754573 bytes).
+Output written on "Rapport de stage.pdf" (26 pages, 2754578 bytes).
 PDF statistics:
  984 PDF objects out of 1000 (max. 8388607)
  115 named destinations out of 1000 (max. 500000)
