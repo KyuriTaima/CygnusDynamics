@@ -120,7 +120,7 @@ for t in target_times:
     plt.xlabel('X (pc)')
     plt.ylabel('Y (pc)')
     plt.title(f'Positions of Cygnus X Objects in the Galactic plane at -{t:.1f} Myr')
-    plt.xlim(-100, 700)
+    plt.xlim(-100, 1000)
     plt.ylim(500, -100)
     plt.legend()
     plt.grid(True, linestyle=':', alpha=0.6)
