@@ -543,4 +543,181 @@ Overfull \hbox (1.20793pt too wide) in paragraph at lines 32--43
 [1
 
 {C:/Users/Lucile/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Logo_UF_P
-hysique_cmjn-eps
+hysique_cmjn-eps-converted-to.pdf> <./logo.png>] (Rapport de stage.toc)
+\tf@toc=\write4
+\openout4 = `"Rapport de stage.toc"'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.101 	\newpage
+                [1] [2]
+<galactocentric_cartesian.png, id=145, 437.2537pt x 265.6629pt>
+File: galactocentric_cartesian.png Graphic file (type png)
+<use galactocentric_cartesian.png>
+Package pdftex.def Info: galactocentric_cartesian.png  used on input line 130.
+(pdftex.def)             Requested size: 234.15192pt x 142.26378pt.
+ [3 <./galactocentric_cartesian.png>] [4]
+<Cygnus_geometry_plane.png, id=181, 224.89993pt x 98.69708pt>
+File: Cygnus_geometry_plane.png Graphic file (type png)
+<use Cygnus_geometry_plane.png>
+Package pdftex.def Info: Cygnus_geometry_plane.png  used on input line 184.
+(pdftex.def)             Requested size: 162.0891pt x 71.13188pt.
+<Cygnus_geometry_vertical.png, id=182, 287.12675pt x 90.04451pt>
+File: Cygnus_geometry_vertical.png Graphic file (type png)
+<use Cygnus_geometry_vertical.png>
+Package pdftex.def Info: Cygnus_geometry_vertical.png  used on input line 191.
+(pdftex.def)             Requested size: 226.83202pt x 71.13188pt.
+
+Overfull \hbox (21.97356pt too wide) in paragraph at lines 191--192
+ [][] 
+ []
+
+<Transform_Vlsr_Vpec.png, id=184, 166.72327pt x 157.79414pt>
+File: Transform_Vlsr_Vpec.png Graphic file (type png)
+<use Transform_Vlsr_Vpec.png>
+Package pdftex.def Info: Transform_Vlsr_Vpec.png  used on input line 211.
+(pdftex.def)             Requested size: 120.25433pt x 113.81102pt.
+[5 <./Cygnus_geometry_plane.png> <./Cygnus_geometry_vertical.png> <./Transform_
+Vlsr_Vpec.png>] [6] [7]
+<spatial_distribution_legended.png, id=240, 556.0775pt x 384.43625pt>
+File: spatial_distribution_legended.png Graphic file (type png)
+<use spatial_distribution_legended.png>
+Package pdftex.def Info: spatial_distribution_legended.png  used on input line 
+296.
+(pdftex.def)             Requested size: 370.43176pt x 256.0748pt.
+<Bobylev_vl_vb_avec fond.png, id=242, 375.4025pt x 252.945pt>
+File: Bobylev_vl_vb_avec fond.png Graphic file (type png)
+<use Bobylev_vl_vb_avec fond.png>
+Package pdftex.def Info: Bobylev_vl_vb_avec fond.png  used on input line 303.
+(pdftex.def)             Requested size: 375.40158pt x 252.94438pt.
+ [8 <./spatial_distribution_legended.png>] [9 <./Bobylev_vl_vb_avec fond.png>]
+<mu_l as a fct of l.png, id=263, 645.91313pt x 410.2828pt>
+File: mu_l as a fct of l.png Graphic file (type png)
+<use mu_l as a fct of l.png>
+Package pdftex.def Info: mu_l as a fct of l.png  used on input line 320.
+(pdftex.def)             Requested size: 447.92767pt x 284.52756pt.
+<Galactic plane view Bobylev 2026 v2.png, id=267, 820.2645pt x 599.1183pt>
+File: Galactic plane view Bobylev 2026 v2.png Graphic file (type png)
+<use Galactic plane view Bobylev 2026 v2.png>
+Package pdftex.def Info: Galactic plane view Bobylev 2026 v2.png  used on input
+ line 331.
+(pdftex.def)             Requested size: 389.56711pt x 284.52756pt.
+ [10 <./mu_l as a fct of l.png>]
+<3D_view_1.png, id=273, 700.6175pt x 375.4025pt>
+File: 3D_view_1.png Graphic file (type png)
+<use 3D_view_1.png>
+Package pdftex.def Info: 3D_view_1.png  used on input line 342.
+(pdftex.def)             Requested size: 238.95512pt x 128.0374pt.
+
+Overfull \hbox (34.09666pt too wide) in paragraph at lines 342--343
+ [][] 
+ []
+
+<3D_view_2.png, id=274, 676.02562pt x 411.5375pt>
+File: 3D_view_2.png Graphic file (type png)
+<use 3D_view_2.png>
+Package pdftex.def Info: 3D_view_2.png  used on input line 347.
+(pdftex.def)             Requested size: 210.31879pt x 128.0374pt.
+
+Overfull \hbox (5.46033pt too wide) in paragraph at lines 347--348
+ [][] 
+ []
+
+[11 <./Galactic plane view Bobylev 2026 v2.png> <./3D_view_1.png> <./3D_view_2.
+png>] [12]
+<traceback_gal_plane_4,5.png, id=299, 628.749pt x 359.9046pt>
+File: traceback_gal_plane_4,5.png Graphic file (type png)
+<use traceback_gal_plane_4,5.png>
+Package pdftex.def Info: traceback_gal_plane_4,5.png  used on input line 373.
+(pdftex.def)             Requested size: 298.24634pt x 170.7203pt.
+<traceback_gal_plane_9,8.png, id=300, 623.6901pt x 356.2911pt>
+File: traceback_gal_plane_9,8.png Graphic file (type png)
+<use traceback_gal_plane_9,8.png>
+Package pdftex.def Info: traceback_gal_plane_9,8.png  used on input line 377.
+(pdftex.def)             Requested size: 298.84442pt x 170.71877pt.
+ [13 <./traceback_gal_plane_4,5.png> <./traceback_gal_plane_9,8.png>]
+<cloud_collision.png, id=308, 721.9773pt x 531.9072pt>
+File: cloud_collision.png Graphic file (type png)
+<use cloud_collision.png>
+Package pdftex.def Info: cloud_collision.png  used on input line 398.
+(pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
+[14] [15 <./cloud_collision.png>] [16] (Rapport de stage.bbl [17]) [18]
+[19] [20] [21]
+<mu_b as a fct of mu_l.png, id=366, 646.66594pt x 420.06938pt>
+File: mu_b as a fct of mu_l.png Graphic file (type png)
+<use mu_b as a fct of mu_l.png>
+Package pdftex.def Info: mu_b as a fct of mu_l.png  used on input line 609.
+(pdftex.def)             Requested size: 350.40808pt x 227.62204pt.
+ [22]
+<linear_traceback_BEC_XY.png, id=384, 619.3539pt x 461.0826pt>
+File: linear_traceback_BEC_XY.png Graphic file (type png)
+<use linear_traceback_BEC_XY.png>
+Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 616.
+(pdftex.def)             Requested size: 382.20929pt x 284.52756pt.
+<linear_traceback_FAD_XY.png, id=385, 617.1858pt x 457.4691pt>
+File: linear_traceback_FAD_XY.png Graphic file (type png)
+<use linear_traceback_FAD_XY.png>
+Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 623.
+(pdftex.def)             Requested size: 383.88493pt x 284.52756pt.
+ [23 <./mu_b as a fct of mu_l.png> <./linear_traceback_BEC_XY.png>] [24 <./line
+ar_traceback_FAD_XY.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 653--654
+
+ []
+
+[25] (Rapport de stage.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-04-28>
+ ***********
+Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
+(rerunfilecheck)             Checksum: F6C994E92743C047F1039554DD4CC8AB;5709.
+ ) 
+Here is how much of TeX's memory you used:
+ 13999 strings out of 467683
+ 232935 string characters out of 5414238
+ 694081 words of memory out of 5000000
+ 42782 multiletter control sequences out of 15000+600000
+ 643369 words of font info for 70 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,13n,79p,1288b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
+x1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
+600\ecrm0800.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\eccc1095.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\ecti1095.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Lucile\AppData\Local\MiK
+TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Lucile\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Lucile\App
+Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Luc
+ile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Us
+ers\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk>
+ <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1
+200.pk><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmbx8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Lucile/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Lucile/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lucil
+e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Us
+ers/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pf
+b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb>
+Output written on "Rapport de stage.pdf" (26 pages, 2615212 bytes).
+PDF statistics:
+ 989 PDF objects out of 1000 (max. 8388607)
+ 119 named destinations out of 1000 (max. 500000)
+ 259 words of extra memory for PDF output out of 10000 (max. 10000000)
+
