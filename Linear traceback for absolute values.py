@@ -114,7 +114,9 @@ for t in target_times:
     # plot the past positions on a new figure each time for specific time steps: 4.5 Myr, 9.8 Myr, 10 Myr, 15 Myr
     plt.figure(figsize=(10, 8))
     # Display names of the objects at their past positions
-    plt.scatter(x_past, y_past, color='blue', label=f'-{t:.1f} Myr', alpha=0.7)
+    # Red for Groups F, A and D, green for groups B, E and C, blue for the rest
+    marker_colors = ['red' if 'Group F' in str(name) or 'Group A' in str(name) or 'Group D' in str(name) else 'green' if 'Group B' in str(name) or 'Group E' in str(name) or 'Group C' in str(name) else 'blue' for name in object_names]
+    plt.scatter(x_past, y_past, color=marker_colors, label=f'-{t:.1f} Myr', alpha=0.7)
     for j in range(len(object_names)):
         plt.text(x_past[j], y_past[j], object_names[j], fontsize=10, color='black', weight='bold')
     plt.xlabel('X (pc)')
