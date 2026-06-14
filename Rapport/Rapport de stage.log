@@ -524,13 +524,13 @@ Package epstopdf Info: Source file: <Logo_UF_Physique_cmjn.eps>
 n-eps-converted-to.pdf Logo_UF_Physique_cmjn.eps>
 (epstopdf)             \includegraphics on input line 34.
 Package epstopdf Info: Output file is already uptodate.
-<Logo_UF_Physique_cmjn-eps-converted-to.pdf, id=87, 231.86626pt x 63.23625pt>
+<Logo_UF_Physique_cmjn-eps-converted-to.pdf, id=47, 231.86626pt x 63.23625pt>
 File: Logo_UF_Physique_cmjn-eps-converted-to.pdf Graphic file (type pdf)
 <use Logo_UF_Physique_cmjn-eps-converted-to.pdf>
 Package pdftex.def Info: Logo_UF_Physique_cmjn-eps-converted-to.pdf  used on in
 put line 34.
 (pdftex.def)             Requested size: 208.65646pt x 56.9055pt.
-<logo.png, id=88, 302.12875pt x 204.765pt>
+<logo.png, id=48, 302.12875pt x 204.765pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 40.
@@ -554,18 +554,18 @@ been already used, duplicate ignored
                    \relax 
 l.101 	\newpage
                 [1] [2]
-<galactocentric_cartesian.png, id=145, 437.2537pt x 265.6629pt>
+<galactocentric_cartesian.png, id=94, 437.2537pt x 265.6629pt>
 File: galactocentric_cartesian.png Graphic file (type png)
 <use galactocentric_cartesian.png>
 Package pdftex.def Info: galactocentric_cartesian.png  used on input line 130.
 (pdftex.def)             Requested size: 234.15192pt x 142.26378pt.
  [3 <./galactocentric_cartesian.png>] [4]
-<Cygnus_geometry_plane.png, id=181, 224.89993pt x 98.69708pt>
+<Cygnus_geometry_plane.png, id=130, 224.89993pt x 98.69708pt>
 File: Cygnus_geometry_plane.png Graphic file (type png)
 <use Cygnus_geometry_plane.png>
 Package pdftex.def Info: Cygnus_geometry_plane.png  used on input line 184.
 (pdftex.def)             Requested size: 162.0891pt x 71.13188pt.
-<Cygnus_geometry_vertical.png, id=182, 287.12675pt x 90.04451pt>
+<Cygnus_geometry_vertical.png, id=131, 287.12675pt x 90.04451pt>
 File: Cygnus_geometry_vertical.png Graphic file (type png)
 <use Cygnus_geometry_vertical.png>
 Package pdftex.def Info: Cygnus_geometry_vertical.png  used on input line 191.
@@ -575,38 +575,72 @@ Overfull \hbox (21.97356pt too wide) in paragraph at lines 191--192
  [][] 
  []
 
-<Transform_Vlsr_Vpec.png, id=184, 166.72327pt x 157.79414pt>
+<Transform_Vlsr_Vpec.png, id=133, 166.72327pt x 157.79414pt>
 File: Transform_Vlsr_Vpec.png Graphic file (type png)
 <use Transform_Vlsr_Vpec.png>
 Package pdftex.def Info: Transform_Vlsr_Vpec.png  used on input line 211.
 (pdftex.def)             Requested size: 120.25433pt x 113.81102pt.
 [5 <./Cygnus_geometry_plane.png> <./Cygnus_geometry_vertical.png> <./Transform_
-Vlsr_Vpec.png>] [6] [7]
-<spatial_distribution_legended.png, id=240, 556.0775pt x 384.43625pt>
+Vlsr_Vpec.png>]
+
+LaTeX Warning: Reference `tab:annexe_donnees_entree' on page 6 undefined on inp
+ut line 227.
+
+
+LaTeX Warning: Reference `annexe:donnees_complémentaires' on page 6 undefined 
+on input line 227.
+
+
+LaTeX Warning: Reference `tab:annexe_positions' on page 6 undefined on input li
+ne 227.
+
+
+LaTeX Warning: Reference `tab:annexe_vitesses_intermediaires' on page 6 undefin
+ed on input line 227.
+
+
+LaTeX Warning: Reference `tab:annexe_masses_gradients' on page 6 undefined on i
+nput line 227.
+
+
+LaTeX Warning: Reference `annexe:methode_incertitudes' on page 6 undefined on i
+nput line 229.
+
+[6] [7]
+<spatial_distribution_legended.png, id=179, 556.0775pt x 384.43625pt>
 File: spatial_distribution_legended.png Graphic file (type png)
 <use spatial_distribution_legended.png>
 Package pdftex.def Info: spatial_distribution_legended.png  used on input line 
 296.
 (pdftex.def)             Requested size: 370.43176pt x 256.0748pt.
-<Bobylev_vl_vb_avec fond.png, id=242, 375.4025pt x 252.945pt>
+<Bobylev_vl_vb_avec fond.png, id=181, 375.4025pt x 252.945pt>
 File: Bobylev_vl_vb_avec fond.png Graphic file (type png)
 <use Bobylev_vl_vb_avec fond.png>
 Package pdftex.def Info: Bobylev_vl_vb_avec fond.png  used on input line 303.
 (pdftex.def)             Requested size: 375.40158pt x 252.94438pt.
- [8 <./spatial_distribution_legended.png>] [9 <./Bobylev_vl_vb_avec fond.png>]
-<mu_l as a fct of l.png, id=263, 645.91313pt x 410.2828pt>
+ [8 <./spatial_distribution_legended.png>]
+
+LaTeX Warning: Reference `appendix:complementary_graphs' on page 9 undefined on
+ input line 311.
+
+
+LaTeX Warning: Reference `fig:proper_motions' on page 9 undefined on input line
+ 311.
+
+[9 <./Bobylev_vl_vb_avec fond.png>]
+<mu_l as a fct of l.png, id=199, 645.91313pt x 410.2828pt>
 File: mu_l as a fct of l.png Graphic file (type png)
 <use mu_l as a fct of l.png>
 Package pdftex.def Info: mu_l as a fct of l.png  used on input line 320.
 (pdftex.def)             Requested size: 447.92767pt x 284.52756pt.
-<Galactic plane view Bobylev 2026 v2.png, id=267, 820.2645pt x 599.1183pt>
+<Galactic plane view Bobylev 2026 v2.png, id=203, 820.2645pt x 599.1183pt>
 File: Galactic plane view Bobylev 2026 v2.png Graphic file (type png)
 <use Galactic plane view Bobylev 2026 v2.png>
 Package pdftex.def Info: Galactic plane view Bobylev 2026 v2.png  used on input
  line 331.
 (pdftex.def)             Requested size: 389.56711pt x 284.52756pt.
  [10 <./mu_l as a fct of l.png>]
-<3D_view_1.png, id=273, 700.6175pt x 375.4025pt>
+<3D_view_1.png, id=209, 700.6175pt x 375.4025pt>
 File: 3D_view_1.png Graphic file (type png)
 <use 3D_view_1.png>
 Package pdftex.def Info: 3D_view_1.png  used on input line 342.
@@ -616,7 +650,7 @@ Overfull \hbox (34.09666pt too wide) in paragraph at lines 342--343
  [][] 
  []
 
-<3D_view_2.png, id=274, 676.02562pt x 411.5375pt>
+<3D_view_2.png, id=210, 676.02562pt x 411.5375pt>
 File: 3D_view_2.png Graphic file (type png)
 <use 3D_view_2.png>
 Package pdftex.def Info: 3D_view_2.png  used on input line 347.
@@ -627,7 +661,40 @@ Overfull \hbox (5.46033pt too wide) in paragraph at lines 347--348
  []
 
 [11 <./Galactic plane view Bobylev 2026 v2.png> <./3D_view_1.png> <./3D_view_2.
-png>] [12]
+png>]
+
+LaTeX Warning: Reference `appendix:complementary_graphs' on page 12 undefined o
+n input line 361.
+
+
+LaTeX Warning: Reference `fig:linear_traceback_BEC_XY' on page 12 undefined on 
+input line 361.
+
+
+LaTeX Warning: Reference `fig:linear_traceback_FAD_XY' on page 12 undefined on 
+input line 361.
+
+
+LaTeX Warning: Reference `appendix:linear_traceback' on page 12 undefined on in
+put line 361.
+
+
+LaTeX Warning: Reference `appendix:linear_traceback' on page 12 undefined on in
+put line 365.
+
+
+LaTeX Warning: Reference `fig:traceback_mosaique' on page 12 undefined on input
+ line 369.
+
+
+LaTeX Warning: Reference `appendix:complementary_graphs' on page 12 undefined o
+n input line 369.
+
+
+LaTeX Warning: Reference `appendix:complementary_graphs' on page 12 undefined o
+n input line 369.
+
+[12]
 Runaway argument?
  on peut voir que le groupes E s'éloigne des groupes B et C à parti\ETC.
 ! Paragraph ended before \Gin@iii was complete.
@@ -639,23 +706,23 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-<cloud_collision.png, id=299, 721.9773pt x 531.9072pt>
+<cloud_collision.png, id=225, 721.9773pt x 531.9072pt>
 File: cloud_collision.png Graphic file (type png)
 <use cloud_collision.png>
 Package pdftex.def Info: cloud_collision.png  used on input line 396.
 (pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
 (Rapport de stage.bbl)
-<mu_b as a fct of mu_l.png, id=302, 646.66594pt x 420.06938pt>
+<mu_b as a fct of mu_l.png, id=228, 646.66594pt x 420.06938pt>
 File: mu_b as a fct of mu_l.png Graphic file (type png)
 <use mu_b as a fct of mu_l.png>
 Package pdftex.def Info: mu_b as a fct of mu_l.png  used on input line 607.
 (pdftex.def)             Requested size: 350.40808pt x 227.62204pt.
-<linear_traceback_BEC_XY.png, id=303, 619.3539pt x 461.0826pt>
+<linear_traceback_BEC_XY.png, id=229, 619.3539pt x 461.0826pt>
 File: linear_traceback_BEC_XY.png Graphic file (type png)
 <use linear_traceback_BEC_XY.png>
 Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 614.
 (pdftex.def)             Requested size: 382.20929pt x 284.52756pt.
-<linear_traceback_FAD_XY.png, id=304, 617.1858pt x 457.4691pt>
+<linear_traceback_FAD_XY.png, id=230, 617.1858pt x 457.4691pt>
 File: linear_traceback_FAD_XY.png Graphic file (type png)
 <use linear_traceback_FAD_XY.png>
 Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 621.
@@ -681,13 +748,10 @@ L3 programming layer <2026-04-28>
  ***********
 
 
-Package rerunfilecheck Warning: File `"Rapport de stage".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `"Rapport de stage".out':
-(rerunfilecheck)             Before: F6C994E92743C047F1039554DD4CC8AB;5709
-(rerunfilecheck)             After:  413352908456EB0AFBC8E86E300171E3;3050.
+Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
+(rerunfilecheck)             Checksum: 413352908456EB0AFBC8E86E300171E3;3050.
 ! You can't use `\end' in internal vertical mode.
 \enddocument ...cument/end}\deadcycles \z@ \@@end 
                                                   
@@ -730,10 +794,10 @@ my insertion and my current dilemma will both disappear.
 
  
 Here is how much of TeX's memory you used:
- 13935 strings out of 467683
- 231917 string characters out of 5414238
- 725081 words of memory out of 5000000
- 42768 multiletter control sequences out of 15000+600000
+ 13907 strings out of 467683
+ 231540 string characters out of 5414238
+ 721886 words of memory out of 5000000
+ 42757 multiletter control sequences out of 15000+600000
  643369 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,14n,79p,1288b,668s stack positions out of 10000i,1000n,20000p,200000b,200000s
