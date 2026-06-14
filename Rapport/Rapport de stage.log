@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  14 JUN 2026 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  14 JUN 2026 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -627,65 +627,61 @@ Overfull \hbox (5.46033pt too wide) in paragraph at lines 347--348
  []
 
 [11 <./Galactic plane view Bobylev 2026 v2.png> <./3D_view_1.png> <./3D_view_2.
-png>]
-
-LaTeX Warning: Reference `fig:linear_traceback_XY_global' on page 12 undefined 
-on input line 361.
-
-[12]
-<traceback_gal_plane_4,5.png, id=291, 371.88937pt x 289.58188pt>
+png>] [12]
+<traceback_gal_plane_4,5.png, id=295, 371.88937pt x 289.58188pt>
 File: traceback_gal_plane_4,5.png Graphic file (type png)
 <use traceback_gal_plane_4,5.png>
-Package pdftex.def Info: traceback_gal_plane_4,5.png  used on input line 373.
+Package pdftex.def Info: traceback_gal_plane_4,5.png  used on input line 377.
 (pdftex.def)             Requested size: 218.51521pt x 170.15808pt.
-<traceback_gal_plane_8,5.png, id=292, 374.90062pt x 307.64937pt>
+<traceback_gal_plane_8,5.png, id=296, 374.90062pt x 307.64937pt>
 File: traceback_gal_plane_8,5.png Graphic file (type png)
 <use traceback_gal_plane_8,5.png>
-Package pdftex.def Info: traceback_gal_plane_8,5.png  used on input line 380.
+Package pdftex.def Info: traceback_gal_plane_8,5.png  used on input line 384.
 (pdftex.def)             Requested size: 218.51521pt x 179.31929pt.
-<traceback_gal_plane_10.png, id=293, 384.43625pt x 301.62688pt>
+<traceback_gal_plane_10.png, id=297, 384.43625pt x 301.62688pt>
 File: traceback_gal_plane_10.png Graphic file (type png)
 <use traceback_gal_plane_10.png>
-Package pdftex.def Info: traceback_gal_plane_10.png  used on input line 388.
+Package pdftex.def Info: traceback_gal_plane_10.png  used on input line 392.
 (pdftex.def)             Requested size: 218.51521pt x 171.45044pt.
-<traceback_gal_plane_15.png, id=294, 370.88562pt x 301.62688pt>
+<traceback_gal_plane_15.png, id=298, 370.88562pt x 301.62688pt>
 File: traceback_gal_plane_15.png Graphic file (type png)
 <use traceback_gal_plane_15.png>
-Package pdftex.def Info: traceback_gal_plane_15.png  used on input line 395.
+Package pdftex.def Info: traceback_gal_plane_15.png  used on input line 399.
 (pdftex.def)             Requested size: 218.51521pt x 177.71437pt.
  [13 <./traceback_gal_plane_4,5.png> <./traceback_gal_plane_8,5.png> <./traceba
 ck_gal_plane_10.png> <./traceback_gal_plane_15.png>]
-<cloud_collision.png, id=304, 721.9773pt x 531.9072pt>
+<cloud_collision.png, id=308, 721.9773pt x 531.9072pt>
 File: cloud_collision.png Graphic file (type png)
 <use cloud_collision.png>
-Package pdftex.def Info: cloud_collision.png  used on input line 417.
+Package pdftex.def Info: cloud_collision.png  used on input line 421.
 (pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
  [14] [15 <./cloud_collision.png>] [16] (Rapport de stage.bbl [17]) [18] [19] [
 20] [21]
-<mu_b as a fct of mu_l.png, id=362, 646.66594pt x 420.06938pt>
+<mu_b as a fct of mu_l.png, id=366, 646.66594pt x 420.06938pt>
 File: mu_b as a fct of mu_l.png Graphic file (type png)
 <use mu_b as a fct of mu_l.png>
-Package pdftex.def Info: mu_b as a fct of mu_l.png  used on input line 628.
+Package pdftex.def Info: mu_b as a fct of mu_l.png  used on input line 632.
 (pdftex.def)             Requested size: 350.40808pt x 227.62204pt.
  [22]
-<linear_traceback_BEC_XY.png, id=380, 619.3539pt x 461.0826pt>
+<linear_traceback_BEC_XY.png, id=384, 619.3539pt x 461.0826pt>
 File: linear_traceback_BEC_XY.png Graphic file (type png)
 <use linear_traceback_BEC_XY.png>
-Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 635.
+Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 639.
 (pdftex.def)             Requested size: 382.20929pt x 284.52756pt.
-<linear_traceback_FAD_XY.png, id=381, 617.1858pt x 457.4691pt>
+<linear_traceback_FAD_XY.png, id=385, 617.1858pt x 457.4691pt>
 File: linear_traceback_FAD_XY.png Graphic file (type png)
 <use linear_traceback_FAD_XY.png>
-Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 642.
+Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 646.
 (pdftex.def)             Requested size: 383.88493pt x 284.52756pt.
- [23 <./mu_b as a fct of mu_l.png> <./linear_traceback_BEC_XY.png>] [24 <./line
-ar_traceback_FAD_XY.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 653--654
+
+[23 <./mu_b as a fct of mu_l.png> <./linear_traceback_BEC_XY.png>] [24 <./linea
+r_traceback_FAD_XY.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 670--671
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 659--660
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
 
  []
 
@@ -694,21 +690,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 659--660
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
 (rerunfilecheck)             Checksum: F6C994E92743C047F1039554DD4CC8AB;5709.
  ) 
 Here is how much of TeX's memory you used:
- 14027 strings out of 467683
- 233720 string characters out of 5414238
+ 14030 strings out of 467683
+ 233732 string characters out of 5414238
  694407 words of memory out of 5000000
- 42814 multiletter control sequences out of 15000+600000
+ 42813 multiletter control sequences out of 15000+600000
  643369 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1288b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1288b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
 x1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecrm0800.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
@@ -735,9 +727,9 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (26 pages, 2754578 bytes).
+Output written on "Rapport de stage.pdf" (26 pages, 2756713 bytes).
 PDF statistics:
- 984 PDF objects out of 1000 (max. 8388607)
- 115 named destinations out of 1000 (max. 500000)
+ 989 PDF objects out of 1000 (max. 8388607)
+ 119 named destinations out of 1000 (max. 500000)
  269 words of extra memory for PDF output out of 10000 (max. 10000000)
 
