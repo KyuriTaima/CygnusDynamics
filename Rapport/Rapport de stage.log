@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  14 JUN 2026 18:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  14 JUN 2026 18:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -628,96 +628,113 @@ Overfull \hbox (5.46033pt too wide) in paragraph at lines 347--348
 
 [11 <./Galactic plane view Bobylev 2026 v2.png> <./3D_view_1.png> <./3D_view_2.
 png>] [12]
-<traceback_gal_plane_4,5.png, id=299, 628.749pt x 359.9046pt>
-File: traceback_gal_plane_4,5.png Graphic file (type png)
-<use traceback_gal_plane_4,5.png>
-Package pdftex.def Info: traceback_gal_plane_4,5.png  used on input line 373.
-(pdftex.def)             Requested size: 455.24411pt x 260.5974pt.
-<traceback_gal_plane_9,8.png, id=300, 623.6901pt x 356.2911pt>
-File: traceback_gal_plane_9,8.png Graphic file (type png)
-<use traceback_gal_plane_9,8.png>
-Package pdftex.def Info: traceback_gal_plane_9,8.png  used on input line 374.
-(pdftex.def)             Requested size: 455.24411pt x 260.06316pt.
- [13 <./traceback_gal_plane_4,5.png> <./traceback_gal_plane_9,8.png>] [14]
-<cloud_collision.png, id=312, 721.9773pt x 531.9072pt>
+Runaway argument?
+ on peut voir que le groupes E s'éloigne des groupes B et C à parti\ETC.
+! Paragraph ended before \Gin@iii was complete.
+<to be read again> 
+                   \par 
+l.381 	
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<cloud_collision.png, id=299, 721.9773pt x 531.9072pt>
 File: cloud_collision.png Graphic file (type png)
 <use cloud_collision.png>
-Package pdftex.def Info: cloud_collision.png  used on input line 395.
+Package pdftex.def Info: cloud_collision.png  used on input line 396.
 (pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
- [15 <./cloud_collision.png>] [16] (Rapport de stage.bbl [17]) [18]
-[19] [20] [21]
-<mu_b as a fct of mu_l.png, id=366, 646.66594pt x 420.06938pt>
+(Rapport de stage.bbl)
+<mu_b as a fct of mu_l.png, id=302, 646.66594pt x 420.06938pt>
 File: mu_b as a fct of mu_l.png Graphic file (type png)
 <use mu_b as a fct of mu_l.png>
-Package pdftex.def Info: mu_b as a fct of mu_l.png  used on input line 606.
+Package pdftex.def Info: mu_b as a fct of mu_l.png  used on input line 607.
 (pdftex.def)             Requested size: 350.40808pt x 227.62204pt.
- [22]
-<linear_traceback_BEC_XY.png, id=384, 619.3539pt x 461.0826pt>
+<linear_traceback_BEC_XY.png, id=303, 619.3539pt x 461.0826pt>
 File: linear_traceback_BEC_XY.png Graphic file (type png)
 <use linear_traceback_BEC_XY.png>
-Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 613.
+Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 614.
 (pdftex.def)             Requested size: 382.20929pt x 284.52756pt.
-<linear_traceback_FAD_XY.png, id=385, 617.1858pt x 457.4691pt>
+<linear_traceback_FAD_XY.png, id=304, 617.1858pt x 457.4691pt>
 File: linear_traceback_FAD_XY.png Graphic file (type png)
 <use linear_traceback_FAD_XY.png>
-Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 620.
+Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 621.
 (pdftex.def)             Requested size: 383.88493pt x 284.52756pt.
- [23 <./mu_b as a fct of mu_l.png> <./linear_traceback_BEC_XY.png>] [24 <./line
-ar_traceback_FAD_XY.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 644--645
-
- []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--651
+! LaTeX Error: \begin{figure} on input line 371 ended by \end{document}.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.658 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-[25] (Rapport de stage.aux)
+(Rapport de stage.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
  ***********
-Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
-(rerunfilecheck)             Checksum: F6C994E92743C047F1039554DD4CC8AB;5709.
- ) 
+
+
+Package rerunfilecheck Warning: File `"Rapport de stage".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Rapport de stage".out':
+(rerunfilecheck)             Before: F6C994E92743C047F1039554DD4CC8AB;5709
+(rerunfilecheck)             After:  413352908456EB0AFBC8E86E300171E3;3050.
+! You can't use `\end' in internal vertical mode.
+\enddocument ...cument/end}\deadcycles \z@ \@@end 
+                                                  
+l.658 \end{document}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: \begin{figure} on input line 371 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.658 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.658 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)
+! Emergency stop.
+<*> "./Rapport de stage.tex"
+                            
+*** (job aborted, no legal \end found)
+
+ 
 Here is how much of TeX's memory you used:
- 13999 strings out of 467683
- 232935 string characters out of 5414238
- 694081 words of memory out of 5000000
- 42782 multiletter control sequences out of 15000+600000
+ 13935 strings out of 467683
+ 231917 string characters out of 5414238
+ 725081 words of memory out of 5000000
+ 42768 multiletter control sequences out of 15000+600000
  643369 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1288b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
-x1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
-600\ecrm0800.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\eccc1095.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/j
-knappen/ec/dpi600\ecti1095.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Lucile\AppData\Local\MiK
-TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Lucile\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Lucile\App
-Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Luc
-ile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Us
-ers\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk>
- <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1
-200.pk><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmbx8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Lucile/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Lucile/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lucil
-e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Us
-ers/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pf
-b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (26 pages, 2615538 bytes).
-PDF statistics:
- 990 PDF objects out of 1000 (max. 8388607)
- 119 named destinations out of 1000 (max. 500000)
- 259 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 75i,14n,79p,1288b,668s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
