@@ -362,7 +362,19 @@
 	
 	On constate que les deux super-amas semblent avoir été les plus compacts il y a environ 10 millions d'années. Mais cette représentation comporte un biais important, car il s'agit d'une projection sur le plan XY et que, par conséquent, la composante Z n'est pas prise en compte. Or, nous avons montré que le groupe B se trouve en réalité en hauteur sur le plan XZ ; il faut donc également tenir compte de cette composante Z. 	
 	
-	Afin d'approfondir cette analyse, je peux déterminer le moment où les amas étaient les plus proches les uns des autres en appliquant la méthode des moindres carrés à des intervalles de 100 000 ans, entre 0 et 20 millions d'années. Je calcule la moyenne des distances entre les amas pour chaque intervalle de temps et détermine la valeur la plus faible. La valeur ainsi obtenue est le TCA (Time of Closest Approach), son calcul est détaillé en annexe \ref{appendix:linear_traceback}.
+	Afin d'approfondir cette analyse, je peux déterminer le moment où les amas étaient les plus proches les uns des autres en appliquant la méthode des moindres carrés à des intervalles de 100 000 ans, entre 0 et 20 millions d'années. Je calcule la moyenne des distances entre les amas pour chaque intervalle de temps et détermine la valeur la plus faible. La valeur ainsi obtenue est le TCA (Time of Closest Approach), son calcul est détaillé en annexe \ref{appendix:linear_traceback}. Les résultats obtenus sont présentés en figure METTRE LA REF.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth, height=6cm, keepaspectratio]{traceback_TCA_BEC.png}
+		
+		\vspace{0.4cm}
+		
+		\includegraphics[width=0.8\textwidth, height=8cm, keepaspectratio]{traceback_TCA_FAD.png} 
+		\caption{Traceback linéaire sur le plan galactique des objets du Cygne à $-4.5$ et $-9.8 \ \mathrm{Myr}$. L'origine est la position actuelle du nuage W75N.}
+		\label{fig:traceback_TCA}
+	\end{figure}
+	
 	Pour le super-amas BEC, j'obtiens un TCA de $-4.5 \ \mathrm{Myr}$ avec une distance relative minimale de $95.6 \ \mathrm{pc}$. Pour le groupe FAD, j'obtiens un TCA de $-9.8 \ \mathrm{Myr}$ avec une distance relative minimale de $62.2 \ \mathrm{pc}$. Ces valeurs concordent parfaitement avec celles de Quintana et al. \cite{quintana2022}, qui datent les associations B, C et E de 3 à 5 millions d'années et les associations F, A et D d'environ 10 millions d'années.
 	Le groupe B se trouvant au-dessus du plan galactique, la force de rappel qui le ramène vers le plan galactique n'est pas négligeable et je ne peux donc pas utiliser une approximation de vitesse linéaire, même pour quelques millions d'années en arrière. De plus, rien n'indique que le TCA devrait être le même entre E et C et entre E et B. Je détermine donc le TCA linéaire entre C et E, car ils se trouvent tous deux dans le plan galactique, et j'obtiens $-4.1 \ \mathrm{Myr}$ avec une distance relative minimale de $93.9 \ \mathrm{pc}$.
 	
