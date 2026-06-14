@@ -14,9 +14,9 @@ cluster_names = bec_data['Object_Name'].values
 
 # --- Parameter Extraction and Unit Conversion ---
 # Convert Galactocentric spatial coordinates from kpc to pc for precision
-X_0 = bec_data['X_gc_pc'].values * 1000  
-Y_0 = bec_data['Y_gc_pc'].values * 1000
-Z_0 = bec_data['Z_gc_pc'].values * 1000
+X_0 = bec_data['X_gc_kpc'].values * 1000  
+Y_0 = bec_data['Y_gc_kpc'].values * 1000
+Z_0 = bec_data['Z_gc_kpc'].values * 1000
 
 # Galactocentric velocity components in km/s
 Vx = bec_data['vx_gc_kms'].values
