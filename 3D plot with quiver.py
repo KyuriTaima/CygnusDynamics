@@ -86,8 +86,9 @@ fig.update_layout(
     paper_bgcolor='rgb(10, 10, 20)', font=dict(color='white'),
     margin=dict(l=0, r=0, b=0, t=40)
 )
-fig.xlim(-100, 700)
-fig.ylim(500, -100)
+fig.update_xaxes(range=[-100, 700])
+fig.update_yaxes(range=[500, -100])
+fig.update_zaxes(range=[-100, 100])
 
 # fig.show()
 
