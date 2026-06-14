@@ -126,8 +126,8 @@ for t in target_times:
 
     plt.annotate(
         'To Galactic Center', 
-        xy=(0, 380),             
-        xytext=(0, 300),         
+        xy=(40, 480),             
+        xytext=(40, 400),         
         arrowprops=dict(facecolor='black', width=2, headwidth=8, alpha=0.6, shrink=0.05),
         fontsize=10, fontweight='bold', color='black',
         ha='center', va='top', zorder=4,
