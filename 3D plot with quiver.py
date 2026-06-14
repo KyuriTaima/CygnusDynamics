@@ -86,9 +86,12 @@ fig.update_layout(
     paper_bgcolor='rgb(10, 10, 20)', font=dict(color='white'),
     margin=dict(l=0, r=0, b=0, t=40)
 )
-fig.update_xaxes(range=[-100, 700])
-fig.update_yaxes(range=[500, -100])
-fig.update_zaxes(range=[-100, 100])
+# Set x axis from -100 to 700 and y axis from 500 to -100
+fig.update_layout(scene=dict(
+    xaxis=dict(range=[-100, 700]),
+    yaxis=dict(range=[500, -100]),
+    zaxis=dict(range=[-100, 100])
+))
 
 # fig.show()
 
