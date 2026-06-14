@@ -73,6 +73,9 @@ plt.xlabel('Time (Myr)', fontsize=12, fontweight='bold')
 # Add title
 plt.title('Kinematic Traceback of the BEC Supergroup', fontsize=14, fontweight='bold')
 
+# Add minimal mean relative distance point
+plt.scatter(kinematic_age, minimum_mean_distance, color='red', s=100, zorder=5, label=f'Min Distance: {minimum_mean_distance:.1f} pc at -{kinematic_age:.1f} Myr')  
+
 # Add a vertical dashed line at the time of closest approach
 plt.axvline(x=kinematic_age, color='red', linestyle='--', lw=2, label=f'TCA: -{kinematic_age:.1f} Myr')
 plt.plot(time_array_myr, mean_distances_array, lw=2.5, color='royalblue', label='Mean Relative Distance')
