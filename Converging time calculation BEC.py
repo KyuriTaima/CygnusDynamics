@@ -76,4 +76,5 @@ plt.title('Kinematic Traceback of the BEC Supergroup', fontsize=14, fontweight='
 # Add a vertical dashed line at the time of closest approach
 plt.axvline(x=kinematic_age, color='red', linestyle='--', lw=2, label=f'TCA: -{kinematic_age:.1f} Myr')
 plt.plot(time_array_myr, mean_distances_array, lw=2.5, color='royalblue', label='Mean Relative Distance')
+plt.legend()
 plt.show()
