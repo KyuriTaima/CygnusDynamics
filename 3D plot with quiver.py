@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 # Data import
-objects_data = pd.read_csv('Cygnus_Objects_Datas_Uncertainties_v3.csv')
+objects_data = pd.read_csv('Cygnus_Objects_Datas_Uncertainties.csv')
 objects_data = objects_data.dropna(subset=['Distance_pc', 'U_pec_kms', 'V_pec_kms', 'W_pec_kms'])
 object_names = objects_data['Object_Name'].values
 distances_pc = objects_data['Distance_pc'].values
