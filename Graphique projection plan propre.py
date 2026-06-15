@@ -42,7 +42,7 @@ for i in range(len(names)):
             names[i], 
             (l_deg[i], b_deg[i]),          # Coordonnées du point d'origine
             textcoords="offset points",    # On indique qu'on veut décaler le texte
-            xytext=(-100, 5),               # Décalage de 5 pixels à droite et 10 en bas
+            xytext=(5, -10),               # Décalage de 5 pixels à droite et 10 en bas
             ha='left',                     # Alignement horizontal
             fontsize=9,
             fontweight='bold',
