@@ -129,9 +129,7 @@ for t_past in target_times:
     for j in range(len(object_names)):
         plt.text(x_past[j], y_past[j] + 15, object_names[j], fontsize=10, color='black', weight='bold') # Petit décalage +15 en Y pour la lisibilité
     
-    # -------------------------------------------------------------
     # TRACÉ DE L'ONDE SPIRALE À L'INSTANT t_phys
-    # -------------------------------------------------------------
     # On crée une ligne de coordonnées Y pour dessiner le bras sur tout l'écran
     y_arm_line = np.linspace(-200, 600, 100) 
     
