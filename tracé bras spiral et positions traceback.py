@@ -107,7 +107,7 @@ pitch_angle_deg = -11.4
 cot_i = 1 / np.tan(np.radians(pitch_angle_deg))
 
 # Données cibles des 3 groupes : [W75N, Group E, Group D]
-t_impacts = np.array([0.0, -4.5, -9.8])
+t_impacts = np.array([0.0, -4, -9])
 x_impacts = np.array([0.0, 399.0, 730.0])
 y_impacts = np.array([0.0, 54.0, 187.0])
 
