@@ -107,7 +107,7 @@ fig.write_html("Carte_Cygnus_3D_quiver.html")
 # ==============================================================================
 pitch_angle_deg = -11.4
 cot_i = 1 / np.tan(np.radians(pitch_angle_deg))
-W_rel_pc_myr = -158.6  # Vitesse relative de l'onde calculée pour l'impact
+W_rel_pc_myr = 158.6  # Vitesse relative de l'onde calculée pour l'impact
 
 past_positions = []
 target_times = [0.0, 4.5, 9.8, 10, 15]  # Time steps in Myr
