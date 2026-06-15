@@ -31,7 +31,7 @@ plt.figure(figsize=(10, 8))
 plt.quiver(l_deg, b_deg, v_l_kms, v_b_kms, angles='xy', scale_units='xy', scale=5, color=arrow_colors, width = 0.003, headwidth = 3.5, headlength = 4)
 
 # Scatter dots for each object
-plt.scatter(l_deg, b_deg, color='black', marker='o', s=100, label='Objects')
+plt.scatter(l_deg, b_deg, color='black', marker='o', s=50, label='Objects')
 
 # Boucle pour ajouter les noms des objets
 for i in range(len(names)):
