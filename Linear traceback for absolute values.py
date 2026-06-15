@@ -102,34 +102,61 @@ fig.update_layout(
 # Create an html file to save for interactive plot
 fig.write_html("Carte_Cygnus_3D_quiver.html")
 
-# Now we go back in time using the velocity vectors to see the past positions of the objects, we can use the same time_array_myr for this purpose
+# ==============================================================================
+# PARAMÈTRES DU BRAS SPIRAL POUR LE TRACEBACK 2D
+# ==============================================================================
+pitch_angle_deg = 11.4
+cot_i = 1 / np.tan(np.radians(pitch_angle_deg))
+W_rel_pc_myr = -158.6  # Vitesse relative de l'onde spirale en pc/Myr
+
 past_positions = []
-target_times = [0.0, 4.5, 9.8, 10, 15]  # Time steps in Myr for which we want to plot the past positions
-for t in target_times:
-    x_past = x_local - v_pec * t * velocity_to_pc_myr  # V affects X
-    y_past = y_local - u_pec * t * velocity_to_pc_myr  # U affects Y
-    z_past = z_local - w_pec * t * velocity_to_pc_myr  # W affects Z
+target_times = [0.0, 4.5, 9.8, 10, 15]  # Time steps in Myr
+
+for t_past in target_times:
+    # Le temps t est positif dans ta boucle, mais on va dans le passé.
+    # Pour la physique, on utilise un temps négatif :
+    t_phys = -t_past 
+    
+    x_past = x_local + v_pec * t_phys * velocity_to_pc_myr  # V affects X
+    y_past = y_local + u_pec * t_phys * velocity_to_pc_myr  # U affects Y
+    z_past = z_local + w_pec * t_phys * velocity_to_pc_myr  # W affects Z
     past_positions.append((x_past, y_past, z_past))
 
-    # plot the past positions on a new figure each time for specific time steps: 4.5 Myr, 9.8 Myr, 10 Myr, 15 Myr
+    # plot the past positions on a new figure each time
     plt.figure(figsize=(10, 8))
-    # Display names of the objects at their past positions
-    # Red for Groups F, A and D, green for groups B, E and C, blue for the rest
+    
+    # Trace des amas
     marker_colors = ['red' if 'Group F' in str(name) or 'Group A' in str(name) or 'Group D' in str(name) else 'green' if 'Group B' in str(name) or 'Group E' in str(name) or 'Group C' in str(name) else 'blue' for name in object_names]
-    plt.scatter(x_past, y_past, color=marker_colors, label=f'-{t:.1f} Myr', alpha=0.7)
+    plt.scatter(x_past, y_past, color=marker_colors, label=f'Amas à t={t_phys:.1f} Myr', alpha=0.7)
     for j in range(len(object_names)):
-        plt.text(x_past[j], y_past[j], object_names[j], fontsize=10, color='black', weight='bold')
-    plt.xlabel('X (pc)')
-    plt.ylabel('Y (pc)')
-    plt.title(f'Positions of Cygnus X Objects in the Galactic plane at -{t:.1f} Myr')
+        plt.text(x_past[j], y_past[j] + 15, object_names[j], fontsize=10, color='black', weight='bold') # Petit décalage +15 en Y pour la lisibilité
+    
+    # -------------------------------------------------------------
+    # TRACÉ DE L'ONDE SPIRALE À L'INSTANT t_phys
+    # -------------------------------------------------------------
+    # On crée une ligne de coordonnées Y pour dessiner le bras sur tout l'écran
+    y_arm_line = np.linspace(-200, 600, 100) 
+    
+    # Équation cinématique complète du bras spiral : X = Y*cot(i) + W*t
+    x_arm_line = y_arm_line * cot_i + (W_rel_pc_myr * t_phys)
+    
+    plt.plot(x_arm_line, y_arm_line, color='magenta', linestyle='--', linewidth=2.5, 
+             label=f'Bras Local à t={t_phys:.1f} Myr')
+    # -------------------------------------------------------------
+
+    plt.xlabel('Distance along Galactic Rotation (pc)')
+    plt.ylabel('Distance towards Galactic Center (pc)')
+    plt.title(f'Positions of Cygnus X Objects and Spiral Arm at t={t_phys:.1f} Myr')
     plt.gca().set_aspect('equal', adjustable='box')
+    
+    # Limites inversées pour l'axe Y comme établi précédemment
     plt.xlim(-100, 1000)
     plt.ylim(500, -100)
 
     plt.annotate(
         'To Galactic Center', 
-        xy=(40, 480),             
-        xytext=(40, 400),         
+        xy=(40, 480),            
+        xytext=(40, 400),        
         arrowprops=dict(facecolor='black', width=2, headwidth=8, alpha=0.6, shrink=0.05),
         fontsize=10, fontweight='bold', color='black',
         ha='center', va='top', zorder=4,
@@ -146,6 +173,7 @@ for t in target_times:
         bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1)
     )
     plt.grid(True, linestyle=':', alpha=0.6)
+    plt.legend(loc='upper right')
     plt.show()
 
     # Also export a 3D version of the past positions for this time step
@@ -165,10 +193,10 @@ for t in target_times:
         color='cyan',
         opacity=0.15,
         name='Galactic Plane (Z=0)',
-        hoverinfo='skip' # On évite que la souris s'accroche au plan
+        hoverinfo='skip' 
     ))
     fig.update_layout(
-        title=f"3D Kinematics of Cygnus X for positions at -{t:.1f} Myr",
+        title=f"3D Kinematics of Cygnus X for positions at -{t_past:.1f} Myr",
         scene=dict(
             xaxis_title='Rotation (pc)', 
             yaxis_title='Center (pc)', 
@@ -179,5 +207,4 @@ for t in target_times:
         paper_bgcolor='rgb(10, 10, 20)', font=dict(color='white'),
         margin=dict(l=0, r=0, b=0, t=40)
     )
-    fig.write_html(f"Carte_Cygnus_3D_quiver_{t:.1f}Myr.html")
-
+    fig.write_html(f"Carte_Cygnus_3D_quiver_{-t_phys:.1f}Myr.html")
