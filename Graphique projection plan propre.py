@@ -48,17 +48,17 @@ for i in range(len(names)):
             fontweight='bold',
             color='darkred'                # Une couleur différente pour bien distinguer le texte
         )
-
-    plt.annotate(
-        names[i], 
-        (l_deg[i], b_deg[i]),          # Coordonnées du point d'origine
-        textcoords="offset points",    # On indique qu'on veut décaler le texte
-        xytext=(5, 5),                 # Décalage de 5 pixels à droite et 5 en haut
-        ha='left',                     # Alignement horizontal
-        fontsize=9,
-        fontweight='bold',
-        color='darkred'                # Une couleur différente pour bien distinguer le texte
-    )
+    else:
+        plt.annotate(
+            names[i], 
+            (l_deg[i], b_deg[i]),          # Coordonnées du point d'origine
+            textcoords="offset points",    # On indique qu'on veut décaler le texte
+            xytext=(5, 5),                 # Décalage de 5 pixels à droite et 5 en haut
+            ha='left',                     # Alignement horizontal
+            fontsize=9,
+            fontweight='bold',
+            color='darkred'                # Une couleur différente pour bien distinguer le texte
+        )
 
 
 
