@@ -102,10 +102,31 @@ fig.update_layout(
 # Create an html file to save for interactive plot
 fig.write_html("Carte_Cygnus_3D_quiver.html")
 
+# PARAMÈTRES ET RÉGRESSION LINÉAIRE DU BRAS SPIRAL
+pitch_angle_deg = -11.4
+cot_i = 1 / np.tan(np.radians(pitch_angle_deg))
 
-# ==============================================================================
+# Données cibles des 3 groupes : [W75N, Group E, Group D]
+t_impacts = np.array([0.0, -4.5, -9.8])
+x_impacts = np.array([0.0, 399.0, 730.0])
+y_impacts = np.array([0.0, 54.0, 187.0])
+
+# Calcul de la projection spatiale D = X + Y*cot(i)
+D_proj = x_impacts + (y_impacts * cot_i)
+
+# Régression linéaire avec Numpy : D = W * t + X0
+W_rel_pc_myr, X0_pc = np.polyfit(t_impacts, D_proj, 1)
+
+print(f"--- RÉSULTATS DE LA RÉGRESSION ---")
+print(f"Vitesse relative de l'onde (W) : {W_rel_pc_myr:.1f} pc/Myr")
+print(f"Décalage spatial à t=0 (X0) : {X0_pc:.1f} pc")
+print(f"----------------------------------")
+
+past_positions = []
+target_times = [0.0, 4.5, 9.8, 10, 15]  # Time steps in Myr
+
+
 # PARAMÈTRES DU BRAS SPIRAL (Modèle de Reid 2019 : i = 11.4°)
-# ==============================================================================
 pitch_angle_deg = -11.4
 cot_i = 1 / np.tan(np.radians(pitch_angle_deg))
 W_rel_pc_myr = 21.4  # Vitesse relative de l'onde calculée pour l'impact
