@@ -135,7 +135,7 @@ for t_past in target_times:
     y_arm_line = np.linspace(-300, 600, 100) 
     
     # L'équation magique : X = -Y*cot(i) + W*t (Le signe moins est vital !)
-    x_arm_line = -y_arm_line * (cot_i) + (W_rel_pc_myr * t_phys)
+    x_arm_line = y_arm_line * (cot_i) + (W_rel_pc_myr * t_phys)
     
     # On ajoute la ligne du front d'onde
     plt.plot(x_arm_line, y_arm_line, color='magenta', linestyle='--', linewidth=2.5, 
