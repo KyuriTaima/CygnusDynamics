@@ -54,6 +54,7 @@ arrow_colors = ['blue' if 'Group' in str(nom) else 'black' for nom in names]
 # Superposition des vecteurs vitesse (zorder=3 pour être au-dessus du fond)
 plt.quiver(l_deg, b_deg, v_l_kms, v_b_kms, angles='xy', scale_units='xy', scale=15, color=arrow_colors, width = 0.003, headwidth = 3.5, headlength = 4)
 
+plt.scatter(l_deg, b_deg, color='black', marker='o', s=50, label='Objects')
 
 # Boucle pour ajouter les noms des objets
 for i in range(len(names)):
