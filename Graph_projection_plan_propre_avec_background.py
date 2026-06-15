@@ -60,7 +60,7 @@ plt.scatter(l_deg, b_deg, color=arrow_colors, marker='o', s=10, label='Objects')
 # Boucle pour ajouter les noms des objets
 for i in range(len(names)):
     # On met le texte de la même couleur que la flèche pour bien lire sur le fond sombre
-    couleur_texte = 'blue' if 'Group' in str(names[i]) else 'black'
+    couleur_texte = 'black'
     
     if i == 6: # On met un décalage différent pour le dernier objet (DR20) pour éviter qu'il ne soit superposé à DR21
         xytext = (-35, -10)
