@@ -49,13 +49,12 @@ plt.figure(figsize=(12, 8))
 plt.imshow(img_data, extent=extent_fits, cmap='inferno', origin='lower', norm=norm_log, aspect='auto', zorder=1)
 
 # Couleurs des flèches
-arrow_colors = ['blue' if 'Group' in str(nom) else 'black' for nom in names]
+arrow_colors = ['green' if 'Group B' in str(nom) or 'Group E' in str(nom) or 'Group C' in str(nom) else 'red' if 'Group A' in str(nom) or 'Group D' in str(nom) or 'Group F' in str(nom) else 'blue' for nom in names] 
 
 # Superposition des vecteurs vitesse (zorder=3 pour être au-dessus du fond)
 plt.quiver(l_deg, b_deg, v_l_kms, v_b_kms, angles='xy', scale_units='xy', scale=15, color=arrow_colors, width = 0.003, headwidth = 3.5, headlength = 4)
 
 # Use diffent colors for the dot markers, green for groups B,E and C; red for groups A,D and F; blue for the rest
-dot_colors = ['green' if 'Group B' in str(nom) or 'Group E' in str(nom) or 'Group C' in str(nom) else 'red' if 'Group A' in str(nom) or 'Group D' in str(nom) or 'Group F' in str(nom) else 'blue' for nom in names] 
 plt.scatter(l_deg, b_deg, color=arrow_colors, marker='o', s=10, label='Objects')
 
 # Boucle pour ajouter les noms des objets
