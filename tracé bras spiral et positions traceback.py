@@ -112,6 +112,33 @@ W_rel_pc_myr = 21.4  # Vitesse relative de l'onde calculée pour l'impact
 past_positions = []
 target_times = [0.0, 4.5, 9.8, 10, 15]  # Time steps in Myr
 
+# ==============================================================================
+# RÉGRESSION LINÉAIRE DU BRAS SPIRAL (Inclinaison 11.4°)
+# ==============================================================================
+pitch_angle_deg = 11.4
+cot_i = 1 / np.tan(np.radians(pitch_angle_deg))
+arm_width_pc = 300 # Largeur du bras
+
+# Données d'impact des amas : [W75N, Groupe E, Groupe D]
+t_impacts = np.array([0.0, -4.5, -9.8])
+x_impacts = np.array([0.0, 399.0, 730.0])
+y_impacts = np.array([0.0, 54.0, 187.0])
+
+# On calcule la projection spatiale D
+D_proj = x_impacts - (y_impacts * cot_i)
+
+# Régression linéaire : D_proj = W * t + X0
+# np.polyfit(x, y, 1) retourne [pente, ordonnée_origine] pour une fonction de degré 1
+W_rel_pc_myr, X0_pc = np.polyfit(t_impacts, D_proj, 1)
+
+print(f"--- RÉSULTATS DE LA RÉGRESSION ---")
+print(f"Vitesse relative de l'onde (W) : {W_rel_pc_myr:.1f} pc/Myr")
+print(f"Décalage spatial à t=0 (X0) : {X0_pc:.1f} pc")
+print(f"----------------------------------")
+
+past_positions = []
+target_times = [0.0, 4.5, 9.8, 10, 15]  # Time steps in Myr
+
 for t_past in target_times:
     t_phys = -t_past # Le temps recule (valeurs négatives)
     
