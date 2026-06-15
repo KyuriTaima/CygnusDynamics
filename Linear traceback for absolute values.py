@@ -102,9 +102,7 @@ fig.update_layout(
 # Create an html file to save for interactive plot
 fig.write_html("Carte_Cygnus_3D_quiver.html")
 
-# ==============================================================================
-# PARAMÈTRES DU BRAS SPIRAL POUR LE TRACEBACK 2D
-# ==============================================================================
+# Bras spiral
 pitch_angle_deg = 11.4
 cot_i = 1 / np.tan(np.radians(pitch_angle_deg))
 W_rel_pc_myr = -158.6  # Vitesse relative de l'onde spirale en pc/Myr
