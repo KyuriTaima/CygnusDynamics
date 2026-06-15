@@ -103,16 +103,17 @@ fig.update_layout(
 fig.write_html("Carte_Cygnus_3D_quiver.html")
 
 # ==============================================================================
-# PARAMÈTRES DU BRAS SPIRAL (Modèle d'éperon local à pitch angle ~ 0°)
+# PARAMÈTRES DU BRAS SPIRAL (Modèle de Reid 2019 : i = 11.4°)
 # ==============================================================================
-W_rel_pc_myr = -80.0  # Vitesse relative de l'onde en pc/Myr (déduite de la 1D)
-arm_width = 300       # Largeur du bras en pc
+pitch_angle_deg = 11.4
+cot_i = 1 / np.tan(np.radians(pitch_angle_deg))
+W_rel_pc_myr = -158.6  # Vitesse relative de l'onde calculée pour l'impact
 
 past_positions = []
 target_times = [0.0, 4.5, 9.8, 10, 15]  # Time steps in Myr
 
 for t_past in target_times:
-    t_phys = -t_past 
+    t_phys = -t_past # Le temps recule (valeurs négatives)
     
     x_past = x_local + v_pec * t_phys * velocity_to_pc_myr
     y_past = y_local + u_pec * t_phys * velocity_to_pc_myr
@@ -128,16 +129,17 @@ for t_past in target_times:
         plt.text(x_past[j], y_past[j] + 15, object_names[j], fontsize=10, color='black', weight='bold', zorder=5)
     
     # -------------------------------------------------------------
-    # TRACÉ DU BRAS SPIRAL (Onde de densité locale / Éperon)
+    # TRACÉ DU BRAS SPIRAL À LA TRAÎNE
     # -------------------------------------------------------------
-    # Le bras se déplace le long de l'axe X (Rotation)
-    center_arm_x = W_rel_pc_myr * t_phys
+    # On définit une plage de Y couvrant tout le graphique
+    y_arm_line = np.linspace(-300, 600, 100) 
     
-    # On dessine un rectangle semi-transparent pour montrer la largeur du bras (300 pc)
-    plt.axvspan(center_arm_x - (arm_width/2), center_arm_x + (arm_width/2), 
-                color='magenta', alpha=0.15, label=f'Bras Local (Largeur 300pc)')
-    # On trace la ligne centrale du bras
-    plt.axvline(x=center_arm_x, color='magenta', linestyle='--', linewidth=2.5, label='Centre du bras')
+    # L'équation magique : X = -Y*cot(i) + W*t (Le signe moins est vital !)
+    x_arm_line = -y_arm_line * cot_i + (W_rel_pc_myr * t_phys)
+    
+    # On ajoute la ligne du front d'onde
+    plt.plot(x_arm_line, y_arm_line, color='magenta', linestyle='--', linewidth=2.5, 
+             label=f'Bras Local (i=11.4°)', zorder=4)
     # -------------------------------------------------------------
 
     plt.xlabel('Distance along Galactic Rotation (pc)')
@@ -145,8 +147,9 @@ for t_past in target_times:
     plt.title(f'Positions of Cygnus X Objects and Spiral Arm at t={t_phys:.1f} Myr')
     plt.gca().set_aspect('equal', adjustable='box')
     
+    # Axes avec Y inversé (Centre galactique vers le bas)
     plt.xlim(-100, 1000)
-    plt.ylim(500, -100) # L'axe est bien inversé
+    plt.ylim(500, -100) 
 
     plt.annotate(
         'To Galactic Center', 
