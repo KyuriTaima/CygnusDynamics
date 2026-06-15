@@ -102,32 +102,6 @@ fig.update_layout(
 # Create an html file to save for interactive plot
 fig.write_html("Carte_Cygnus_3D_quiver.html")
 
-# ==============================================================================
-# RÉGRESSION LINÉAIRE DU BRAS SPIRAL (Inclinaison 11.4°)
-# ==============================================================================
-pitch_angle_deg = 11.4
-cot_i = 1 / np.tan(np.radians(pitch_angle_deg))
-arm_width_pc = 300 # Largeur du bras
-
-# Données d'impact des amas : [W75N, Groupe E, Groupe D]
-t_impacts = np.array([0.0, -4.5, -9.8])
-x_impacts = np.array([0.0, 399.0, 730.0])
-y_impacts = np.array([0.0, 54.0, 187.0])
-
-# On calcule la projection spatiale D
-D_proj = x_impacts - (y_impacts * cot_i)
-
-# Régression linéaire : D_proj = W * t + X0
-# np.polyfit(x, y, 1) retourne [pente, ordonnée_origine] pour une fonction de degré 1
-W_rel_pc_myr, X0_pc = np.polyfit(t_impacts, D_proj, 1)
-
-print(f"--- RÉSULTATS DE LA RÉGRESSION ---")
-print(f"Vitesse relative de l'onde (W) : {W_rel_pc_myr:.1f} pc/Myr")
-print(f"Décalage spatial à t=0 (X0) : {X0_pc:.1f} pc")
-print(f"----------------------------------")
-
-past_positions = []
-target_times = [0.0, 4.5, 9.8, 10, 15]  # Time steps in Myr
 
 # ==============================================================================
 # PARAMÈTRES DU BRAS SPIRAL (Modèle de Reid 2019 : i = 11.4°)
@@ -155,22 +129,16 @@ for t_past in target_times:
     plt.scatter(x_past, y_past, color=marker_colors, label=f'Amas à t={t_phys:.1f} Myr', alpha=0.7, zorder=5)
     for j in range(len(object_names)):
         plt.text(x_past[j], y_past[j] + 15, object_names[j], fontsize=10, color='black', weight='bold', zorder=5)
+
+    # On définit une plage de Y couvrant tout le graphique
+    y_arm_line = np.linspace(-300, 600, 100) 
     
-# -------------------------------------------------------------
-    # TRACÉ DU BRAS SPIRAL OPTIMISÉ PAR RÉGRESSION
-    # -------------------------------------------------------------
-    y_arm_line = np.linspace(-300, 800, 100) 
+    # L'équation : X = -Y*cot(i) + W*t
+    x_arm_line = -y_arm_line * (cot_i) + (W_rel_pc_myr * t_phys)
     
-    # Équation ajustée avec X0
-    x_arm_center = y_arm_line * cot_i + (W_rel_pc_myr * t_phys) + X0_pc
-    
-    width_x_offset = (arm_width_pc / 2) / np.cos(np.radians(pitch_angle_deg))
-    x_arm_left = x_arm_center - width_x_offset
-    x_arm_right = x_arm_center + width_x_offset
-    
-    # Tracé de l'épaisseur et du centre
-    plt.fill_betweenx(y_arm_line, x_arm_left, x_arm_right, color='magenta', alpha=0.15, label=f'Épaisseur Bras ({arm_width_pc} pc)')
-    plt.plot(x_arm_center, y_arm_line, color='magenta', linestyle='--', linewidth=2.5, label=f'Centre Ajusté (W={W_rel_pc_myr:.1f} pc/Myr)')
+    # On ajoute la ligne du front d'onde
+    plt.plot(x_arm_line, y_arm_line, color='magenta', linestyle='--', linewidth=2.5, 
+             label=f'Bras Local (i=11.4°)', zorder=4)
     # -------------------------------------------------------------
 
     plt.xlabel('Distance along Galactic Rotation (pc)')
