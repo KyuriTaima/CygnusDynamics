@@ -105,7 +105,7 @@ fig.write_html("Carte_Cygnus_3D_quiver.html")
 # ==============================================================================
 # PARAMÈTRES DU BRAS SPIRAL (Modèle de Reid 2019 : i = 11.4°)
 # ==============================================================================
-pitch_angle_deg = -11.4
+pitch_angle_deg = 11.4
 cot_i = 1 / np.tan(np.radians(pitch_angle_deg))
 W_rel_pc_myr = -158.6  # Vitesse relative de l'onde calculée pour l'impact
 
