@@ -289,13 +289,13 @@
 	
 	\section{Visualisation des vitesses et des positions}
 	\subsection{Projection en deux dimensions}
-	J'utilise NASA Sky View pour récupérer une image de Cygnus-X provenant d'une observation du télescope WISE à 12 $\mu$m. A cette longueur d'onde, WISE montre les poussières chaudes à l'interface entre les nuages et le rayonnement UV des étoiles jeunes massives. Le fichier FITS extrait peut ensuite être chargé comme image d'arrière-plan via la bibliothèque \textit{astropy} de python. Le graphique représentant les positions projetées sur l'image du Cygne est disponible en figure \ref{fig:cygnus_positions}.
+	J'utilise NASA Sky View pour récupérer une image de Cygnus-X provenant d'une observation du télescope WISE à 12 $\mu$m. A cette longueur d'onde, WISE montre les poussières chaudes à l'interface entre les nuages et le rayonnement UV des étoiles jeunes massives. Le fichier FITS extrait peut ensuite être chargé comme image d'arrière-plan via la bibliothèque \textit{astropy} de python. Le graphique représentant les positions et les vitesses projetées sur l'image du Cygne est disponible en figure \ref{fig:cygnus_fits}.
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=9cm]{spatial_distribution_legended.png}
-		\caption{Projection des positions des nuages moléculaires et des groupes d'étoiles massives sur une image WISE à 12 $\mu$m. L'abscisse est la longitude galactique et l'ordonnée est la latitude galactique. Les nuages moléculaires sont en noir et les groupes d'étoiles en bleu}
-		\label{fig:cygnus_positions}
+		\caption{Projection des positions et des vitesses des nuages moléculaires et des groupes d'étoiles massives sur une image WISE à 12 $\mu$m. L'abscisse est la longitude galactique et l'ordonnée est la latitude galactique. Les nuages moléculaires sont en bleus et les groupes d'étoiles en vert et rouge.}
+		\label{fig:cygnus_fits}
 	\end{figure}
 	A cette longueur d'onde, les nuages moléculaires sont bien visibles mais les groupes d'étoiles ne le sont pas directement. Indirectement, on voit des bulles au niveau des groupes d'étoiles qui éjectent la matière environnante par de forts vents stellaires. Le groupe E semble très proche des nuages moléculaires, cependant cette vue ne tient pas compte des distances des objets sur la ligne de visée, donc de la profondeur sur le graphique, et le groupe E est en réalité environ 300 pc plus lointain que les nuages moléculaires. On peut aussi voir que le groupe B est sur une latitude galactique plus élevée que les autres objets. Je projette aussi les vitesses $v_l$ et $v_b$ sur le graphique en figure \ref{fig:bobylev_vl_vb} afin de visualiser les trajectoire des nuages et des groupes d'étoiles dans ce plan.
 	\begin{figure}[H]
