@@ -107,7 +107,7 @@ pitch_angle_deg = -11.4
 cot_i = 1 / np.tan(np.radians(pitch_angle_deg))
 
 # Données cibles des 3 groupes : [W75N, Group E, Group D]
-t_impacts = np.array([0.0, -4, -9])
+t_impacts = np.array([0.0, -4.0, -8.0])
 x_impacts = np.array([0.0, 399.0, 730.0])
 y_impacts = np.array([0.0, 54.0, 187.0])
 
@@ -123,7 +123,7 @@ print(f"Décalage spatial à t=0 (X0) : {X0_pc:.1f} pc")
 print(f"----------------------------------")
 
 past_positions = []
-target_times = [0.0, 4.5, 9.8, 10, 15]  # Time steps in Myr
+target_times = [0.0, 4.5, 8.0, 10, 15]  # Time steps in Myr
 
 
 # PARAMÈTRES DU BRAS SPIRAL (Modèle de Reid 2019 : i = 11.4°)
