@@ -35,6 +35,20 @@ plt.scatter(l_deg, b_deg, color='black', marker='o', s=50, label='Objects')
 
 # Boucle pour ajouter les noms des objets
 for i in range(len(names)):
+
+    # if group E, we set a different xytext to avoid overlap with the arrow
+    if 'Group E' in str(names[i]):
+        plt.annotate(
+            names[i], 
+            (l_deg[i], b_deg[i]),          # Coordonnées du point d'origine
+            textcoords="offset points",    # On indique qu'on veut décaler le texte
+            xytext=(5, -10),               # Décalage de 5 pixels à droite et 10 en bas
+            ha='left',                     # Alignement horizontal
+            fontsize=9,
+            fontweight='bold',
+            color='darkred'                # Une couleur différente pour bien distinguer le texte
+        )
+
     plt.annotate(
         names[i], 
         (l_deg[i], b_deg[i]),          # Coordonnées du point d'origine
