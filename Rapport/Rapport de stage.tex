@@ -306,12 +306,6 @@
 		dx &= x_{\text{gal}} - x_{\text{W75N}} ; \quad dy = y_{\text{gal}} - y_{\text{W75N}} ; \quad dz = z_{\text{gal}} - z_{\text{W75N}} ; \quad \beta = \arctan\left(\frac{y_{\text{W75N}}}{x_{\text{W75N}}}\right) \\[0.4cm]
 		x_{\text{cyg}} &= -dx \cdot \sin(\beta) + dy \cdot \cos(\beta) ; \quad y_{\text{cyg}} = -(dx \cdot \cos(\beta)) + dy \cdot \sin(\beta) ; \quad z_{\text{cyg}} = dz
 	\end{align*}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[height=10cm]{mu_l as a fct of l.png}
-		\caption{Mouvement propre selon la longitude galactique $\mu_l$ en fonction de la longitude galactique $l$, les nuages moléculaires sont en bleus et les amas d'étoiles OB en rouge}
-		\label{fig:proper_motion_galactic_longitude}
-	\end{figure}
 	
 	En comparant avec la figure \ref{fig:cygnus_positions}, on se rend compte que les interprétations qui se basent uniquement sur la projection sur le plan du ciel et qui ne prennent pas en compte la distance sur la ligne de visée sont erronées. En effet, même si on a l'impression sur la figure \ref{fig:cygnus_positions} que le groupe E fait partie du nuage, la figure \ref{fig:bobylev_U_V_plane} nous permet de distinguer trois super-amas d'objets distincts. Les deux super-groupes d'étoiles massives BEC et FAD, et le groupe des nuages moléculaires. Chacun de ces deux super-amas est espacé d'environ 200 parsecs selon la courbe de rotation de la galaxie.
 	
@@ -639,6 +633,13 @@
 	\section{Graphiques complémentaires}
 	\label{appendix:complementary_graphs}
 	Je trace les mouvements propres selon la longitude galactique $\mu_b$ en fonction de la longitude galactique en figure \ref{fig:proper_motion_galactic_longitude}. Quintana et al. avaient interprété la linéarité de $\mu_l$ en fonction de $l$ comme un signe d'appartenance à un même super-groupe. On retrouve bien les super-groupes d'amas d'étoiles et on remarque une linéarité entre W75N, DR21 et DR20, ce qui appuie l'hypothèse de leur appartenance à un même groupe cinématique cohérent. Cependant, IRAS20290+4052 s'intègre mal à ce super-groupe de nuages moléculaires selon le graphique.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=10cm]{mu_l as a fct of l.png}
+		\caption{Mouvement propre selon la longitude galactique $\mu_l$ en fonction de la longitude galactique $l$, les nuages moléculaires sont en bleus et les amas d'étoiles OB en rouge}
+		\label{fig:proper_motion_galactic_longitude}
+	\end{figure}
 	
 	Je trace aussi $\mu_l$ en fonction de $\mu_b$ figure \ref{fig:proper_motions}, mais aucun regroupement particulier n'en ressort.
 	
