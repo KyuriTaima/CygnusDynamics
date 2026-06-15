@@ -103,41 +103,42 @@ fig.update_layout(
 fig.write_html("Carte_Cygnus_3D_quiver.html")
 
 # Bras spiral
-pitch_angle_deg = 11.4
-cot_i = 1 / np.tan(np.radians(pitch_angle_deg))
-W_rel_pc_myr = -158.6  # Vitesse relative de l'onde spirale en pc/Myr
+# ==============================================================================
+# PARAMÈTRES DU BRAS SPIRAL (Modèle d'éperon local à pitch angle ~ 0°)
+# ==============================================================================
+W_rel_pc_myr = -80.0  # Vitesse relative de l'onde en pc/Myr (déduite de la 1D)
+arm_width = 300       # Largeur du bras en pc
 
 past_positions = []
 target_times = [0.0, 4.5, 9.8, 10, 15]  # Time steps in Myr
 
 for t_past in target_times:
-    # Le temps t est positif dans ta boucle, mais on va dans le passé.
-    # Pour la physique, on utilise un temps négatif :
     t_phys = -t_past 
     
-    x_past = x_local + v_pec * t_phys * velocity_to_pc_myr  # V affects X
-    y_past = y_local + u_pec * t_phys * velocity_to_pc_myr  # U affects Y
-    z_past = z_local + w_pec * t_phys * velocity_to_pc_myr  # W affects Z
+    x_past = x_local + v_pec * t_phys * velocity_to_pc_myr
+    y_past = y_local + u_pec * t_phys * velocity_to_pc_myr
+    z_past = z_local + w_pec * t_phys * velocity_to_pc_myr
     past_positions.append((x_past, y_past, z_past))
 
-    # plot the past positions on a new figure each time
     plt.figure(figsize=(10, 8))
     
     # Trace des amas
     marker_colors = ['red' if 'Group F' in str(name) or 'Group A' in str(name) or 'Group D' in str(name) else 'green' if 'Group B' in str(name) or 'Group E' in str(name) or 'Group C' in str(name) else 'blue' for name in object_names]
-    plt.scatter(x_past, y_past, color=marker_colors, label=f'Amas à t={t_phys:.1f} Myr', alpha=0.7)
+    plt.scatter(x_past, y_past, color=marker_colors, label=f'Amas à t={t_phys:.1f} Myr', alpha=0.7, zorder=5)
     for j in range(len(object_names)):
-        plt.text(x_past[j], y_past[j] + 15, object_names[j], fontsize=10, color='black', weight='bold') # Petit décalage +15 en Y pour la lisibilité
+        plt.text(x_past[j], y_past[j] + 15, object_names[j], fontsize=10, color='black', weight='bold', zorder=5)
     
-    # TRACÉ DE L'ONDE SPIRALE À L'INSTANT t_phys
-    # On crée une ligne de coordonnées Y pour dessiner le bras sur tout l'écran
-    y_arm_line = np.linspace(-200, 600, 100) 
+    # -------------------------------------------------------------
+    # TRACÉ DU BRAS SPIRAL (Onde de densité locale / Éperon)
+    # -------------------------------------------------------------
+    # Le bras se déplace le long de l'axe X (Rotation)
+    center_arm_x = W_rel_pc_myr * t_phys
     
-    # Équation cinématique complète du bras spiral : X = Y*cot(i) + W*t
-    x_arm_line = y_arm_line * cot_i + (W_rel_pc_myr * t_phys)
-    
-    plt.plot(x_arm_line, y_arm_line, color='magenta', linestyle='--', linewidth=2.5, 
-             label=f'Bras Local à t={t_phys:.1f} Myr')
+    # On dessine un rectangle semi-transparent pour montrer la largeur du bras (300 pc)
+    plt.axvspan(center_arm_x - (arm_width/2), center_arm_x + (arm_width/2), 
+                color='magenta', alpha=0.15, label=f'Bras Local (Largeur 300pc)')
+    # On trace la ligne centrale du bras
+    plt.axvline(x=center_arm_x, color='magenta', linestyle='--', linewidth=2.5, label='Centre du bras')
     # -------------------------------------------------------------
 
     plt.xlabel('Distance along Galactic Rotation (pc)')
@@ -145,9 +146,8 @@ for t_past in target_times:
     plt.title(f'Positions of Cygnus X Objects and Spiral Arm at t={t_phys:.1f} Myr')
     plt.gca().set_aspect('equal', adjustable='box')
     
-    # Limites inversées pour l'axe Y comme établi précédemment
     plt.xlim(-100, 1000)
-    plt.ylim(500, -100)
+    plt.ylim(500, -100) # L'axe est bien inversé
 
     plt.annotate(
         'To Galactic Center', 
