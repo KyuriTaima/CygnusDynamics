@@ -52,7 +52,7 @@ plt.imshow(img_data, extent=extent_fits, cmap='inferno', origin='lower', norm=no
 arrow_colors = ['blue' if 'Group' in str(nom) else 'black' for nom in names]
 
 # Superposition des vecteurs vitesse (zorder=3 pour être au-dessus du fond)
-plt.quiver(l_deg, b_deg, v_l_kms, v_b_kms, angles='xy', scale_units='xy', scale=10, color=arrow_colors, width = 0.003, headwidth = 3.5, headlength = 4)
+plt.quiver(l_deg, b_deg, v_l_kms, v_b_kms, angles='xy', scale_units='xy', scale=5, color=arrow_colors, width = 0.003, headwidth = 3.5, headlength = 4)
 
 
 # Boucle pour ajouter les noms des objets
