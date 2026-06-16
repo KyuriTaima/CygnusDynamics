@@ -184,6 +184,10 @@ for i in range(len(names)):
         xytext = (-50, -10)
     elif names[i] == "Group E":
         xytext = (-30, 6)
+    elif names[i] == "DR20":
+        xytext = (6, -6)
+    elif names[i] == "W75N":
+        xytext = (6, -6)
     else:
         xytext = (5, 5)
 # annotate if the object is not W75N or Group E or Group D
