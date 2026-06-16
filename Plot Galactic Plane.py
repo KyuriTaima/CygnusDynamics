@@ -89,16 +89,28 @@ for i in range(len(names)):
         xytext = (-10, 6)
     else:
         xytext = (5, 5)
-
-    plt.annotate(
-        names[i], 
-        (X_local[i], Y_local[i]),      
-        textcoords="offset points",    
-        xytext=xytext,                 
-        ha='left',                     
-        fontsize=10,
-        color=couleur_texte
-    )
+# annotate if the object is not W75N or Group E or Group D
+    if names[i] not in ["W75N", "Group E", "Group D"]:
+        plt.annotate(
+            names[i], 
+            (X_local[i], Y_local[i]),      
+            textcoords="offset points",    
+            xytext=xytext,                 
+            ha='left',                     
+            fontsize=10,
+            color=couleur_texte
+        )
+    else:
+        plt.annotate(
+            names[i], 
+            (X_local[i], Y_local[i]),      
+            textcoords="offset points",    
+            xytext=(5, 5),                 
+            ha='left',                     
+            fontsize=10,
+            fontweight='bold',
+            color=couleur_texte
+        )
     if names[i] != "W75N":
         # Add a small marker for object, except for W75N which is already marked
         plt.scatter(X_local[i], Y_local[i], marker='o', s=20, color='white',edgecolor='black', zorder=2)
