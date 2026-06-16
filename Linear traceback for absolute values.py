@@ -117,10 +117,22 @@ for t in target_times:
     # Red for Groups F, A and D, green for groups B, E and C, blue for the rest
     marker_colors = ['red' if 'Group F' in str(name) or 'Group A' in str(name) or 'Group D' in str(name) else 'green' if 'Group B' in str(name) or 'Group E' in str(name) or 'Group C' in str(name) else 'blue' for name in object_names]
     plt.scatter(x_past, y_past, color=marker_colors, label=f'-{t:.1f} Myr', alpha=0.7)
-    if names[i] not in ["W75N", "Group E", "Group D"]:
+    couleur_texte = 'darkred' if 'Group' in str(object_names[i]) else 'teal'
+    # Adjust the text position for IRAS to avoid overlap
+    if object_names[i] == "IRAS20290+4052":
+        xytext = (-40, -10)
+    elif object_names[i] == "Group E":
+        xytext = (-30, 6)
+    elif object_names[i] == "DR20":
+        xytext = (6, -6)
+    elif object_names[i] == "W75N":
+        xytext = (-20, 6)
+    else:
+        xytext = (5, 5)
+    if object_names[i] not in ["W75N", "Group E", "Group D"]:
         plt.annotate(
-            names[i], 
-            (X_local[i], Z_gal[i]),      
+            object_names[i], 
+            (x_past[i], y_past[i]),      
             textcoords="offset points",    
             xytext=xytext,                 
             ha='left',                     
@@ -129,8 +141,8 @@ for t in target_times:
         )
     else:
         plt.annotate(
-            names[i], 
-            (X_local[i], Z_gal[i]),      
+            object_names[i], 
+            (x_past[i], y_past[i]),      
             textcoords="offset points",    
             xytext=xytext,                 
             ha='left',                     
