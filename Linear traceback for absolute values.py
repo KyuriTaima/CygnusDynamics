@@ -127,7 +127,7 @@ for t in target_times:
     plt.title(f'Positions of Cygnus X Objects in the Galactic plane at -{t:.1f} Myr')
     plt.gca().set_aspect('equal', adjustable='box')
     plt.xlim(-100, 1000)
-    plt.ylim(300, -50)
+    plt.ylim(320, -50)
 
     plt.annotate(
         'To Galactic Center', 
@@ -141,8 +141,8 @@ for t in target_times:
 
     plt.annotate(
         'Galactic Rotation', 
-        xy=(950, 250),           
-        xytext=(850, 250),       
+        xy=(950, -50),           
+        xytext=(850, -50),       
         arrowprops=dict(facecolor='black', width=2, headwidth=5, alpha=0.6, shrink=0.05),
         fontsize=10, fontweight='bold', color='black',
         ha='right', va='center', zorder=3,
