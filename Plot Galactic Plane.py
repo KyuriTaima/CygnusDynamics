@@ -20,6 +20,7 @@ l_rad = np.radians(l_deg)
 b_rad = np.radians(b_deg)
 X_gal = R0 - distances * np.cos(l_rad) * np.cos(b_rad)
 Y_gal = distances * np.sin(l_rad) * np.cos(b_rad)
+Z_gal = distances * np.sin(b_rad)
 
 # We set the origin of the local frame on W75N
 index_W75N = list(names).index("W75N")  # Index of W75N in the names list
@@ -158,3 +159,6 @@ plt.xlim(-100, 700)
 plt.ylim(400, -100)
 
 plt.show()
+
+# Add a figure showing the positions in the X,Z plane (height above/below the galactic plane)
+plt.figure(figsize=(10, 10))
