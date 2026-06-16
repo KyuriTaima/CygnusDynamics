@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  16 JUN 2026 11:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  16 JUN 2026 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -589,7 +589,7 @@ Package pdftex.def Info: spatial_distribution_legended.png  used on input line
 296.
 (pdftex.def)             Requested size: 379.21445pt x 284.52756pt.
  [8 <./spatial_distribution_legended.png>]
-<Galactic plane view Bobylev 2026 v2.png, id=249, 957.5775pt x 588.2778pt>
+<Galactic plane view Bobylev 2026 v2.png, id=250, 957.5775pt x 588.2778pt>
 File: Galactic plane view Bobylev 2026 v2.png Graphic file (type png)
 <use Galactic plane view Bobylev 2026 v2.png>
 Package pdftex.def Info: Galactic plane view Bobylev 2026 v2.png  used on input
@@ -600,7 +600,7 @@ Overfull \hbox (7.90923pt too wide) in paragraph at lines 308--309
  [][] 
  []
 
-<Kinematics_XZ_plane.png, id=250, 1162.1016pt x 322.3242pt>
+<Kinematics_XZ_plane.png, id=251, 1162.1016pt x 322.3242pt>
 File: Kinematics_XZ_plane.png Graphic file (type png)
 <use Kinematics_XZ_plane.png>
 Package pdftex.def Info: Kinematics_XZ_plane.png  used on input line 314.
@@ -611,7 +611,7 @@ Overfull \hbox (570.61801pt too wide) in paragraph at lines 314--315
  []
 
 [9 <./Galactic plane view Bobylev 2026 v2.png>]
-<3D_view_1.png, id=260, 700.6175pt x 375.4025pt>
+<3D_view_1.png, id=262, 700.6175pt x 375.4025pt>
 File: 3D_view_1.png Graphic file (type png)
 <use 3D_view_1.png>
 Package pdftex.def Info: 3D_view_1.png  used on input line 329.
@@ -621,7 +621,7 @@ Overfull \hbox (34.09666pt too wide) in paragraph at lines 329--330
  [][] 
  []
 
-<3D_view_2.png, id=261, 676.02562pt x 411.5375pt>
+<3D_view_2.png, id=263, 676.02562pt x 411.5375pt>
 File: 3D_view_2.png Graphic file (type png)
 <use 3D_view_2.png>
 Package pdftex.def Info: 3D_view_2.png  used on input line 334.
@@ -632,7 +632,7 @@ Overfull \hbox (5.46033pt too wide) in paragraph at lines 334--335
  []
 
 [10 <./Kinematics_XZ_plane.png>] [11 <./3D_view_1.png> <./3D_view_2.png>]
-<traceback_TCA_graph_BEC.png, id=284, 552.8655pt x 386.6445pt>
+<traceback_TCA_graph_BEC.png, id=285, 552.8655pt x 386.6445pt>
 File: traceback_TCA_graph_BEC.png Graphic file (type png)
 <use traceback_TCA_graph_BEC.png>
 Package pdftex.def Info: traceback_TCA_graph_BEC.png  used on input line 359.
@@ -642,7 +642,7 @@ Overfull \hbox (18.90742pt too wide) in paragraph at lines 359--360
  [][] 
  []
 
-<traceback_TCA_FAD.png, id=285, 557.2017pt x 386.6445pt>
+<traceback_TCA_FAD.png, id=286, 557.2017pt x 386.6445pt>
 File: traceback_TCA_FAD.png Graphic file (type png)
 <use traceback_TCA_FAD.png>
 Package pdftex.def Info: traceback_TCA_FAD.png  used on input line 364.
@@ -653,63 +653,63 @@ Overfull \hbox (20.66245pt too wide) in paragraph at lines 364--365
  []
 
 [12 <./traceback_TCA_graph_BEC.png> <./traceback_TCA_FAD.png>]
-<traceback_gal_plane_4,5.png, id=303, 625.8582pt x 362.0727pt>
+<traceback_gal_plane_4,5.png, id=304, 625.8582pt x 362.0727pt>
 File: traceback_gal_plane_4,5.png Graphic file (type png)
 <use traceback_gal_plane_4,5.png>
 Package pdftex.def Info: traceback_gal_plane_4,5.png  used on input line 379.
 (pdftex.def)             Requested size: 364.20128pt x 210.69843pt.
-<traceback_gal_plane_9,8.png, id=304, 627.3036pt x 359.1819pt>
+<traceback_gal_plane_9,8.png, id=305, 627.3036pt x 359.1819pt>
 File: traceback_gal_plane_9,8.png Graphic file (type png)
 <use traceback_gal_plane_9,8.png>
 Package pdftex.def Info: traceback_gal_plane_9,8.png  used on input line 383.
 (pdftex.def)             Requested size: 364.20007pt x 208.5339pt.
  [13 <./traceback_gal_plane_4,5.png> <./traceback_gal_plane_9,8.png>]
-<cloud_collision.png, id=311, 721.9773pt x 531.9072pt>
+<cloud_collision.png, id=312, 721.9773pt x 531.9072pt>
 File: cloud_collision.png Graphic file (type png)
 <use cloud_collision.png>
 Package pdftex.def Info: cloud_collision.png  used on input line 403.
 (pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
  [14] [15 <./cloud_collision.png>] [16] [17] (Rapport de stage.bbl [18]) [19] [
 20] [21] [22]
-<mu_l as a fct of l.png, id=378, 645.91313pt x 410.2828pt>
+<mu_l as a fct of l.png, id=379, 645.91313pt x 410.2828pt>
 File: mu_l as a fct of l.png Graphic file (type png)
 <use mu_l as a fct of l.png>
 Package pdftex.def Info: mu_l as a fct of l.png  used on input line 641.
 (pdftex.def)             Requested size: 447.92767pt x 284.52756pt.
  [23]
-<mu_b as a fct of mu_l.png, id=398, 646.66594pt x 420.06938pt>
+<mu_b as a fct of mu_l.png, id=399, 646.66594pt x 420.06938pt>
 File: mu_b as a fct of mu_l.png Graphic file (type png)
 <use mu_b as a fct of mu_l.png>
 Package pdftex.def Info: mu_b as a fct of mu_l.png  used on input line 650.
 (pdftex.def)             Requested size: 350.40808pt x 227.62204pt.
-<linear_traceback_BEC_XY.png, id=399, 619.3539pt x 461.0826pt>
+<linear_traceback_BEC_XY.png, id=400, 619.3539pt x 461.0826pt>
 File: linear_traceback_BEC_XY.png Graphic file (type png)
 <use linear_traceback_BEC_XY.png>
 Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 657.
 (pdftex.def)             Requested size: 382.20929pt x 284.52756pt.
  [24 <./mu_l as a fct of l.png> <./mu_b as a fct of mu_l.png>]
-<linear_traceback_FAD_XY.png, id=408, 617.1858pt x 457.4691pt>
+<linear_traceback_FAD_XY.png, id=409, 617.1858pt x 457.4691pt>
 File: linear_traceback_FAD_XY.png Graphic file (type png)
 <use linear_traceback_FAD_XY.png>
 Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 664.
 (pdftex.def)             Requested size: 383.88493pt x 284.52756pt.
-<traceback_gal_plane_10.png, id=409, 622.2447pt x 358.4592pt>
+<traceback_gal_plane_10.png, id=410, 622.2447pt x 358.4592pt>
 File: traceback_gal_plane_10.png Graphic file (type png)
 <use traceback_gal_plane_10.png>
 Package pdftex.def Info: traceback_gal_plane_10.png  used on input line 671.
 (pdftex.def)             Requested size: 364.20633pt x 209.8099pt.
-<traceback_gal_plane_15.png, id=410, 621.522pt x 354.123pt>
+<traceback_gal_plane_15.png, id=411, 621.522pt x 354.123pt>
 File: traceback_gal_plane_15.png Graphic file (type png)
 <use traceback_gal_plane_15.png>
 Package pdftex.def Info: traceback_gal_plane_15.png  used on input line 675.
 (pdftex.def)             Requested size: 364.2006pt x 207.50963pt.
  [25 <./linear_traceback_BEC_XY.png> <./linear_traceback_FAD_XY.png>]
-<traceback_3D_4,5.png, id=417, 697.60625pt x 331.73938pt>
+<traceback_3D_4,5.png, id=418, 697.60625pt x 331.73938pt>
 File: traceback_3D_4,5.png Graphic file (type png)
 <use traceback_3D_4,5.png>
 Package pdftex.def Info: traceback_3D_4,5.png  used on input line 682.
 (pdftex.def)             Requested size: 364.19435pt x 173.18881pt.
-<traceback_3D_9,8.png, id=418, 691.58376pt x 413.04312pt>
+<traceback_3D_9,8.png, id=419, 691.58376pt x 413.04312pt>
 File: traceback_3D_9,8.png Graphic file (type png)
 <use traceback_3D_9,8.png>
 Package pdftex.def Info: traceback_3D_9,8.png  used on input line 686.
@@ -767,9 +767,9 @@ b><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (30 pages, 2128868 bytes).
+Output written on "Rapport de stage.pdf" (30 pages, 2129060 bytes).
 PDF statistics:
- 1022 PDF objects out of 1200 (max. 8388607)
+ 1023 PDF objects out of 1200 (max. 8388607)
  128 named destinations out of 1000 (max. 500000)
  289 words of extra memory for PDF output out of 10000 (max. 10000000)
 
