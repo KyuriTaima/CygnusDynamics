@@ -168,7 +168,7 @@ Q = plt.quiver(X_local, Z_gal, V_pec_kms, W_pec_kms,
            angles='xz', scale_units='xz', scale=0.2, 
            color=arrow_colors, width=0.003, headwidth=3.5, headlength=4, zorder=3)
 
-plt.quiverkey(Q, X=0.70, Z=0.97, U=10, 
+plt.quiverkey(Q, X=0.70, Y=0.97, U=10, 
               label='10 km/s', labelpos='E', 
               coordinates='axes', fontproperties={'weight': 'bold', 'size': 10}, 
               color='black')
