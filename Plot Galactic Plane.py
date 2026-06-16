@@ -160,7 +160,7 @@ plt.ylim(400, -100)
 plt.show()
 
 # Add a figure showing the positions in the X,Z plane (height above/below the galactic plane)
-Z_gal = objects_data['Z_gc_pc'].values
+Z_gal = objects_data['Z_gc_kpc'].values
 W_pec_kms = objects_data['W_pec_kms'].values
 
 plt.figure(figsize=(10, 10))
