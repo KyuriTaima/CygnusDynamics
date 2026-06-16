@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{{Gra}22}
+\begin{thebibliography}{BHCa20}
 
 \bibitem[AKS26]{azatyan2026}
 N.~Azatyan, L.~Kaper, and A.~et~al. Samsonyan.
@@ -11,6 +11,12 @@ V.~V. Bobylev and A.~T. Bajkova.
 \newblock Analysis of spatial velocities of several samples of open star
   clusters.
 \newblock {\em Astronomy Letters}, 51(11-12), 2026.
+
+\bibitem[BHCa20]{berlanas2020}
+S.~R. Berlanas, A.~Herrero, F.~Comeron, and al.
+\newblock Spectroscopic characterization of the known o-star population in
+  cygnus ob2.
+\newblock {\em Astronomy \& Astrophysics}, 642:A168, 2020.
 
 \bibitem[BRM11]{brunthaler2011}
 A.~Brunthaler, M.~J. Reid, and K.~M. et~al. Menten.
@@ -24,9 +30,14 @@ Vera Collaboration et~al.
 \newblock {\em Publications of the Astronomical Society of Japan},
   73(Supplement\_1):S1--S20, 2021.
 
+\bibitem[CDSa20]{comeron2020}
+F.~Comeron, A.~Djupvik, N.~Schneider, and al.
+\newblock The historical record of massive star formation in cygnus.
+\newblock {\em Astronomy \& Astrophysics}, 644:A62, 2020.
+
 \bibitem[DLB19]{dias2019}
 W.~S. Dias, J.~R.~D. Lépine, and D.~A. Barros.
-\newblock he spiral pattern rotation speed of the galaxy and the corotation
+\newblock The spiral pattern rotation speed of the galaxy and the corotation
   radius with gaia dr2.
 \newblock {\em Monthly Notices of the Royal Astronomical Society},
   486:5726--5736, 2019.
