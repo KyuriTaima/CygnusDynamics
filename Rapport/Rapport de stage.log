@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  16 JUN 2026 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  16 JUN 2026 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -588,7 +588,7 @@ File: spatial_distribution_legended.png Graphic file (type png)
 <use spatial_distribution_legended.png>
 Package pdftex.def Info: spatial_distribution_legended.png  used on input line 
 295.
-(pdftex.def)             Requested size: 379.21445pt x 284.52756pt.
+(pdftex.def)             Requested size: 303.3643pt x 227.62204pt.
  [8 <./spatial_distribution_legended.png>]
 <Galactic plane view Bobylev 2026 v2.png, id=250, 957.5775pt x 588.2778pt>
 File: Galactic plane view Bobylev 2026 v2.png Graphic file (type png)
@@ -772,7 +772,7 @@ cmr6.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (30 pages, 2462500 bytes).
+Output written on "Rapport de stage.pdf" (30 pages, 2462497 bytes).
 PDF statistics:
  1067 PDF objects out of 1200 (max. 8388607)
  131 named destinations out of 1000 (max. 500000)
