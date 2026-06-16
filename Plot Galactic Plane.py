@@ -228,7 +228,7 @@ plt.axvline(0, color='black', linewidth=0.8, linestyle='--')
 
 plt.xlabel('X-X(W75N): Distance along Galactic Rotation (pc)')
 plt.ylabel('Z: Distance towards Galactic North Pole (pc)')
-plt.title('Local Kinematics of Cygnus X (Centered on W75N)')
+plt.title('Local Kinematics of Cygnus X in the X-Z Plane (Centered on W75N)')
 
 plt.grid(True, linestyle=':', alpha=0.7)
 plt.legend(loc='upper right')
