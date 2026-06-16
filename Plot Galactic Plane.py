@@ -235,7 +235,6 @@ plt.ylabel('Z: Distance towards Galactic North Pole (pc)')
 plt.title('Local Kinematics of Cygnus X in the X-Z Plane (Centered on W75N)')
 
 plt.grid(True, linestyle=':', alpha=0.7)
-plt.legend(loc='upper right')
 
 # Set equal ratio for x and y axes
 plt.gca().set_aspect('equal', adjustable='box')
