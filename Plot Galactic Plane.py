@@ -214,8 +214,8 @@ for i in range(len(names)):
 # Set arrow towards the galactic center along the x axis
 plt.annotate(
     'Galactic Center', 
-    xy=(600, -100),           
-    xytext=(500, -100),       
+    xy=(600, -50),           
+    xytext=(500, -50),       
     arrowprops=dict(facecolor='black', width=2, headwidth=5, alpha=0.6, shrink=0.05),
     fontsize=10, fontweight='bold', color='black',
     ha='right', va='center', zorder=3,
