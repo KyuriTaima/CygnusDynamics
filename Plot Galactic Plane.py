@@ -222,23 +222,12 @@ plt.annotate(
     bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1)
 )
 
-# Arrow in the direction of the galactic rotation
-plt.annotate(
-    'Galactic Rotation', 
-    xy=(600, 0),           
-    xytext=(500, 0),       
-    arrowprops=dict(facecolor='black', width=2, headwidth=5, alpha=0.6, shrink=0.05),
-    fontsize=10, fontweight='bold', color='black',
-    ha='right', va='center', zorder=3,
-    bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1)
-)
-
 # Set markers for the axes
 plt.axhline(0, color='black', linewidth=0.8, linestyle='--')
 plt.axvline(0, color='black', linewidth=0.8, linestyle='--')
 
 plt.xlabel('X-X(W75N): Distance along Galactic Rotation (pc)')
-plt.ylabel('Y-Y(W75N): Distance towards Galactic Center (pc)')
+plt.ylabel('Z: Distance towards Galactic North Pole (pc)')
 plt.title('Local Kinematics of Cygnus X (Centered on W75N)')
 
 plt.grid(True, linestyle=':', alpha=0.7)
