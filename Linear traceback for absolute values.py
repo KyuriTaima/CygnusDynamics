@@ -118,7 +118,9 @@ for t in target_times:
     marker_colors = ['red' if 'Group F' in str(name) or 'Group A' in str(name) or 'Group D' in str(name) else 'green' if 'Group B' in str(name) or 'Group E' in str(name) or 'Group C' in str(name) else 'blue' for name in object_names]
     plt.scatter(x_past, y_past, color=marker_colors, label=f'-{t:.1f} Myr', alpha=0.7)
     for j in range(len(object_names)):
-        plt.text(x_past[j], y_past[j], object_names[j], fontsize=10, color='black', weight='bold')
+        if object_names[j] not in ["W75N", "Group E", "Group D"]:
+            plt.text(x_past[j], y_past[j], object_names[j], fontsize=10, color='black', weight='bold')
+        plt.text(x_past[j], y_past[j], object_names[j], fontsize=10, color='black')
     plt.xlabel('Y - Y(W75N) (pc)')
     plt.ylabel('X - X(W75N) (pc)')
     plt.title(f'Positions of Cygnus X Objects in the Galactic plane at -{t:.1f} Myr')
