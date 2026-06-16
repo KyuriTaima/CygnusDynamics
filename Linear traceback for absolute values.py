@@ -131,8 +131,8 @@ for t in target_times:
 
     plt.annotate(
         'To Galactic Center', 
-        xy=(40, 280),             
-        xytext=(40, 200),         
+        xy=(40, 300),             
+        xytext=(40, 250),         
         arrowprops=dict(facecolor='black', width=2, headwidth=8, alpha=0.6, shrink=0.05),
         fontsize=10, fontweight='bold', color='black',
         ha='center', va='top', zorder=4,
@@ -141,8 +141,8 @@ for t in target_times:
 
     plt.annotate(
         'Galactic Rotation', 
-        xy=(950, -50),           
-        xytext=(850, -50),       
+        xy=(950, -30),           
+        xytext=(850, -30),       
         arrowprops=dict(facecolor='black', width=2, headwidth=5, alpha=0.6, shrink=0.05),
         fontsize=10, fontweight='bold', color='black',
         ha='right', va='center', zorder=3,
