@@ -141,8 +141,8 @@ for t in target_times:
 
     plt.annotate(
         'Galactic Rotation', 
-        xy=(950, -30),           
-        xytext=(850, -30),       
+        xy=(950, -80),           
+        xytext=(850, -80),       
         arrowprops=dict(facecolor='black', width=2, headwidth=5, alpha=0.6, shrink=0.05),
         fontsize=10, fontweight='bold', color='black',
         ha='right', va='center', zorder=3,
