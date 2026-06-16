@@ -97,7 +97,6 @@ for i in range(len(names)):
         xytext=xytext,                 
         ha='left',                     
         fontsize=10,
-        fontweight='bold',
         color=couleur_texte
     )
     if names[i] != "W75N":
