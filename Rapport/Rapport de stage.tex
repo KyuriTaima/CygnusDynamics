@@ -321,21 +321,8 @@
 	Ces projections en 2D ne permettent cependant pas de visualiser la cinématique globale des la région du Cygne, pour cela, il est nécessaire de faire une modélisation en 3D et d'étudier la cinématique sous différents angles.
 		
 	\subsection{Projection en trois dimensions}
-	Afin de modéliser les positions et les vitesses des objets en 3D, j'utilise le même repère que pour la représentation en 2D. La modélisation en 3D est difficilement appréciable sur un support 2D, le fichier est disponible à l'adresse \href{https://github.com/KyuriTaima/CygnusDynamics/blob/8276b42224d7c76e1cba126970f6e30ef20acc10/Carte_Cygnus_3D_quiver.html }{Lien vers fichier 3D} 
-	\begin{figure}[H]
-		\centering
-		\begin{minipage}{0.45\textwidth}
-			\centering
-			\includegraphics[height=4.5cm]{3D_view_1.png}
-		\end{minipage}
-		\hfill
-		\begin{minipage}{0.45\textwidth}
-			\centering
-			\includegraphics[height=4.5cm]{3D_view_2.png}
-		\end{minipage}
-		\caption{Visualisation des objets du Cygne en 3D dans le repère centré sur W75N. Les lignes jaunes représentent les vecteurs vitesses}
-		\label{fig:3D_view}
-	\end{figure}
+	Afin de modéliser les positions et les vitesses des objets en 3D, j'utilise le même repère que pour la représentation en 2D. La modélisation en 3D est difficilement appréciable sur un support 2D, le fichier est disponible à l'adresse \href{https://github.com/KyuriTaima/CygnusDynamics/blob/8276b42224d7c76e1cba126970f6e30ef20acc10/Carte_Cygnus_3D_quiver.html }{Lien vers fichier 3D}. Quelques vues 3D sont aussi disponibles en annexe \ref{appendix:complementary_graphs}, figure \ref{fig:3D_view}
+
 	La modélisation 3D permet de se rendre compte des vitesses différentielles entre les objets. Au niveau du complexe de nuages moléculaires, W75N est presque immobile par rapport à la rotation de la Galaxie alors que les autres nuages sont ralentis de $14$ à $15 \ \mathrm{km\cdot s^{-1}}$ par rapport à la rotation moyenne de la galaxie, de plus, ils montent vers le pôle nord galactique. Au niveau du super-amas BEC, le groupe B est plus haut que les deux autres amas, mais les vitesses des groupes B et C sont similaires tandis que le groupe E a une vitesse beaucoup plus faible et dans une direction différente.
 	
 	Connaissant les vitesses et les positions des objets, je suis en capacité de revenir dans le passé pour étudier la cinématique des objets du Cygne à différentes temporalités clés.	L'extrapolation de ces trajectoires a pour but de reconstituer la séquence chronologique d'apparition des amas massifs, dans l'optique de mettre en évidence un motif dynamique commun guidant l'évolution de Cygnus X.
@@ -686,6 +673,14 @@
 		\includegraphics[width=0.8\textwidth, height=10cm, keepaspectratio]{traceback_3D_9,8.png} 
 		\caption{Traceback linéaire modélisé en 3D des objets du Cygne à $-4.5$ et $-9.8 \ \mathrm{Myr}$. L'origine est la position actuelle du nuage W75N.}
 		\label{fig:traceback_complémentaires_3D}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=8cm]{3D_view_1.png}
+		\includegraphics[height=8cm]{3D_view_2.png}
+		\caption{Visualisation des objets du Cygne en 3D dans le repère centré sur W75N. Les lignes jaunes représentent les vecteurs vitesses}
+		\label{fig:3D_view}
 	\end{figure}
 	
 	\section{Calculs de traceback linéaires}
