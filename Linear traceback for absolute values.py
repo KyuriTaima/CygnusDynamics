@@ -118,7 +118,7 @@ for t in target_times:
     marker_colors = ['red' if 'Group F' in str(name) or 'Group A' in str(name) or 'Group D' in str(name) else 'green' if 'Group B' in str(name) or 'Group E' in str(name) or 'Group C' in str(name) else 'blue' for name in object_names]
     plt.scatter(x_past, y_past, color=marker_colors, label=f'-{t:.1f} Myr', alpha=0.7)
     for j in range(len(object_names)):
-        if object_names[j] not in ["W75N", "Group E", "Group D"]:
+        if object_names[j] in ["W75N", "Group E", "Group D"]:
             plt.text(x_past[j], y_past[j], object_names[j], fontsize=10, color='black', weight='bold')
         else:
             plt.text(x_past[j], y_past[j], object_names[j], fontsize=10, color='black')
