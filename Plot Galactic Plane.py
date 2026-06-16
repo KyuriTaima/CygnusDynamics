@@ -213,12 +213,12 @@ for i in range(len(names)):
         plt.scatter(X_local[i], Z_gal[i], marker='o', s=20, color='white',edgecolor='black', zorder=2)
 # Set arrow towards the galactic center along the x axis
 plt.annotate(
-    'To Galactic Center', 
-    xy=(0, 380),             
-    xytext=(0, 300),         
-    arrowprops=dict(facecolor='black', width=2, headwidth=8, alpha=0.6, shrink=0.05),
+    'Galactic Center', 
+    xy=(600, -100),           
+    xytext=(500, -100),       
+    arrowprops=dict(facecolor='black', width=2, headwidth=5, alpha=0.6, shrink=0.05),
     fontsize=10, fontweight='bold', color='black',
-    ha='center', va='top', zorder=4,
+    ha='right', va='center', zorder=3,
     bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1)
 )
 
