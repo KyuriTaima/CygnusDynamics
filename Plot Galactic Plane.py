@@ -226,7 +226,7 @@ plt.annotate(
 plt.axhline(0, color='black', linewidth=0.8, linestyle='--')
 plt.axvline(0, color='black', linewidth=0.8, linestyle='--')
 
-plt.xlabel('X-X(W75N): Distance along Galactic Rotation (pc)')
+plt.xlabel('X-X(W75N): Distance towards the galactic center (pc)')
 plt.ylabel('Z: Distance towards Galactic North Pole (pc)')
 plt.title('Local Kinematics of Cygnus X in the X-Z Plane (Centered on W75N)')
 
@@ -236,7 +236,7 @@ plt.legend(loc='upper right')
 # Set equal ratio for x and y axes
 plt.gca().set_aspect('equal', adjustable='box')
 plt.xlim(-100, 700)
-plt.ylim(400, -100)
+plt.ylim(20, 150)
 
 plt.show()
 
