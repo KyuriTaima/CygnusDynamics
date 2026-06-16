@@ -163,6 +163,8 @@ plt.show()
 Z_gal = objects_data['Z_ggc_pc'].values
 W_pec_kms = objects_data['W_pec_kms'].values
 
+plt.figure(figsize=(10, 10))
+
 # Velocity vectors
 Q = plt.quiver(X_local, Z_gal, V_pec_kms, W_pec_kms, 
            angles='xz', scale_units='xz', scale=0.2, 
@@ -173,4 +175,5 @@ plt.quiverkey(Q, X=0.70, Y=0.97, U=10,
               coordinates='axes', fontproperties={'weight': 'bold', 'size': 10}, 
               color='black')
 
-plt.figure(figsize=(10, 10))
+plt.scatter(0, Z_gal[0], marker='o', s=20, color='black', edgecolor='black', zorder=2, label="W75N (Origin)")
+
