@@ -145,8 +145,8 @@ plt.annotate(
 plt.axhline(0, color='black', linewidth=0.8, linestyle='--')
 plt.axvline(0, color='black', linewidth=0.8, linestyle='--')
 
-plt.ylabel('X-X(W75N): Distance along Galactic Rotation (pc)')
-plt.xlabel('Y-Y(W75N): Distance towards Galactic Center (pc)')
+plt.ylabel('X-X(W75N): Distance towards Galactic Center (pc)')
+plt.xlabel('Y-Y(W75N): Distance along Galactic Rotation (pc)')
 plt.title('Local Kinematics of Cygnus X (Centered on W75N)')
 
 plt.grid(True, linestyle=':', alpha=0.7)
