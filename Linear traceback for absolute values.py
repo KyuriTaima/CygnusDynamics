@@ -117,39 +117,11 @@ for t in target_times:
     # Red for Groups F, A and D, green for groups B, E and C, blue for the rest
     marker_colors = ['red' if 'Group F' in str(name) or 'Group A' in str(name) or 'Group D' in str(name) else 'green' if 'Group B' in str(name) or 'Group E' in str(name) or 'Group C' in str(name) else 'blue' for name in object_names]
     plt.scatter(x_past, y_past, color=marker_colors, label=f'-{t:.1f} Myr', alpha=0.7)
-    couleur_texte = 'darkred' if 'Group' in str(object_names[i]) else 'teal'
-    # Adjust the text position for IRAS to avoid overlap
-    if object_names[i] == "IRAS20290+4052":
-        xytext = (-40, -10)
-    elif object_names[i] == "Group E":
-        xytext = (-30, 6)
-    elif object_names[i] == "DR20":
-        xytext = (6, -6)
-    elif object_names[i] == "W75N":
-        xytext = (-20, 6)
-    else:
-        xytext = (5, 5)
-    if object_names[i] not in ["W75N", "Group E", "Group D"]:
-        plt.annotate(
-            object_names[i], 
-            (x_past[i], y_past[i]),      
-            textcoords="offset points",    
-            xytext=xytext,                 
-            ha='left',                     
-            fontsize=10,
-            color=couleur_texte
-        )
-    else:
-        plt.annotate(
-            object_names[i], 
-            (x_past[i], y_past[i]),      
-            textcoords="offset points",    
-            xytext=xytext,                 
-            ha='left',                     
-            fontsize=10,
-            fontweight='bold',
-            color=couleur_texte
-        )
+    for j in range(len(object_names)):
+        if object_names[j] in ["W75N", "Group E", "Group D"]:
+            plt.text(x_past[j], y_past[j], object_names[j], fontsize=10, color='black', weight='bold')
+        else:
+            plt.text(x_past[j], y_past[j], object_names[j], fontsize=10, color='black')
     plt.xlabel('Y - Y(W75N) (pc)')
     plt.ylabel('X - X(W75N) (pc)')
     plt.title(f'Positions of Cygnus X Objects in the Galactic plane at -{t:.1f} Myr')
@@ -160,7 +132,7 @@ for t in target_times:
     plt.annotate(
         'To Galactic Center', 
         xy=(40, 300),             
-        xytext=(40, 220),         
+        xytext=(40, 20),         
         arrowprops=dict(facecolor='black', width=2, headwidth=8, alpha=0.6, shrink=0.05),
         fontsize=10, fontweight='bold', color='black',
         ha='center', va='top', zorder=4,
