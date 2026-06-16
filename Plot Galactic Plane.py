@@ -177,3 +177,77 @@ plt.quiverkey(Q, X=0.70, Y=0.97, U=10,
 
 plt.scatter(0, Z_gal[7], marker='o', s=20, color='black', edgecolor='black', zorder=2, label="W75N")
 
+for i in range(len(names)):
+    couleur_texte = 'darkred' if 'Group' in str(names[i]) else 'teal'
+    # Adjust the text position for IRAS to avoid overlap
+    if names[i] == "IRAS20290+4052":
+        xytext = (-50, 6)
+    elif names[i] == "Group A":
+        xytext = (-10, 6)
+    else:
+        xytext = (5, 5)
+# annotate if the object is not W75N or Group E or Group D
+    if names[i] not in ["W75N", "Group E", "Group D"]:
+        plt.annotate(
+            names[i], 
+            (X_local[i], Z_gal[i]),      
+            textcoords="offset points",    
+            xytext=xytext,                 
+            ha='left',                     
+            fontsize=10,
+            color=couleur_texte
+        )
+    else:
+        plt.annotate(
+            names[i], 
+            (X_local[i], Z_gal[i]),      
+            textcoords="offset points",    
+            xytext=xytext,                 
+            ha='left',                     
+            fontsize=10,
+            fontweight='bold',
+            color=couleur_texte
+        )
+    if names[i] != "W75N":
+        # Add a small marker for object, except for W75N which is already marked
+        plt.scatter(X_local[i], Z_gal[i], marker='o', s=20, color='white',edgecolor='black', zorder=2)
+
+plt.annotate(
+    'To Galactic Center', 
+    xy=(0, 20),             
+    xytext=(0, 300),         
+    arrowprops=dict(facecolor='black', width=2, headwidth=8, alpha=0.6, shrink=0.05),
+    fontsize=10, fontweight='bold', color='black',
+    ha='center', va='top', zorder=4,
+    bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1)
+)
+
+# Arrow in the direction of the galactic rotation
+plt.annotate(
+    'Galactic Rotation', 
+    xy=(600, 0),           
+    xytext=(500, 0),       
+    arrowprops=dict(facecolor='black', width=2, headwidth=5, alpha=0.6, shrink=0.05),
+    fontsize=10, fontweight='bold', color='black',
+    ha='right', va='center', zorder=3,
+    bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1)
+)
+
+# Set markers for the axes
+plt.axhline(0, color='black', linewidth=0.8, linestyle='--')
+plt.axvline(0, color='black', linewidth=0.8, linestyle='--')
+
+plt.xlabel('X-X(W75N): Distance along Galactic Rotation (pc)')
+plt.ylabel('Y-Y(W75N): Distance towards Galactic Center (pc)')
+plt.title('Local Kinematics of Cygnus X (Centered on W75N)')
+
+plt.grid(True, linestyle=':', alpha=0.7)
+plt.legend(loc='upper right')
+
+# Set equal ratio for x and y axes
+plt.gca().set_aspect('equal', adjustable='box')
+plt.xlim(-100, 700)
+plt.ylim(400, -100)
+
+plt.show()
+
