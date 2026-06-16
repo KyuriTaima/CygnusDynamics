@@ -105,7 +105,7 @@ for i in range(len(names)):
             names[i], 
             (X_local[i], Y_local[i]),      
             textcoords="offset points",    
-            xytext=(5, 5),                 
+            xytext=xytext,                 
             ha='left',                     
             fontsize=10,
             fontweight='bold',
