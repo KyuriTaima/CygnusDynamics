@@ -175,5 +175,5 @@ plt.quiverkey(Q, X=0.70, Y=0.97, U=10,
               coordinates='axes', fontproperties={'weight': 'bold', 'size': 10}, 
               color='black')
 
-plt.scatter(0, Z_gal[0], marker='o', s=20, color='black', edgecolor='black', zorder=2, label="W75N (Origin)")
+plt.scatter(0, Z_gal[7], marker='o', s=20, color='black', edgecolor='black', zorder=2, label="W75N")
 
