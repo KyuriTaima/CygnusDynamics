@@ -119,8 +119,8 @@ for t in target_times:
     plt.scatter(x_past, y_past, color=marker_colors, label=f'-{t:.1f} Myr', alpha=0.7)
     for j in range(len(object_names)):
         plt.text(x_past[j], y_past[j], object_names[j], fontsize=10, color='black', weight='bold')
-    plt.xlabel('X (pc)')
-    plt.ylabel('Y (pc)')
+    plt.xlabel('Y - Y(W75N) (pc)')
+    plt.ylabel('X - X(W75N) (pc)')
     plt.title(f'Positions of Cygnus X Objects in the Galactic plane at -{t:.1f} Myr')
     plt.gca().set_aspect('equal', adjustable='box')
     plt.xlim(-100, 1000)
