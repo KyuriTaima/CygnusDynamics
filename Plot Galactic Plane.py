@@ -43,7 +43,9 @@ X_local = -delta_X * np.sin(beta_W75N) + delta_Y * np.cos(beta_W75N)
 
 
 # Graph creation
-arrow_colors = ['red' if 'Group' in str(nom) else 'cyan' for nom in names]
+# set arrow colors: Red for groups A, D, F; Green for groups B, C, E; blue for the rest
+
+arrow_colors = ['green' if 'Group B' in str(nom) or 'Group E' in str(nom) or 'Group C' in str(nom) else 'red' if 'Group A' in str(nom) or 'Group D' in str(nom) or 'Group F' in str(nom) else 'blue' for nom in names] 
 
 plt.figure(figsize=(10, 10))
 
