@@ -127,12 +127,12 @@ for t in target_times:
     plt.title(f'Positions of Cygnus X Objects in the Galactic plane at -{t:.1f} Myr')
     plt.gca().set_aspect('equal', adjustable='box')
     plt.xlim(-100, 1000)
-    plt.ylim(250, -100)
+    plt.ylim(300, -100)
 
     plt.annotate(
         'To Galactic Center', 
-        xy=(40, 240),             
-        xytext=(40, 190),         
+        xy=(40, 290),             
+        xytext=(40, 220),         
         arrowprops=dict(facecolor='black', width=2, headwidth=8, alpha=0.6, shrink=0.05),
         fontsize=10, fontweight='bold', color='black',
         ha='center', va='top', zorder=4,
