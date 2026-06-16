@@ -236,7 +236,7 @@ plt.legend(loc='upper right')
 # Set equal ratio for x and y axes
 plt.gca().set_aspect('equal', adjustable='box')
 plt.xlim(-100, 700)
-plt.ylim(20, 150)
+plt.ylim(-50, 150)
 
 plt.show()
 
