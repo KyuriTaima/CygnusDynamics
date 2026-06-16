@@ -145,8 +145,8 @@ plt.annotate(
 plt.axhline(0, color='black', linewidth=0.8, linestyle='--')
 plt.axvline(0, color='black', linewidth=0.8, linestyle='--')
 
-plt.xlabel('X-X(W75N): Distance along Galactic Rotation (pc)')
-plt.ylabel('Y-Y(W75N): Distance towards Galactic Center (pc)')
+plt.ylabel('X-X(W75N): Distance along Galactic Rotation (pc)')
+plt.xlabel('Y-Y(W75N): Distance towards Galactic Center (pc)')
 plt.title('Local Kinematics of Cygnus X (Centered on W75N)')
 
 plt.grid(True, linestyle=':', alpha=0.7)
@@ -160,7 +160,7 @@ plt.ylim(400, -100)
 plt.show()
 
 # Add a figure showing the positions in the X,Z plane (height above/below the galactic plane)
-Z_gal = objects_data['Z_ggc_pc'].values
+Z_gal = objects_data['Z_gc_pc'].values
 W_pec_kms = objects_data['W_pec_kms'].values
 
 plt.figure(figsize=(10, 10))
