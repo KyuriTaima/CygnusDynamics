@@ -608,7 +608,7 @@ File: TCA_MCC_BCE.png Graphic file (type png)
 Package pdftex.def Info: TCA_MCC_BCE.png  used on input line 349.
 (pdftex.def)             Requested size: 262.47104pt x 142.26378pt.
 
-Overfull \hbox (34.84898pt too wide) in paragraph at lines 349--350
+Overfull \hbox (39.39893pt too wide) in paragraph at lines 349--350
  [][] 
  []
 
@@ -618,40 +618,39 @@ File: TCA_MCC_FAD.png Graphic file (type png)
 Package pdftex.def Info: TCA_MCC_FAD.png  used on input line 354.
 (pdftex.def)             Requested size: 264.2769pt x 142.26378pt.
 
-Overfull \hbox (36.65485pt too wide) in paragraph at lines 354--355
+Overfull \hbox (41.20479pt too wide) in paragraph at lines 354--355
  [][] 
  []
 
-[11 <./TCA_MCC_BCE.png> <./TCA_MCC_FAD.png>]
-<traceback_gal_plane_0.png, id=304, 777.6252pt x 310.0383pt>
+<traceback_gal_plane_0.png, id=295, 777.6252pt x 310.0383pt>
 File: traceback_gal_plane_0.png Graphic file (type png)
 <use traceback_gal_plane_0.png>
 Package pdftex.def Info: traceback_gal_plane_0.png  used on input line 372.
 (pdftex.def)             Requested size: 364.20241pt x 145.20709pt.
-<traceback_gal_plane_4,5.png, id=305, 780.516pt x 310.0383pt>
+<traceback_gal_plane_4,5.png, id=296, 780.516pt x 310.0383pt>
 File: traceback_gal_plane_4,5.png Graphic file (type png)
 <use traceback_gal_plane_4,5.png>
 Package pdftex.def Info: traceback_gal_plane_4,5.png  used on input line 377.
 (pdftex.def)             Requested size: 364.19862pt x 144.66777pt.
-<traceback_gal_plane_9,8.png, id=306, 781.2387pt x 310.0383pt>
+<traceback_gal_plane_9,8.png, id=297, 781.2387pt x 310.0383pt>
 File: traceback_gal_plane_9,8.png Graphic file (type png)
 <use traceback_gal_plane_9,8.png>
 Package pdftex.def Info: traceback_gal_plane_9,8.png  used on input line 381.
 (pdftex.def)             Requested size: 364.20206pt x 144.53531pt.
- [12 <./traceback_gal_plane_0.png> <./traceback_gal_plane_4,5.png> <./traceback
-_gal_plane_9,8.png>] [13]
-<cloud_collision.png, id=327, 721.9773pt x 531.9072pt>
+[11 <./TCA_MCC_BCE.png> <./TCA_MCC_FAD.png>] [12 <./traceback_gal_plane_0.png> 
+<./traceback_gal_plane_4,5.png> <./traceback_gal_plane_9,8.png>]
+<cloud_collision.png, id=320, 721.9773pt x 531.9072pt>
 File: cloud_collision.png Graphic file (type png)
 <use cloud_collision.png>
 Package pdftex.def Info: cloud_collision.png  used on input line 403.
 (pdftex.def)             Requested size: 193.09673pt x 142.26378pt.
- [14 <./cloud_collision.png>] [15]
-<traj_spirale.png, id=343, 576.65437pt x 490.83376pt>
+ [13] [14 <./cloud_collision.png>]
+<traj_spirale.png, id=338, 576.65437pt x 490.83376pt>
 File: traj_spirale.png Graphic file (type png)
 <use traj_spirale.png>
 Package pdftex.def Info: traj_spirale.png  used on input line 433.
 (pdftex.def)             Requested size: 200.56499pt x 170.71652pt.
- [16 <./traj_spirale.png>] (Rapport de stage.bbl
+ [15] (Rapport de stage.bbl [16 <./traj_spirale.png>]
 [17]) [18] [19] [20] [21]
 <mu_l as a fct of l.png, id=394, 645.91313pt x 410.2828pt>
 File: mu_l as a fct of l.png Graphic file (type png)
@@ -769,7 +768,7 @@ type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Lucile/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (30 pages, 2636314 bytes).
+Output written on "Rapport de stage.pdf" (30 pages, 2636121 bytes).
 PDF statistics:
  1123 PDF objects out of 1200 (max. 8388607)
  131 named destinations out of 1000 (max. 500000)
