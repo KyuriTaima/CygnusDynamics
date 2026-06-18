@@ -36,7 +36,7 @@ cluster_pairs = list(combinations(range(len(cluster_names)), 2))
 velocity_to_pc_myr = 1.022
 
 # Monte Carlo Simulation for Uncertainty Propagation
-N_simulations = 1000  # Number of Monte Carlo simulations
+N_simulations = 10000  # Number of Monte Carlo simulations
 all_mean_distances = np.zeros((N_simulations, len(time_array_myr)))
 all_tcas = []
 all_min_distances = []
