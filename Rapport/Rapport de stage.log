@@ -634,87 +634,75 @@ Package pdftex.def Info: traceback_gal_plane_9,8.png  used on input line 381.
 (pdftex.def)             Requested size: 364.20206pt x 144.1984pt.
 [11 <./TCA_MCC_BCE.png> <./TCA_MCC_FAD.png>] [12 <./traceback_gal_plane_0.png> 
 <./traceback_gal_plane_4,5.png> <./traceback_gal_plane_9,8.png>]
-
-LaTeX Warning: File `filament_geometrie.png' not found on input line 403.
-
-
-! Package pdftex.def Error: File `filament_geometrie.png' not found: using draf
-t setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.403 ...phics[height=5cm]{filament_geometrie.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[13] [14]
-<traj_spirale.png, id=335, 576.65437pt x 490.83376pt>
+<Filament_géométrie.png, id=320, 284.56313pt x 162.6075pt>
+File: Filament_géométrie.png Graphic file (type png)
+<use Filament_géométrie.png>
+Package pdftex.def Info: Filament_géométrie.png  used on input line 403.
+(pdftex.def)             Requested size: 248.97908pt x 142.26378pt.
+ [13] [14 <./Filament_géométrie.png>]
+<traj_spirale.png, id=336, 576.65437pt x 490.83376pt>
 File: traj_spirale.png Graphic file (type png)
 <use traj_spirale.png>
 Package pdftex.def Info: traj_spirale.png  used on input line 433.
 (pdftex.def)             Requested size: 200.56499pt x 170.71652pt.
- [15] (Rapport de stage.bbl [16 <./traj_spirale.png>] [17]) [18]
-[19] [20] [21]
-<mu_l as a fct of l.png, id=391, 645.91313pt x 410.2828pt>
+ [15] (Rapport de stage.bbl [16 <./traj_spirale.png>]
+[17]) [18] [19] [20] [21]
+<mu_l as a fct of l.png, id=392, 645.91313pt x 410.2828pt>
 File: mu_l as a fct of l.png Graphic file (type png)
 <use mu_l as a fct of l.png>
 Package pdftex.def Info: mu_l as a fct of l.png  used on input line 640.
 (pdftex.def)             Requested size: 447.92767pt x 284.52756pt.
  [22]
-<mu_b as a fct of mu_l.png, id=408, 646.66594pt x 420.06938pt>
+<mu_b as a fct of mu_l.png, id=409, 646.66594pt x 420.06938pt>
 File: mu_b as a fct of mu_l.png Graphic file (type png)
 <use mu_b as a fct of mu_l.png>
 Package pdftex.def Info: mu_b as a fct of mu_l.png  used on input line 649.
 (pdftex.def)             Requested size: 350.40808pt x 227.62204pt.
-<linear_traceback_BEC_XY.png, id=409, 619.3539pt x 461.0826pt>
+<linear_traceback_BEC_XY.png, id=410, 619.3539pt x 461.0826pt>
 File: linear_traceback_BEC_XY.png Graphic file (type png)
 <use linear_traceback_BEC_XY.png>
 Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 656.
 (pdftex.def)             Requested size: 382.20929pt x 284.52756pt.
  [23 <./mu_l as a fct of l.png> <./mu_b as a fct of mu_l.png>]
-<linear_traceback_FAD_XY.png, id=417, 617.1858pt x 457.4691pt>
+<linear_traceback_FAD_XY.png, id=418, 617.1858pt x 457.4691pt>
 File: linear_traceback_FAD_XY.png Graphic file (type png)
 <use linear_traceback_FAD_XY.png>
 Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 663.
 (pdftex.def)             Requested size: 383.88493pt x 284.52756pt.
-<traceback_gal_plane_10.png, id=418, 781.2387pt x 310.761pt>
+<traceback_gal_plane_10.png, id=419, 781.2387pt x 310.761pt>
 File: traceback_gal_plane_10.png Graphic file (type png)
 <use traceback_gal_plane_10.png>
 Package pdftex.def Info: traceback_gal_plane_10.png  used on input line 670.
 (pdftex.def)             Requested size: 364.20206pt x 144.87222pt.
-<traceback_gal_plane_15.png, id=419, 781.9614pt x 310.0383pt>
+<traceback_gal_plane_15.png, id=420, 781.9614pt x 310.0383pt>
 File: traceback_gal_plane_15.png Graphic file (type png)
 <use traceback_gal_plane_15.png>
 Package pdftex.def Info: traceback_gal_plane_15.png  used on input line 674.
 (pdftex.def)             Requested size: 364.20488pt x 144.40285pt.
  [24 <./linear_traceback_BEC_XY.png> <./linear_traceback_FAD_XY.png>]
-<traceback_3D_4,5.png, id=427, 697.60625pt x 331.73938pt>
+<traceback_3D_4,5.png, id=428, 697.60625pt x 331.73938pt>
 File: traceback_3D_4,5.png Graphic file (type png)
 <use traceback_3D_4,5.png>
 Package pdftex.def Info: traceback_3D_4,5.png  used on input line 681.
 (pdftex.def)             Requested size: 364.19435pt x 173.18881pt.
-<traceback_3D_9,8.png, id=428, 691.58376pt x 413.04312pt>
+<traceback_3D_9,8.png, id=429, 691.58376pt x 413.04312pt>
 File: traceback_3D_9,8.png Graphic file (type png)
 <use traceback_3D_9,8.png>
 Package pdftex.def Info: traceback_3D_9,8.png  used on input line 685.
 (pdftex.def)             Requested size: 364.20549pt x 217.51894pt.
-
-[25 <./traceback_gal_plane_10.png> <./traceback_gal_plane_15.png>]
-<3D_view_1.png, id=435, 700.6175pt x 375.4025pt>
+ [25 <./traceback_gal_plane_10.png> <./traceback_gal_plane_15.png>]
+<3D_view_1.png, id=436, 700.6175pt x 375.4025pt>
 File: 3D_view_1.png Graphic file (type png)
 <use 3D_view_1.png>
 Package pdftex.def Info: 3D_view_1.png  used on input line 692.
 (pdftex.def)             Requested size: 424.82101pt x 227.62204pt.
  [26 <./traceback_3D_4,5.png> <./traceback_3D_9,8.png>]
-<3D_view_2.png, id=442, 676.02562pt x 411.5375pt>
+<3D_view_2.png, id=443, 676.02562pt x 411.5375pt>
 File: 3D_view_2.png Graphic file (type png)
 <use 3D_view_2.png>
 Package pdftex.def Info: 3D_view_2.png  used on input line 699.
 (pdftex.def)             Requested size: 373.90924pt x 227.62204pt.
-<TCA_nonaxi.png, id=443, 787.2612pt x 426.8748pt>
+<TCA_nonaxi.png, id=444, 787.2612pt x 426.8748pt>
 File: TCA_nonaxi.png Graphic file (type png)
 <use TCA_nonaxi.png>
 Package pdftex.def Info: TCA_nonaxi.png  used on input line 706.
@@ -738,45 +726,44 @@ Package rerunfilecheck Info: File `"Rapport de stage".out' has not changed.
 (rerunfilecheck)             Checksum: F6C994E92743C047F1039554DD4CC8AB;5709.
  ) 
 Here is how much of TeX's memory you used:
- 14123 strings out of 467683
- 235881 string characters out of 5414238
+ 14097 strings out of 467683
+ 235099 string characters out of 5414238
  695943 words of memory out of 5000000
- 42887 multiletter control sequences out of 15000+600000
- 647996 words of font info for 80 fonts, out of 8000000 for 9000
+ 42862 multiletter control sequences out of 15000+600000
+ 647682 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,79p,1316b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ect
 i1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
-600\ectt1095.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\ecrm0800.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/j
-knappen/ec/dpi600\ecbx1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecxc1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Lucile\AppData\Local\MiK
-TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Lucile\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Lucile\App
-Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Luc
-ile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Us
-ers\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk>
- <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1
-440.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx2074.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/e
-c/dpi600\ecrm1200.pk><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Lucile/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Lucile/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Lucile/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/
-Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Lucile/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (30 pages, 2535700 bytes).
+600\ecrm0800.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\ecbx1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\ecxc1000.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Lucile\AppData\Local\MiK
+TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Lucile\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Lucile\App
+Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Luc
+ile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Us
+ers\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk>
+ <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2
+074.pk> <C:\Users\Lucile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm1200.pk><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmbx10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Lucile/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Lucile/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Lucile/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/User
+s/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb
+><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr7.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Lucile/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Rapport de stage.pdf" (30 pages, 2538014 bytes).
 PDF statistics:
- 1130 PDF objects out of 1200 (max. 8388607)
+ 1114 PDF objects out of 1200 (max. 8388607)
  131 named destinations out of 1000 (max. 500000)
- 299 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
 
