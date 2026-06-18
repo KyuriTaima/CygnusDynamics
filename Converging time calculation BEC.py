@@ -30,12 +30,12 @@ e_Vx = bec_data['vx_gc_err_kms'].values
 e_Vy = bec_data['vy_gc_err_kms'].values
 e_Vz = bec_data['vz_gc_err_kms'].values
 
-# --- Kinematic Traceback Setup ---
+# Kinematic traceback parameters
 time_array_myr = np.arange(0.0, 20.1, 0.1)
 cluster_pairs = list(combinations(range(len(cluster_names)), 2))
 velocity_to_pc_myr = 1.022
 
-# --- MONTE CARLO SIMULATION ---
+# Monte Carlo Simulation for Uncertainty Propagation
 N_simulations = 1000  # Nombre d'itérations de Monte-Carlo
 all_mean_distances = np.zeros((N_simulations, len(time_array_myr)))
 all_tcas = []
