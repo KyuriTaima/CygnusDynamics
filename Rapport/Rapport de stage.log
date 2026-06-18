@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  18 JUN 2026 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  18 JUN 2026 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -634,11 +634,11 @@ Package pdftex.def Info: traceback_gal_plane_9,8.png  used on input line 381.
 (pdftex.def)             Requested size: 364.20206pt x 144.1984pt.
 [11 <./TCA_MCC_BCE.png> <./TCA_MCC_FAD.png>] [12 <./traceback_gal_plane_0.png> 
 <./traceback_gal_plane_4,5.png> <./traceback_gal_plane_9,8.png>]
-<Filament_géométrie.png, id=320, 284.56313pt x 162.6075pt>
+<Filament_géométrie.png, id=320, 170.13562pt x 87.82813pt>
 File: Filament_géométrie.png Graphic file (type png)
 <use Filament_géométrie.png>
 Package pdftex.def Info: Filament_géométrie.png  used on input line 403.
-(pdftex.def)             Requested size: 248.97908pt x 142.26378pt.
+(pdftex.def)             Requested size: 275.63115pt x 142.26378pt.
  [13] [14 <./Filament_géométrie.png>]
 <traj_spirale.png, id=336, 576.65437pt x 490.83376pt>
 File: traj_spirale.png Graphic file (type png)
@@ -761,7 +761,7 @@ onts/cm/cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Lucile/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (30 pages, 2538014 bytes).
+Output written on "Rapport de stage.pdf" (30 pages, 2543664 bytes).
 PDF statistics:
  1114 PDF objects out of 1200 (max. 8388607)
  131 named destinations out of 1000 (max. 500000)
