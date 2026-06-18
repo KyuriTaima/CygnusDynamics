@@ -44,7 +44,7 @@ all_min_distances = []
 print(f"Lancement de {N_simulations} simulations de Monte-Carlo...")
 
 for sim in range(N_simulations):
-    # 1. Échantillonnage dans une distribution normale pour chaque paramètre
+    # Normal random sampling for initial positions and velocities based on uncertainties
     X_0 = np.random.normal(X_0_nom, e_X_0)
     Y_0 = np.random.normal(Y_0_nom, e_Y_0)
     Z_0 = np.random.normal(Z_0_nom, e_Z_0)
