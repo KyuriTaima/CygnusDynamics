@@ -79,6 +79,12 @@
         <mxCell id="0JJRajizu3KT1cCAe-Zn-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Halo de matière" vertex="1">
           <mxGeometry height="30" width="130" x="485" y="448" as="geometry" />
         </mxCell>
+        <mxCell id="0JJRajizu3KT1cCAe-Zn-22" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="630" as="sourcePoint" />
+            <mxPoint x="400" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
