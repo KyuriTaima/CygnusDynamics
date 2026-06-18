@@ -73,7 +73,7 @@ for sim in range(N_simulations):
     all_tcas.append(time_array_myr[min_idx])
     all_min_distances.append(sim_distances[min_idx])
 
-# --- STATISTIQUES DES RÉSULTATS (MÉDIANES ET 1-SIGMA) ---
+# Statistical analysis of the Monte Carlo results
 # Distances
 median_distances = np.median(all_mean_distances, axis=0)
 lower_bound_dist = np.percentile(all_mean_distances, 16, axis=0) # -1 sigma
