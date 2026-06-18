@@ -31,6 +31,15 @@
         <mxCell id="0JJRajizu3KT1cCAe-Zn-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="R_fil" vertex="1">
           <mxGeometry height="30" width="60" x="400" y="120" as="geometry" />
         </mxCell>
+        <mxCell id="0JJRajizu3KT1cCAe-Zn-9" edge="1" parent="1" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="160" y="400" as="sourcePoint" />
+            <mxPoint x="160" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0JJRajizu3KT1cCAe-Zn-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="R_B" vertex="1">
+          <mxGeometry height="30" width="60" x="380" y="220" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
