@@ -79,7 +79,7 @@ median_distances = np.median(all_mean_distances, axis=0)
 lower_bound_dist = np.percentile(all_mean_distances, 16, axis=0) # -1 sigma
 upper_bound_dist = np.percentile(all_mean_distances, 84, axis=0) # +1 sigma
 
-# TCA et Distance minimale
+# TCA and minimum mean distance statistics
 tca_median = np.median(all_tcas)
 tca_std = np.std(all_tcas)
 min_dist_median = np.median(all_min_distances)
