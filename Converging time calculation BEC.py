@@ -52,7 +52,7 @@ for sim in range(N_simulations):
     Vy = np.random.normal(Vy_nom, e_Vy)
     Vz = np.random.normal(Vz_nom, e_Vz)
     
-    # 2. Exécution du Traceback pour cette simulation
+    # Execute the kinematic traceback for each time step
     sim_distances = []
     for t in time_array_myr:
         X_t = X_0 - (Vx * t * velocity_to_pc_myr)
