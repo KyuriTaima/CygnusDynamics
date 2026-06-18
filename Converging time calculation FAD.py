@@ -117,4 +117,5 @@ plt.scatter(tca_median, min_dist_median, color='red', s=100, zorder=5, label=f'M
 plt.grid(True, linestyle=':', alpha=0.6)
 plt.legend()
 plt.tight_layout()
+plt.xlim(0.0, 12.5) # Limit the x-axis to 12.5 Myr for better visualization of the TCA region
 plt.show()
