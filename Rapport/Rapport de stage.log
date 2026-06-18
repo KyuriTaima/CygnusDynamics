@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  18 JUN 2026 10:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  18 JUN 2026 10:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -589,17 +589,17 @@ Package pdftex.def Info: spatial_distribution_legended.png  used on input line
 297.
 (pdftex.def)             Requested size: 303.3643pt x 227.62204pt.
  [7]
-<Galactic plane view Bobylev 2026 v2.png, id=248, 957.5775pt x 588.2778pt>
+<Galactic plane view Bobylev 2026 v2.png, id=248, 664.1613pt x 408.3255pt>
 File: Galactic plane view Bobylev 2026 v2.png Graphic file (type png)
 <use Galactic plane view Bobylev 2026 v2.png>
 Package pdftex.def Info: Galactic plane view Bobylev 2026 v2.png  used on input
  line 309.
-(pdftex.def)             Requested size: 370.51683pt x 227.62204pt.
-<Kinematics_XZ_plane.png, id=249, 1162.1016pt x 322.3242pt>
+(pdftex.def)             Requested size: 370.2455pt x 227.62204pt.
+<Kinematics_XZ_plane.png, id=249, 1163.547pt x 323.7696pt>
 File: Kinematics_XZ_plane.png Graphic file (type png)
 <use Kinematics_XZ_plane.png>
 Package pdftex.def Info: Kinematics_XZ_plane.png  used on input line 315.
-(pdftex.def)             Requested size: 410.32356pt x 113.81102pt.
+(pdftex.def)             Requested size: 409.00522pt x 113.81102pt.
  [8 <./spatial_distribution_legended.png>] [9 <./Galactic plane view Bobylev 20
 26 v2.png> <./Kinematics_XZ_plane.png>] [10]
 <traceback_TCA_graph_BEC.png, id=287, 552.8655pt x 386.6445pt>
@@ -768,7 +768,7 @@ type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Lucile/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (30 pages, 2502992 bytes).
+Output written on "Rapport de stage.pdf" (30 pages, 2488943 bytes).
 PDF statistics:
  1123 PDF objects out of 1200 (max. 8388607)
  131 named destinations out of 1000 (max. 500000)
