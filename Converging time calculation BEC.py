@@ -12,7 +12,6 @@ target_clusters = ["Group B", "Group E", "Group C"]
 bec_data = objects_data[objects_data['Object_Name'].isin(target_clusters)].reset_index(drop=True)
 cluster_names = bec_data['Object_Name'].values
 
-# --- Parameter Extraction and Unit Conversion ---
 # Convert Galactocentric spatial coordinates from kpc to pc for precision
 X_0_nom = bec_data['X_gc_kpc'].values * 1000  
 Y_0_nom = bec_data['Y_gc_kpc'].values * 1000
@@ -23,8 +22,7 @@ Vx_nom = bec_data['vx_gc_kms'].values
 Vy_nom = bec_data['vy_gc_kms'].values
 Vz_nom = bec_data['vz_gc_kms'].values
 
-# --- EXTRACTION DES INCERTITUDES ---
-# /!\ Modifie les noms de colonnes ci-dessous si nécessaire (ex: 'e_X_gc_kpc')
+# Uncertainties
 e_X_0 = bec_data['X_gc_kpc_err'].values * 1000
 e_Y_0 = bec_data['Y_gc_kpc_err'].values * 1000
 e_Z_0 = bec_data['Z_gc_kpc_err'].values * 1000
