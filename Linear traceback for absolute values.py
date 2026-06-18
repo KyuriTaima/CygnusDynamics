@@ -122,7 +122,7 @@ for t in target_times:
             plt.text(x_past[j], y_past[j], object_names[j], fontsize=10, color='black', weight='bold')
         else:
             plt.text(x_past[j], y_past[j], object_names[j], fontsize=10, color='black')
-    plt.xlabel('Y - Y(W75N) (pc)')
+    plt.xlabel('Y (pc)')
     plt.ylabel('X - X(W75N) (pc)')
     plt.title(f'Positions of Cygnus X Objects in the Galactic plane at -{t:.1f} Myr')
     plt.gca().set_aspect('equal', adjustable='box')
