@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  18 JUN 2026 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.1)  18 JUN 2026 17:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,73 +647,73 @@ Package pdftex.def Info: traj_spirale.png  used on input line 433.
 (pdftex.def)             Requested size: 200.56499pt x 170.71652pt.
  [15] (Rapport de stage.bbl [16 <./traj_spirale.png>]
 [17]) [18] [19] [20] [21]
-<mu_l as a fct of l.png, id=392, 645.91313pt x 410.2828pt>
+<mu_l as a fct of l.png, id=389, 645.91313pt x 410.2828pt>
 File: mu_l as a fct of l.png Graphic file (type png)
 <use mu_l as a fct of l.png>
-Package pdftex.def Info: mu_l as a fct of l.png  used on input line 640.
+Package pdftex.def Info: mu_l as a fct of l.png  used on input line 638.
 (pdftex.def)             Requested size: 447.92767pt x 284.52756pt.
  [22]
 <mu_b as a fct of mu_l.png, id=409, 646.66594pt x 420.06938pt>
 File: mu_b as a fct of mu_l.png Graphic file (type png)
 <use mu_b as a fct of mu_l.png>
-Package pdftex.def Info: mu_b as a fct of mu_l.png  used on input line 649.
+Package pdftex.def Info: mu_b as a fct of mu_l.png  used on input line 647.
 (pdftex.def)             Requested size: 350.40808pt x 227.62204pt.
 <linear_traceback_BEC_XY.png, id=410, 619.3539pt x 461.0826pt>
 File: linear_traceback_BEC_XY.png Graphic file (type png)
 <use linear_traceback_BEC_XY.png>
-Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 656.
+Package pdftex.def Info: linear_traceback_BEC_XY.png  used on input line 654.
 (pdftex.def)             Requested size: 382.20929pt x 284.52756pt.
  [23 <./mu_l as a fct of l.png> <./mu_b as a fct of mu_l.png>]
 <linear_traceback_FAD_XY.png, id=418, 617.1858pt x 457.4691pt>
 File: linear_traceback_FAD_XY.png Graphic file (type png)
 <use linear_traceback_FAD_XY.png>
-Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 663.
+Package pdftex.def Info: linear_traceback_FAD_XY.png  used on input line 661.
 (pdftex.def)             Requested size: 383.88493pt x 284.52756pt.
 <traceback_gal_plane_10.png, id=419, 781.2387pt x 310.761pt>
 File: traceback_gal_plane_10.png Graphic file (type png)
 <use traceback_gal_plane_10.png>
-Package pdftex.def Info: traceback_gal_plane_10.png  used on input line 670.
+Package pdftex.def Info: traceback_gal_plane_10.png  used on input line 668.
 (pdftex.def)             Requested size: 364.20206pt x 144.87222pt.
 <traceback_gal_plane_15.png, id=420, 781.9614pt x 310.0383pt>
 File: traceback_gal_plane_15.png Graphic file (type png)
 <use traceback_gal_plane_15.png>
-Package pdftex.def Info: traceback_gal_plane_15.png  used on input line 674.
+Package pdftex.def Info: traceback_gal_plane_15.png  used on input line 672.
 (pdftex.def)             Requested size: 364.20488pt x 144.40285pt.
  [24 <./linear_traceback_BEC_XY.png> <./linear_traceback_FAD_XY.png>]
 <traceback_3D_4,5.png, id=428, 697.60625pt x 331.73938pt>
 File: traceback_3D_4,5.png Graphic file (type png)
 <use traceback_3D_4,5.png>
-Package pdftex.def Info: traceback_3D_4,5.png  used on input line 681.
+Package pdftex.def Info: traceback_3D_4,5.png  used on input line 679.
 (pdftex.def)             Requested size: 364.19435pt x 173.18881pt.
 <traceback_3D_9,8.png, id=429, 691.58376pt x 413.04312pt>
 File: traceback_3D_9,8.png Graphic file (type png)
 <use traceback_3D_9,8.png>
-Package pdftex.def Info: traceback_3D_9,8.png  used on input line 685.
+Package pdftex.def Info: traceback_3D_9,8.png  used on input line 683.
 (pdftex.def)             Requested size: 364.20549pt x 217.51894pt.
  [25 <./traceback_gal_plane_10.png> <./traceback_gal_plane_15.png>]
 <3D_view_1.png, id=436, 700.6175pt x 375.4025pt>
 File: 3D_view_1.png Graphic file (type png)
 <use 3D_view_1.png>
-Package pdftex.def Info: 3D_view_1.png  used on input line 692.
+Package pdftex.def Info: 3D_view_1.png  used on input line 690.
 (pdftex.def)             Requested size: 424.82101pt x 227.62204pt.
  [26 <./traceback_3D_4,5.png> <./traceback_3D_9,8.png>]
 <3D_view_2.png, id=443, 676.02562pt x 411.5375pt>
 File: 3D_view_2.png Graphic file (type png)
 <use 3D_view_2.png>
-Package pdftex.def Info: 3D_view_2.png  used on input line 699.
+Package pdftex.def Info: 3D_view_2.png  used on input line 697.
 (pdftex.def)             Requested size: 373.90924pt x 227.62204pt.
 <TCA_nonaxi.png, id=444, 787.2612pt x 426.8748pt>
 File: TCA_nonaxi.png Graphic file (type png)
 <use TCA_nonaxi.png>
-Package pdftex.def Info: TCA_nonaxi.png  used on input line 706.
+Package pdftex.def Info: TCA_nonaxi.png  used on input line 704.
 (pdftex.def)             Requested size: 314.85086pt x 170.71652pt.
  [27 <./3D_view_1.png> <./3D_view_2.png>] [28 <./TCA_nonaxi.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 741--742
+Underfull \hbox (badness 10000) in paragraph at lines 739--740
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--750
+Underfull \hbox (badness 10000) in paragraph at lines 747--748
 
  []
 
@@ -761,7 +761,7 @@ onts/cm/cmr8.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb><C:/Users/Lucile/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Lucile/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Rapport de stage.pdf" (30 pages, 2543541 bytes).
+Output written on "Rapport de stage.pdf" (30 pages, 2543057 bytes).
 PDF statistics:
  1114 PDF objects out of 1200 (max. 8388607)
  131 named destinations out of 1000 (max. 500000)
