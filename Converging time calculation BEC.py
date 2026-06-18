@@ -101,10 +101,10 @@ plt.xlabel('Time in the past (Myr)', fontsize=12, fontweight='bold')
 # Add title
 plt.title('Kinematic Traceback of the BEC Supergroup with Monte-Carlo Uncertainties', fontsize=14, fontweight='bold')
 
-# Trace l'enveloppe d'incertitude (Zone ombrée)
+# Draw the uncertainty band (1 sigma) around the median trajectory
 plt.fill_between(time_array_myr, lower_bound_dist, upper_bound_dist, color='royalblue', alpha=0.3, label=r'1$\sigma$ Uncertainty Band')
 
-# Trace la ligne médiane (Trajectoire la plus probable)
+# Draw the median trajectory of the mean relative distance over time
 plt.plot(time_array_myr, median_distances, lw=2.5, color='royalblue', label='Median Relative Distance')
 
 # Add a vertical dashed line at the time of closest approach avec son incertitude
