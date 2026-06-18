@@ -99,7 +99,7 @@ plt.ylabel('Mean Relative Distance (pc)', fontsize=12, fontweight='bold')
 # Add x axis label
 plt.xlabel('Time in the past (Myr)', fontsize=12, fontweight='bold')
 # Add title
-plt.title('Kinematic Traceback of the E-BC Supergroup with Monte-Carlo Uncertainties', fontsize=14, fontweight='bold')
+plt.title('Kinematic Traceback of the EC Supergroup with Monte-Carlo Uncertainties', fontsize=14, fontweight='bold')
 
 # Draw the uncertainty band (1 sigma) around the median trajectory
 plt.fill_between(time_array_myr, lower_bound_dist, upper_bound_dist, color='royalblue', alpha=0.3, label=r'1$\sigma$ Uncertainty Band')
