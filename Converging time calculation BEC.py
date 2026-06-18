@@ -23,12 +23,12 @@ Vy_nom = bec_data['vy_gc_kms'].values
 Vz_nom = bec_data['vz_gc_kms'].values
 
 # Uncertainties
-e_X_0 = bec_data['X_gc_kpc_err'].values * 1000
-e_Y_0 = bec_data['Y_gc_kpc_err'].values * 1000
-e_Z_0 = bec_data['Z_gc_kpc_err'].values * 1000
-e_Vx = bec_data['vx_gc_kms_err'].values
-e_Vy = bec_data['vy_gc_kms_err'].values
-e_Vz = bec_data['vz_gc_kms_err'].values
+e_X_0 = bec_data['X_gc_err_kpc'].values * 1000
+e_Y_0 = bec_data['Y_gc_err_kpc'].values * 1000
+e_Z_0 = bec_data['Z_gc_err_kpc'].values * 1000
+e_Vx = bec_data['vx_gc_err_kms'].values
+e_Vy = bec_data['vy_gc_err_kms'].values
+e_Vz = bec_data['vz_gc_err_kms'].values
 
 # --- Kinematic Traceback Setup ---
 time_array_myr = np.arange(0.0, 20.1, 0.1)
