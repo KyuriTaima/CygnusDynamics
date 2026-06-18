@@ -107,7 +107,7 @@ plt.fill_between(time_array_myr, lower_bound_dist, upper_bound_dist, color='roya
 # Draw the median trajectory of the mean relative distance over time
 plt.plot(time_array_myr, median_distances, lw=2.5, color='royalblue', label='Median Relative Distance')
 
-# Add a vertical dashed line at the time of closest approach avec son incertitude
+# Add a vertical dashed line at the time of closest approach with uncertainty
 plt.axvline(x=tca_median, color='red', linestyle='--', lw=2, label=f'TCA: -{tca_median:.1f} $\pm$ {tca_std:.1f} Myr')
 plt.axvspan(tca_median - tca_std, tca_median + tca_std, color='red', alpha=0.15) # Zone d'incertitude du TCA
 
