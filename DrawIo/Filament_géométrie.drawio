@@ -73,6 +73,9 @@
         <mxCell id="0JJRajizu3KT1cCAe-Zn-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="15 km/s" vertex="1">
           <mxGeometry height="30" width="60" x="425" y="530" as="geometry" />
         </mxCell>
+        <mxCell id="0JJRajizu3KT1cCAe-Zn-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="202" width="120" x="485" y="448" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
