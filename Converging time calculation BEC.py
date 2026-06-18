@@ -91,7 +91,7 @@ print(f"Time of Closest Approach (TCA) : -{tca_median:.1f} ± {tca_std:.1f} Myr"
 print(f"Minimum Mean Relative Distance : {min_dist_median:.1f} ± {min_dist_std:.1f} pc")
 print("-" * 50)
 
-# --- Visualization ---
+# Vizualisation of the results
 plt.figure(figsize=(10, 6))
 
 # Add y axis label
