@@ -1,0 +1,22 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Cinématique des nuages moléculaires et des groupes d'étoiles massives}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Notions cinématiques}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Paramètres fondamentaux du modèle galactique}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Détermination des positions et des vitesses dans le référentiel galactocentrique}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Remarque sur les incertitudes et la crédibilité des résultats}{5}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Visualisation des vitesses et des positions}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Projection en deux dimensions}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Projection en trois dimensions}{8}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Traceback des objets du Cygne}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Traceback linéaire des amas d'étoiles OB}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Traceback avec un potentiel gravitationnel local}{11}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Scénario de formation des groupes d'étoiles massives au sein de la région du Cygne}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Processus de collision de nuages moléculaires}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Proposition de scénario}{13}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Influence du bras local dans la dynamique des nuages moléculaires}{14}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Conclusion}{15}{section.6}%
+\contentsline {section}{\numberline {A}Données cinématiques complémentaires}{18}{section.A}%
+\contentsline {section}{\numberline {B}Méthode de calcul des incertitudes}{19}{section.B}%
+\contentsline {section}{\numberline {C}Graphiques complémentaires}{21}{section.C}%
+\contentsline {section}{\numberline {D}Calculs de traceback linéaires}{27}{section.D}%
