@@ -59,6 +59,7 @@ for sim in range(N_simulations):
         Y_t = Y_0 - (Vy * t * velocity_to_pc_myr)
         Z_t = Z_0 - (Vz * t * velocity_to_pc_myr)
         
+        # Calculate mean relative distances between all cluster pairs at this time step
         dists = []
         for i, j in cluster_pairs:
             dist = np.sqrt((X_t[i] - X_t[j])**2 + (Y_t[i] - Y_t[j])**2 + (Z_t[i] - Z_t[j])**2)
@@ -67,7 +68,7 @@ for sim in range(N_simulations):
         
     all_mean_distances[sim, :] = sim_distances
     
-    # 3. Récupération du TCA pour cette simulation
+    # Get the time of closest approach (TCA) and the corresponding minimum mean distance
     min_idx = np.argmin(sim_distances)
     all_tcas.append(time_array_myr[min_idx])
     all_min_distances.append(sim_distances[min_idx])
