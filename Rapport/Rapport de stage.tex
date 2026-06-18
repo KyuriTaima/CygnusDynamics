@@ -204,17 +204,22 @@
 	\end{equation}
 	
 	Enfin, pour exprimer ces vitesses dans le repère local de l'objet, j'effectue une rotation des axes d'un angle $\beta$ (Figure \ref{fig:geometry_lsr_to_peculiar}). Je soustrais également la vitesse circulaire locale $\Theta_0$ pour isoler la composante de vitesse galactocentrique particulière, notée $V_{pec}$ :
-	\begin{align}
-		U_{pec} &= U_{lsr,abs}\cos(\beta) - V_{lsr,abs}\sin(\beta) \\
-		V_{pec} &= U_{lsr,abs}\sin(\beta) + V_{lsr,abs}\cos(\beta) - \Theta_0 \\
-		W_{pec} &= W_{lsr,abs}
-	\end{align}
-	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=4cm]{Transform_Vlsr_Vpec.png}
-		\caption{Représentation géométrique de la rotation des axes cinématiques vers le référentiel galactocentrique.}
-		\label{fig:geometry_lsr_to_peculiar}
+		\begin{minipage}{0.55\textwidth}
+			\begin{align}
+				U_{pec} &= U_{lsr,abs}\cos(\beta) - V_{lsr,abs}\sin(\beta) \\
+				V_{pec} &= U_{lsr,abs}\sin(\beta) + V_{lsr,abs}\cos(\beta) - \Theta_0 \\
+				W_{pec} &= W_{lsr,abs}
+			\end{align}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.40\textwidth}
+			\centering
+			\includegraphics[width=\textwidth, height=4cm, keepaspectratio]{Transform_Vlsr_Vpec.png}
+			\caption{Représentation géométrique de la rotation des axes cinématiques vers le référentiel galactocentrique.}
+			\label{fig:geometry_lsr_to_peculiar}
+		\end{minipage}
 	\end{figure}
 	
 	Ces composantes ($U_{pec}, V_{pec}, W_{pec}$) sont celles que j'utiliserai dans la suite de ce rapport pour comparer les objets entre eux et établir les trajectoires de collision. 
