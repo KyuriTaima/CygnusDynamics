@@ -99,7 +99,7 @@ plt.ylabel('Mean Relative Distance (pc)', fontsize=12, fontweight='bold')
 # Add x axis label
 plt.xlabel('Time in the past (Myr)', fontsize=12, fontweight='bold')
 # Add title
-plt.title('Kinematic Traceback of the BEC Supergroup with Monte-Carlo Uncertainties', fontsize=14, fontweight='bold')
+plt.title('Kinematic Traceback of the E-BC Supergroup with Monte-Carlo Uncertainties', fontsize=14, fontweight='bold')
 
 # Draw the uncertainty band (1 sigma) around the median trajectory
 plt.fill_between(time_array_myr, lower_bound_dist, upper_bound_dist, color='royalblue', alpha=0.3, label=r'1$\sigma$ Uncertainty Band')
@@ -107,7 +107,7 @@ plt.fill_between(time_array_myr, lower_bound_dist, upper_bound_dist, color='roya
 # Draw the median trajectory of the mean relative distance over time
 plt.plot(time_array_myr, median_distances, lw=2.5, color='royalblue', label='Median Relative Distance')
 
-# Add a vertical dashed line at the time of closest approach avec son incertitude
+# Add a vertical dashed line at the time of closest approach with uncertainty
 plt.axvline(x=tca_median, color='red', linestyle='--', lw=2, label=f'TCA: -{tca_median:.1f} $\pm$ {tca_std:.1f} Myr')
 plt.axvspan(tca_median - tca_std, tca_median + tca_std, color='red', alpha=0.15) # Zone d'incertitude du TCA
 
