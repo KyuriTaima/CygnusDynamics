@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from itertools import combinations
 
-# --- Data Loading and Filtering ---
+# Data loading
 data_file = 'Cygnus_Objects_Datas_Uncertainties.csv'
 objects_data = pd.read_csv(data_file)
 
