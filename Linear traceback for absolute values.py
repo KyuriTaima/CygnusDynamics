@@ -33,7 +33,7 @@ x_gal = R0 - distances_pc * np.cos(l_rad) * np.cos(b_rad)
 y_gal = distances_pc * np.sin(l_rad) * np.cos(b_rad)
 z_gal = distances_pc * np.sin(b_rad)
 
-# On trouve l'index de Group E
+# On trouve l'index de W75N
 index_origin = list(object_names).index("W75N") 
 x_origin, y_origin, z_origin = x_gal[index_origin], y_gal[index_origin], z_gal[index_origin]
 beta_angle = np.arctan2(y_origin, x_origin)
