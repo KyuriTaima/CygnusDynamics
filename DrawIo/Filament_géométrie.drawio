@@ -64,11 +64,20 @@
         <mxCell id="0JJRajizu3KT1cCAe-Zn-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="R_B" vertex="1">
           <mxGeometry height="30" width="60" x="389" y="478" as="geometry" />
         </mxCell>
-        <mxCell id="0JJRajizu3KT1cCAe-Zn-17" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+        <mxCell id="0JJRajizu3KT1cCAe-Zn-17" edge="1" parent="1" source="0JJRajizu3KT1cCAe-Zn-18" style="endArrow=classic;html=1;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="410" y="560" as="sourcePoint" />
+            <mxPoint x="420" y="560" as="sourcePoint" />
             <mxPoint x="490" y="560" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="0JJRajizu3KT1cCAe-Zn-19" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" target="0JJRajizu3KT1cCAe-Zn-18" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="560" as="sourcePoint" />
+            <mxPoint x="490" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0JJRajizu3KT1cCAe-Zn-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="15 km/s" vertex="1">
+          <mxGeometry height="30" width="60" x="420" y="535" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
